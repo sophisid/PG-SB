@@ -1,0 +1,7 @@
+[
+  {
+    "name": "schemadiscovery",
+    "cwd": "./schemadiscovery",
+    "cmd": "sbt run "
+  }
+]

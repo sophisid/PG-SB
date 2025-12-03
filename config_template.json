@@ -1,0 +1,14 @@
+{
+  "datasets_dir": "./datasets",
+  "output_dir": "./output",
+  "commands_file": "./benchmark_commands.json",
+  "neo4j_password": "password",
+  "neo4j_port": 7687,
+  "noise_levels": [0, 10, 20, 30, 40],
+  "label_percents": [0.0, 0.5, 1.0],
+  "neo4j_dirs": {
+    "4.4.0": "./neo4j-community-4.4.0",
+    "5.1.0": "./neo4j-community-5.1.0",
+    "5.25.1": "./neo4j-community-5.25.1"
+  }
+}
