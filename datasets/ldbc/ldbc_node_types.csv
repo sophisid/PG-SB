@@ -1,0 +1,9 @@
+﻿nodeType,properties
+Comment,"[browserUsed, length, locationIP, id, creationDate, content]"
+Forum,"[title, creationDate, id]"
+Organisation,"[name, id, type, url]"
+Person,"[birthday, firstName, lastName, gender, browserUsed, locationIP, id, creationDate]"
+Place,"[name, id, type, url]"
+Post,"[imageFile, browserUsed, length, locationIP, language, id, creationDate, content]"
+Tag,"[name, url, id]"
+TagClass,"[name, url, id]"

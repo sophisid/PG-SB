@@ -1,0 +1,473 @@
+﻿[
+  {
+    "nodeType": ":`AbstractCollection`",
+    "nodeLabels": [
+      "AbstractCollection"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "absCollId",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Abstract`",
+    "nodeLabels": [
+      "Abstract"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "abstractId",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "text",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Affiliation`",
+    "nodeLabels": [
+      "Affiliation"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "laboratory",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "institution",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "affId",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`AuthorCollection`",
+    "nodeLabels": [
+      "AuthorCollection"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "acId",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Author`",
+    "nodeLabels": [
+      "Author"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "authorId",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "first",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "middle",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "last",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "email",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "suffix",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BodyTextCollection`",
+    "nodeLabels": [
+      "BodyTextCollection"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "bodyCollId",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BodyText`",
+    "nodeLabels": [
+      "BodyText"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "text",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "bodyId",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "section",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Citation`",
+    "nodeLabels": [
+      "Citation"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "text",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "citId",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Journal`",
+    "nodeLabels": [
+      "Journal"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "journalId",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`License`",
+    "nodeLabels": [
+      "License"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "licenseId",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Location`",
+    "nodeLabels": [
+      "Location"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "locId",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "region",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "country",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "postcode",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "settlement",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PaperID`",
+    "nodeLabels": [
+      "PaperID"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "paperRefId",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "type",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "value",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Paper`",
+    "nodeLabels": [
+      "Paper"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "title",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "paperId",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "cord_uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "doi",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "pmcid",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "pubmed_id",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "publish_time",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "journal",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source_x",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`ReferenceCollection`",
+    "nodeLabels": [
+      "ReferenceCollection"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "refCollId",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Reference`",
+    "nodeLabels": [
+      "Reference"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "refId",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "title",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "year",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "venue",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Source`",
+    "nodeLabels": [
+      "Source"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceId",
+        "mandatory": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+﻿nodeType,properties
+AS,[asn]
+AtlasMeasurement,"[creation_time, use_probe_resolver, max_hops, type, packets, more_extended_timing, path, include_qbuf, protocol, hostname, status_id, set_nsid_bit, id, query_class, max_bytes_read, duplicate_timeout, target_prefix, udp_payload_size, method, af, include_abuf, query_type, version, is_oneoff, estimated_results_per_day, start_time, size, port, header_bytes, set_do_bit, interval, probes_requested, credits_per_result, hop_by_hop_option_size, target_resolved_ips_8, stop_time, query_argument, target_resolved_ips_6, target_resolved_ips_7, packet_interval, target_resolved_ips_4, target_resolved_ips_5, first_hop, target_resolved_ips_2, description, target_resolved_ips_3, target_resolved_ips_0, is_all_scheduled, target_asn, target_resolved_ips_1, timeout, result, set_rd_bit, paris, extended_timing, include_probe_id, retry, user_agent, response_timeout, group_value, destination_option_size, in_wifi_group, status_name, probes_scheduled, spread, target_hostname, tags_1, participant_count, tags_0, tags_3, group_id, tags_2, target_ip, tags_4, dont_fragment, is_public, resolve_on_probe, query_string]"
+AtlasProbe,"[is_anchor, tags_21_slug, tags_17_name, tags_20_name, tags_8_name, tags_2_name, tags_13_slug, type, tags_26_name, tags_18_slug, tags_3_slug, status_since, tags_12_name, status_id, total_uptime, tags_16_name, id, tags_9_slug, tags_1_name, tags_14_slug, tags_22_slug, tags_4_name, tags_17_slug, tags_7_name, tags_2_slug, tags_8_slug, tags_5_slug, tags_0_slug, asn_v6, tags_26_slug, asn_v4, country_code, tags_15_slug, tags_23_slug, tags_25_name, tags_12_slug, tags_20_slug, tags_11_name, tags_22_name, tags_14_name, address_v6, tags_7_slug, tags_24_slug, address_v4, tags_5_name, description, tags_0_name, firmware_version, tags_10_slug, tags_23_name, tags_6_slug, geometry_type, tags_15_name, prefix_v4, prefix_v6, geometry_coordinates_0, tags_19_name, tags_25_slug, first_connected, tags_24_name, tags_11_slug, tags_13_name, status_name, tags_21_name, geometry_coordinates_1, tags_10_name, tags_9_name, tags_6_name, tags_18_name, tags_3_name, tags_16_slug, is_public, tags_19_slug, tags_1_slug, tags_4_slug, last_connected]"
+AuthoritativeNameServer:HostName,[name]
+BGPCollector,"[name, project]"
+BGPPrefix:GeoPrefix:PeeringLAN:Prefix:RDNSPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:PeeringLAN:Prefix:RDNSPrefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:PeeringLAN:Prefix:RDNSPrefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:PeeringLAN:Prefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:PeeringLAN:Prefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:PeeringLAN:Prefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:Prefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:Prefix:RDNSPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:Prefix:RDNSPrefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:Prefix:RDNSPrefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:Prefix:RDNSPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:Prefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:Prefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:GeoPrefix:Prefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:PeeringLAN:Prefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:PeeringLAN:Prefix:RDNSPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:PeeringLAN:Prefix:RDNSPrefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:PeeringLAN:Prefix:RDNSPrefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:PeeringLAN:Prefix:RDNSPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:PeeringLAN:Prefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:PeeringLAN:Prefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:PeeringLAN:Prefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:Prefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:Prefix:RDNSPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:Prefix:RDNSPrefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:Prefix:RDNSPrefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:Prefix:RDNSPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:Prefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:Prefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+BGPPrefix:Prefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+CaidaIXID,[id]
+CaidaOrgID,[id]
+Country,"[name, country_code, alpha3]"
+DomainName,[name]
+Estimate,[name]
+Facility,[name]
+GeoPrefix:PeeringLAN:Prefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:PeeringLAN:Prefix:RDNSPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:PeeringLAN:Prefix:RDNSPrefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:PeeringLAN:Prefix:RDNSPrefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:PeeringLAN:Prefix:RDNSPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:PeeringLAN:Prefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:PeeringLAN:Prefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:PeeringLAN:Prefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:Prefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:Prefix:RDNSPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:Prefix:RDNSPrefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:Prefix:RDNSPrefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:Prefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:Prefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+GeoPrefix:Prefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+HostName,[name]
+IP,"[af, ip]"
+IP:Resolver,"[af, ip]"
+IXP,[name]
+Name,[name]
+OpaqueID,[id]
+Organization,[name]
+PeeringLAN:Prefix,"[prefixlen, af, prefix, network]"
+PeeringLAN:Prefix:RDNSPrefix,"[prefixlen, af, prefix, network]"
+PeeringLAN:Prefix:RDNSPrefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+PeeringLAN:Prefix:RDNSPrefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+PeeringLAN:Prefix:RDNSPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+PeeringLAN:Prefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+PeeringLAN:Prefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+PeeringLAN:Prefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+PeeringdbFacID,[id]
+PeeringdbIXID,[id]
+PeeringdbNetID,[id]
+PeeringdbOrgID,[id]
+Point,[position]
+Prefix:RDNSPrefix,"[prefixlen, af, prefix, network]"
+Prefix:RDNSPrefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+Prefix:RDNSPrefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+Prefix:RDNSPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+Prefix:RIRPrefix,"[prefixlen, af, prefix, network]"
+Prefix:RIRPrefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+Prefix:RPKIPrefix,"[prefixlen, af, prefix, network]"
+Ranking,[name]
+Tag,[label]
+URL,[url]

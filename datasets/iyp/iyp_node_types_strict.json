@@ -1,0 +1,4222 @@
+﻿[
+  {
+    "nodeType": ":`AS`",
+    "nodeLabels": [
+      "AS"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "asn",
+        "types": [
+          "Long"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`AtlasMeasurement`",
+    "nodeLabels": [
+      "AtlasMeasurement"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "creation_time",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "use_probe_resolver",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "max_hops",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "type",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "packets",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "path",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "include_qbuf",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "protocol",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "hostname",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "status_id",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "set_nsid_bit",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "id",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "query_class",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "max_bytes_read",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "duplicate_timeout",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "udp_payload_size",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "method",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "include_abuf",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "query_type",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "version",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "is_oneoff",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "estimated_results_per_day",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "start_time",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "size",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "port",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "header_bytes",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "set_do_bit",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "interval",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "probes_requested",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "credits_per_result",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "hop_by_hop_option_size",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_resolved_ips_8",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "stop_time",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_resolved_ips_9",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "query_argument",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_resolved_ips_6",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "use_macros",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_resolved_ips_7",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_resolved_ips_4",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "packet_interval",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_resolved_ips_5",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_resolved_ips_2",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "first_hop",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "description",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_resolved_ips_3",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_resolved_ips_0",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "is_all_scheduled",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_asn",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_resolved_ips_1",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "timeout",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "result",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "set_rd_bit",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "paris",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "include_probe_id",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "retry",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "user_agent",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "response_timeout",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "group_value",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "destination_option_size",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "in_wifi_group",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "status_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "probes_scheduled",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "spread",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_hostname",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_1",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "participant_count",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_0",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_3",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "group_id",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_2",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "target_ip",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_4",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "dont_fragment",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "is_public",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "resolve_on_probe",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "query_string",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`AtlasProbe`",
+    "nodeLabels": [
+      "AtlasProbe"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "is_anchor",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_42_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_2_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_13_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "type",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_26_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_39_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_30_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_3_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_12_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "status_id",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_44_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "total_uptime",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "id",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_1_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_14_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_43_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_42_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_4_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_38_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_45_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_28_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_2_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_31_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_44_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_5_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "asn_v6",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_39_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_26_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "asn_v4",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_30_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_15_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_25_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_12_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_41_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_11_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_14_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "address_v6",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_7_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_24_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "address_v4",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_37_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_5_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "firmware_version",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_28_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_31_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "geometry_type",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_15_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix_v4",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_33_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_40_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix_v6",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_46_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_27_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_24_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_11_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "status_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_21_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_18_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_40_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "is_public",
+        "types": [
+          "Boolean"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_43_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_46_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_27_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_1_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_4_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_48_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_21_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_17_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_20_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_8_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_34_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_18_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "status_since",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_36_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_16_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_9_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_35_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_22_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_17_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_7_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_48_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_34_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_37_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_8_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_47_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_0_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "country_code",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_36_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_23_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_33_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_20_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_22_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_45_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_38_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_32_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "description",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_0_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_10_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_23_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_47_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_6_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_29_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_41_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "geometry_coordinates_0",
+        "types": [
+          "Double"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_19_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_25_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_32_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "first_connected",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_13_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "geometry_coordinates_1",
+        "types": [
+          "Double"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_10_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_9_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_6_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_3_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_16_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_29_name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_19_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "tags_35_slug",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "last_connected",
+        "types": [
+          "Long"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`AuthoritativeNameServer`:`HostName`",
+    "nodeLabels": [
+      "AuthoritativeNameServer",
+      "HostName"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPCollector`",
+    "nodeLabels": [
+      "BGPCollector"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "project",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`PeeringLAN`:`Prefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`PeeringLAN`:`Prefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`PeeringLAN`:`Prefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`PeeringLAN`:`Prefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`Prefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "Prefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`Prefix`:`RDNSPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "Prefix",
+      "RDNSPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`Prefix`:`RDNSPrefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`Prefix`:`RDNSPrefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`Prefix`:`RDNSPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "Prefix",
+      "RDNSPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`Prefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "Prefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`Prefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "Prefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`GeoPrefix`:`Prefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "GeoPrefix",
+      "Prefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`PeeringLAN`:`Prefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "PeeringLAN",
+      "Prefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`PeeringLAN`:`Prefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`PeeringLAN`:`Prefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`PeeringLAN`:`Prefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`Prefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "Prefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`Prefix`:`RDNSPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "Prefix",
+      "RDNSPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`Prefix`:`RDNSPrefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`Prefix`:`RDNSPrefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`Prefix`:`RDNSPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "Prefix",
+      "RDNSPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`Prefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "Prefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`Prefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "Prefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`BGPPrefix`:`Prefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "BGPPrefix",
+      "Prefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`CaidaIXID`",
+    "nodeLabels": [
+      "CaidaIXID"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "id",
+        "types": [
+          "Long"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`CaidaOrgID`",
+    "nodeLabels": [
+      "CaidaOrgID"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "id",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Country`",
+    "nodeLabels": [
+      "Country"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "country_code",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "alpha3",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`DomainName`",
+    "nodeLabels": [
+      "DomainName"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Estimate`",
+    "nodeLabels": [
+      "Estimate"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Facility`",
+    "nodeLabels": [
+      "Facility"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`PeeringLAN`:`Prefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`PeeringLAN`:`Prefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`PeeringLAN`:`Prefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`PeeringLAN`:`Prefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "PeeringLAN",
+      "Prefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`Prefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "Prefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`Prefix`:`RDNSPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "Prefix",
+      "RDNSPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`Prefix`:`RDNSPrefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`Prefix`:`RDNSPrefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`Prefix`:`RDNSPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "Prefix",
+      "RDNSPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`Prefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "Prefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`Prefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "Prefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`GeoPrefix`:`Prefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "GeoPrefix",
+      "Prefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`HostName`",
+    "nodeLabels": [
+      "HostName"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`IP`",
+    "nodeLabels": [
+      "IP"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "ip",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`IP`:`Resolver`",
+    "nodeLabels": [
+      "IP",
+      "Resolver"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "ip",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`IXP`",
+    "nodeLabels": [
+      "IXP"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Name`",
+    "nodeLabels": [
+      "Name"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`OpaqueID`",
+    "nodeLabels": [
+      "OpaqueID"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "id",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Organization`",
+    "nodeLabels": [
+      "Organization"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringLAN`:`Prefix`",
+    "nodeLabels": [
+      "PeeringLAN",
+      "Prefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringLAN`:`Prefix`:`RDNSPrefix`",
+    "nodeLabels": [
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringLAN`:`Prefix`:`RDNSPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "PeeringLAN",
+      "Prefix",
+      "RDNSPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringLAN`:`Prefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "PeeringLAN",
+      "Prefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringLAN`:`Prefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "PeeringLAN",
+      "Prefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringLAN`:`Prefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "PeeringLAN",
+      "Prefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringdbFacID`",
+    "nodeLabels": [
+      "PeeringdbFacID"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "id",
+        "types": [
+          "Long"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringdbIXID`",
+    "nodeLabels": [
+      "PeeringdbIXID"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "id",
+        "types": [
+          "Long"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringdbNetID`",
+    "nodeLabels": [
+      "PeeringdbNetID"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "id",
+        "types": [
+          "Long"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PeeringdbOrgID`",
+    "nodeLabels": [
+      "PeeringdbOrgID"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "id",
+        "types": [
+          "Long"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Point`",
+    "nodeLabels": [
+      "Point"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "position",
+        "types": [
+          "Point"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Prefix`:`RDNSPrefix`",
+    "nodeLabels": [
+      "Prefix",
+      "RDNSPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Prefix`:`RDNSPrefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "Prefix",
+      "RDNSPrefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Prefix`:`RDNSPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "Prefix",
+      "RDNSPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Prefix`:`RIRPrefix`",
+    "nodeLabels": [
+      "Prefix",
+      "RIRPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Prefix`:`RIRPrefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "Prefix",
+      "RIRPrefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Prefix`:`RPKIPrefix`",
+    "nodeLabels": [
+      "Prefix",
+      "RPKIPrefix"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "prefixlen",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "af",
+        "types": [
+          "Long"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "prefix",
+        "types": [
+          "String"
+        ]
+      },
+      {
+        "mandatory": false,
+        "name": "network",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Ranking`",
+    "nodeLabels": [
+      "Ranking"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "name",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Tag`",
+    "nodeLabels": [
+      "Tag"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "label",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeType": ":`URL`",
+    "nodeLabels": [
+      "URL"
+    ],
+    "properties": [
+      {
+        "mandatory": false,
+        "name": "url",
+        "types": [
+          "String"
+        ]
+      }
+    ]
+  }
+]

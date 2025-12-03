@@ -1,0 +1,535 @@
+﻿[
+  {
+    "nodeType": ":`Anatomy`:`HetionetNode`",
+    "nodeLabels": [
+      "Anatomy",
+      "HetionetNode"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "mesh_id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "bto_id",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Biological Process`:`HetionetNode`",
+    "nodeLabels": [
+      "Biological Process",
+      "HetionetNode"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Cellular Component`:`HetionetNode`",
+    "nodeLabels": [
+      "Cellular Component",
+      "HetionetNode"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Compound`:`HetionetNode`",
+    "nodeLabels": [
+      "Compound",
+      "HetionetNode"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "inchikey",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "inchi",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Disease`:`HetionetNode`",
+    "nodeLabels": [
+      "Disease",
+      "HetionetNode"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Gene`:`HetionetNode`",
+    "nodeLabels": [
+      "Gene",
+      "HetionetNode"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "chromosome",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "description",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`HetionetNode`:`Molecular Function`",
+    "nodeLabels": [
+      "HetionetNode",
+      "Molecular Function"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`HetionetNode`:`Pathway`",
+    "nodeLabels": [
+      "HetionetNode",
+      "Pathway"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`HetionetNode`:`Pharmacologic Class`",
+    "nodeLabels": [
+      "HetionetNode",
+      "Pharmacologic Class"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "class_type",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`HetionetNode`:`Side Effect`",
+    "nodeLabels": [
+      "HetionetNode",
+      "Side Effect"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`HetionetNode`:`Symptom`",
+    "nodeLabels": [
+      "HetionetNode",
+      "Symptom"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      }
+    ]
+  }
+]

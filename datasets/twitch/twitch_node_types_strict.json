@@ -1,0 +1,134 @@
+﻿[
+  {
+    "nodeType": ":`Game`",
+    "nodeLabels": [
+      "Game"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Language`",
+    "nodeLabels": [
+      "Language"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Stream`:`User`",
+    "nodeLabels": [
+      "Stream",
+      "User"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "followers",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "DateTime"
+        ],
+        "name": "createdAt",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "id",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "total_view_count",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "description",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Team`",
+    "nodeLabels": [
+      "Team"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "DateTime"
+        ],
+        "name": "createdAt",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "id",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`User`",
+    "nodeLabels": [
+      "User"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      }
+    ]
+  }
+]

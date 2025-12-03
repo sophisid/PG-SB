@@ -1,0 +1,162 @@
+﻿[
+  {
+    "relType": ":`CONTAINER_OF`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_CREATOR`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_INTEREST`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_MEMBER`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "joinDate",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_MODERATOR`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_TAG`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_TYPE`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`IS_LOCATED_IN`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`IS_PART_OF`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`IS_SUBCLASS_OF`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`KNOWS`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "creationDate",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`LIKES`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "creationDate",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`REPLY_OF`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`STUDIES_AT`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "classYear",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`WORKS_AT`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "workFrom",
+        "mandatory": true
+      }
+    ]
+  }
+]

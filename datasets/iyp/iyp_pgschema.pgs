@@ -1,0 +1,912 @@
+CREATE EDGE TYPE
+( : HostName | ( AuthoritativeNameServer & HostName ) )
+- [ :ALIAS_OF {
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_url_data String
+  } ]
+-> ( : HostName | ( AuthoritativeNameServer & HostName ) );
+
+CREATE EDGE TYPE
+( : AS
+  | BGPPrefix
+  | GeoPrefix
+  | PeeringLAN
+  | Prefix
+  | IP
+  | ( IP & Resolver )
+)
+- [ :ASSIGNED {
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL registry String,
+    OPTIONAL reference_name String
+  } ]
+-> ( : OpaqueID | AtlasProbe );
+
+CREATE EDGE TYPE
+( : AS | BGPPrefix | GeoPrefix | Prefix )
+- [ :AVAILABLE {
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL registry String,
+    OPTIONAL reference_name String
+  } ]
+-> ( : OpaqueID );
+
+CREATE EDGE TYPE
+( : AS
+  | BGPPrefix
+  | GeoPrefix
+  | PeeringLAN
+  | Prefix
+  | URL
+  | IP
+)
+- [ :CATEGORIZED {
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_org String,
+    OPTIONAL country_id String,
+    OPTIONAL id String,
+    OPTIONAL af String,
+    OPTIONAL prefix String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL rpki_status String,
+    OPTIONAL irr_status String,
+    OPTIONAL delegated_prefix_status String,
+    OPTIONAL delegated_asn_status String,
+    OPTIONAL descr String,
+    OPTIONAL originasn_id String,
+    OPTIONAL visibility String,
+    OPTIONAL moas String,
+    OPTIONAL asn_id String,
+    OPTIONAL hege String,
+    OPTIONAL timebin String,
+    OPTIONAL ratio String,
+    OPTIONAL layer String
+  } ]
+-> ( : Tag );
+
+CREATE EDGE TYPE
+( : AS )
+- [ :CENSORED {
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_name String,
+    OPTIONAL count_tcp_blocking String,
+    OPTIONAL country_code String,
+    OPTIONAL reference_org String,
+    OPTIONAL count_dns_blocking String,
+    OPTIONAL count_unblocked String,
+    OPTIONAL percentage_both_blocked String,
+    OPTIONAL percentage_dns_blocking String,
+    OPTIONAL percentage_tcp_blocking String,
+    OPTIONAL percentage_unblocked String,
+    OPTIONAL count_both_blocked String,
+    OPTIONAL total_count String,
+    OPTIONAL percentage_request_line_capitalization String,
+    OPTIONAL percentage_no_request_line_capitalization String,
+    OPTIONAL percentage_header_name_capitalization String,
+    OPTIONAL percentage_total String,
+    OPTIONAL count_request_line_capitalization String,
+    OPTIONAL percentage_no_total String,
+    OPTIONAL count_header_name_capitalization String,
+    OPTIONAL percentage_header_field_value String,
+    OPTIONAL percentage_no_header_field_value String,
+    OPTIONAL percentage_no_header_name_capitalization String,
+    OPTIONAL count_no_header_name_capitalization String,
+    OPTIONAL count_no_header_field_number String,
+    OPTIONAL percentage_no_header_field_number String,
+    OPTIONAL percentage_header_field_number String,
+    OPTIONAL count_no_request_line_capitalization String,
+    OPTIONAL count_header_field_number String,
+    OPTIONAL count_no_total String,
+    OPTIONAL count_header_field_value String,
+    OPTIONAL count_no_header_field_value String,
+    OPTIONAL count_total String,
+    OPTIONAL percentage_tampering String,
+    OPTIONAL count_no_tampering String,
+    OPTIONAL percentage_no_tampering String,
+    OPTIONAL count_tampering String,
+    OPTIONAL count_blocked String,
+    OPTIONAL count_ok String,
+    OPTIONAL percentage_blocked String,
+    OPTIONAL percentage_ok String,
+    OPTIONAL percentage_bootstrapping_error String,
+    OPTIONAL count_usage_error String,
+    OPTIONAL count_bootstrapping_error String,
+    OPTIONAL count_invalid String,
+    OPTIONAL percentage_invalid String,
+    OPTIONAL percentage_usage_error String,
+    OPTIONAL count_working String,
+    OPTIONAL percentage_working String,
+    OPTIONAL percentage_failure String,
+    OPTIONAL count_failure String,
+    OPTIONAL count_web_ok String,
+    OPTIONAL count_tcp_ok String,
+    OPTIONAL count_tcp_blocked String,
+    OPTIONAL percentage_http_ok String,
+    OPTIONAL count_http_blocked String,
+    OPTIONAL count_http_ok String,
+    OPTIONAL percentage_web_blocked String,
+    OPTIONAL percentage_web_none String,
+    OPTIONAL percentage_total_blocked String,
+    OPTIONAL percentage_tcp_ok String,
+    OPTIONAL count_total_ok String,
+    OPTIONAL count_web_blocked String,
+    OPTIONAL percentage_web_ok String,
+    OPTIONAL percentage_http_blocked String,
+    OPTIONAL percentage_tcp_blocked String,
+    OPTIONAL count_total_blocked String,
+    OPTIONAL percentage_total_ok String,
+    OPTIONAL count_web_none String,
+    OPTIONAL percentage_anomaly String,
+    OPTIONAL percentage_confirmed String,
+    OPTIONAL count_anomaly String,
+    OPTIONAL count_confirmed String,
+    OPTIONAL percentage_registration_server_blocked String,
+    OPTIONAL percentage_endpoint_ok String,
+    OPTIONAL percentage_endpoint_blocked String,
+    OPTIONAL percentage_registration_server_ok String,
+    OPTIONAL count_registration_server_blocked String,
+    OPTIONAL count_registration_server_ok String,
+    OPTIONAL count_endpoint_blocked String,
+    OPTIONAL count_endpoint_ok String
+  } ]
+-> ( : Tag | URL | IP );
+
+CREATE EDGE TYPE
+( : AS
+  | Ranking
+  | BGPPrefix
+  | GeoPrefix
+  | PeeringLAN
+  | Prefix
+  | Organization
+  | Facility
+  | IXP
+  | AtlasProbe
+)
+- [ :COUNTRY {
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_org String,
+    OPTIONAL registry String,
+    OPTIONAL org_ids String,
+    OPTIONAL country_name String,
+    OPTIONAL end_ip String,
+    OPTIONAL continent_name String,
+    OPTIONAL start_ip String,
+    OPTIONAL continent String,
+    OPTIONAL country String
+  } ]
+-> ( : Country );
+
+CREATE EDGE TYPE
+( : AS | BGPPrefix | GeoPrefix | PeeringLAN | Prefix )
+- [ :DEPENDS_ON {
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL timebin String,
+    OPTIONAL af String,
+    OPTIONAL reference_org String,
+    OPTIONAL originasn String,
+    OPTIONAL hege String,
+    OPTIONAL asn String,
+    OPTIONAL country_id String,
+    OPTIONAL id String,
+    OPTIONAL prefix String,
+    OPTIONAL rpki_status String,
+    OPTIONAL irr_status String,
+    OPTIONAL delegated_prefix_status String,
+    OPTIONAL delegated_asn_status String,
+    OPTIONAL descr String,
+    OPTIONAL originasn_id String,
+    OPTIONAL visibility String,
+    OPTIONAL moas String,
+    OPTIONAL asn_id String
+  } ]
+-> ( : AS );
+
+CREATE EDGE TYPE
+( : AS | Organization | Facility | IXP )
+- [ :EXTERNAL_ID {
+    OPTIONAL longitude String,
+    OPTIONAL id String,
+    OPTIONAL updated String,
+    OPTIONAL floor String,
+    OPTIONAL latitude String,
+    OPTIONAL status String,
+    OPTIONAL social_media_website String,
+    OPTIONAL state String,
+    OPTIONAL zipcode String,
+    OPTIONAL aka String,
+    OPTIONAL name_long String,
+    OPTIONAL created String,
+    OPTIONAL city String,
+    OPTIONAL address1 String,
+    OPTIONAL website String,
+    OPTIONAL suite String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL require_2fa String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL address2 String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL notes String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL country String,
+    OPTIONAL name String,
+    OPTIONAL reference_name String,
+    OPTIONAL social_media_linkedin String,
+    OPTIONAL social_media_facebook String,
+    OPTIONAL social_media_x String,
+    OPTIONAL social_media_instagram String,
+    OPTIONAL social_media_tiktok String,
+    OPTIONAL sales_email String,
+    OPTIONAL tech_email String,
+    OPTIONAL ix_count String,
+    OPTIONAL org_id String,
+    OPTIONAL net_count String,
+    OPTIONAL npanxx String,
+    OPTIONAL region_continent String,
+    OPTIONAL org_name String,
+    OPTIONAL tech_phone String,
+    OPTIONAL campus_id String,
+    OPTIONAL clli String,
+    OPTIONAL rencode String,
+    OPTIONAL available_voltage_services String,
+    OPTIONAL sales_phone String,
+    OPTIONAL property String,
+    OPTIONAL status_dashboard String,
+    OPTIONAL diverse_serving_substations String,
+    OPTIONAL rir_status_updated String,
+    OPTIONAL netixlan_updated String,
+    OPTIONAL info_type String,
+    OPTIONAL fac_count String,
+    OPTIONAL policy_general String,
+    OPTIONAL poc_updated String,
+    OPTIONAL looking_glass String,
+    OPTIONAL info_prefixes6 String,
+    OPTIONAL netfac_updated String,
+    OPTIONAL info_ipv6 String,
+    OPTIONAL irr_as_set String,
+    OPTIONAL info_traffic String,
+    OPTIONAL info_scope String,
+    OPTIONAL info_prefixes4 String,
+    OPTIONAL asn String,
+    OPTIONAL policy_contracts String,
+    OPTIONAL info_multicast String,
+    OPTIONAL info_types String,
+    OPTIONAL policy_url String,
+    OPTIONAL policy_locations String,
+    OPTIONAL info_ratio String,
+    OPTIONAL info_unicast String,
+    OPTIONAL rir_status String,
+    OPTIONAL info_never_via_route_servers String,
+    OPTIONAL allow_ixp_update String,
+    OPTIONAL route_server String,
+    OPTIONAL policy_ratio String
+  } ]
+-> ( : PeeringdbOrgID
+      | PeeringdbFacID
+      | PeeringdbIXID
+      | PeeringdbNetID
+      | CaidaIXID
+      | CaidaOrgID );
+
+CREATE EDGE TYPE
+( : AS | Organization | Facility | IXP | AtlasProbe )
+- [ :LOCATED_IN {
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL created String,
+    OPTIONAL city String,
+    OPTIONAL local_asn String,
+    OPTIONAL id String,
+    OPTIONAL fac_id String,
+    OPTIONAL country String,
+    OPTIONAL status String,
+    OPTIONAL net_id String,
+    OPTIONAL name String,
+    OPTIONAL updated String,
+    OPTIONAL af String
+  } ]
+-> ( : Point | Facility | AS );
+
+CREATE EDGE TYPE
+( : Facility
+  | IXP
+  | PeeringLAN
+  | BGPPrefix
+  | GeoPrefix
+  | Prefix
+  | AS
+  | DomainName
+)
+- [ :MANAGED_BY {
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_org String,
+    OPTIONAL rir_status_updated String,
+    OPTIONAL netixlan_updated String,
+    OPTIONAL info_type String,
+    OPTIONAL ix_count String,
+    OPTIONAL org_id String,
+    OPTIONAL fac_count String,
+    OPTIONAL policy_general String,
+    OPTIONAL poc_updated String,
+    OPTIONAL updated String,
+    OPTIONAL aka String,
+    OPTIONAL name_long String,
+    OPTIONAL status String,
+    OPTIONAL looking_glass String,
+    OPTIONAL created String,
+    OPTIONAL notes String,
+    OPTIONAL social_media_website String,
+    OPTIONAL info_prefixes6 String,
+    OPTIONAL website String,
+    OPTIONAL netfac_updated String,
+    OPTIONAL info_ipv6 String,
+    OPTIONAL irr_as_set String,
+    OPTIONAL id String,
+    OPTIONAL name String,
+    OPTIONAL info_traffic String,
+    OPTIONAL info_scope String,
+    OPTIONAL info_prefixes4 String,
+    OPTIONAL asn String,
+    OPTIONAL policy_contracts String,
+    OPTIONAL info_multicast String,
+    OPTIONAL info_types String,
+    OPTIONAL policy_url String,
+    OPTIONAL policy_locations String,
+    OPTIONAL info_ratio String,
+    OPTIONAL info_unicast String,
+    OPTIONAL rir_status String,
+    OPTIONAL info_never_via_route_servers String,
+    OPTIONAL allow_ixp_update String,
+    OPTIONAL route_server String,
+    OPTIONAL policy_ratio String,
+    OPTIONAL status_dashboard String,
+    OPTIONAL social_media_instagram String,
+    OPTIONAL social_media_facebook String,
+    OPTIONAL social_media_tiktok String,
+    OPTIONAL social_media_x String,
+    OPTIONAL social_media_linkedin String,
+    OPTIONAL ttl String,
+    OPTIONAL source String,
+    OPTIONAL should_follow_glue_v4 String,
+    OPTIONAL should_follow_glue_v6 String
+  } ]
+-> ( : Organization | IXP | ( AuthoritativeNameServer & HostName ) );
+
+CREATE EDGE TYPE
+( : AS )
+- [ :MEMBER_OF {
+    OPTIONAL rir_status_updated String,
+    OPTIONAL netixlan_updated String,
+    OPTIONAL info_type String,
+    OPTIONAL ix_count String,
+    OPTIONAL org_id String,
+    OPTIONAL fac_count String,
+    OPTIONAL policy_general String,
+    OPTIONAL poc_updated String,
+    OPTIONAL updated String,
+    OPTIONAL aka String,
+    OPTIONAL name_long String,
+    OPTIONAL status String,
+    OPTIONAL looking_glass String,
+    OPTIONAL created String,
+    OPTIONAL notes String,
+    OPTIONAL social_media_website String,
+    OPTIONAL info_prefixes6 String,
+    OPTIONAL website String,
+    OPTIONAL netfac_updated String,
+    OPTIONAL info_ipv6 String,
+    OPTIONAL irr_as_set String,
+    OPTIONAL id String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_org String,
+    OPTIONAL name String,
+    OPTIONAL info_traffic String,
+    OPTIONAL info_scope String,
+    OPTIONAL info_prefixes4 String,
+    OPTIONAL asn String,
+    OPTIONAL policy_contracts String,
+    OPTIONAL info_multicast String,
+    OPTIONAL info_types String,
+    OPTIONAL policy_url String,
+    OPTIONAL policy_locations String,
+    OPTIONAL info_ratio String,
+    OPTIONAL info_unicast String,
+    OPTIONAL rir_status String,
+    OPTIONAL info_never_via_route_servers String,
+    OPTIONAL allow_ixp_update String,
+    OPTIONAL route_server String,
+    OPTIONAL policy_ratio String,
+    OPTIONAL status_dashboard String,
+    OPTIONAL social_media_instagram String,
+    OPTIONAL social_media_facebook String,
+    OPTIONAL social_media_tiktok String,
+    OPTIONAL social_media_x String,
+    OPTIONAL social_media_linkedin String,
+    OPTIONAL ipv4 String,
+    OPTIONAL ix_id String,
+    OPTIONAL ipv6 String,
+    -- many more BGP session stats...
+    OPTIONAL state String
+  } ]
+-> ( : IXP );
+
+CREATE EDGE TYPE
+( : AS | Organization | Facility | IXP )
+- [ :NAME {
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_org String,
+    OPTIONAL rir_status_updated String,
+    OPTIONAL netixlan_updated String,
+    OPTIONAL info_type String,
+    OPTIONAL ix_count String,
+    OPTIONAL org_id String,
+    OPTIONAL fac_count String,
+    OPTIONAL policy_general String,
+    OPTIONAL poc_updated String,
+    OPTIONAL updated String,
+    OPTIONAL aka String,
+    OPTIONAL name_long String,
+    OPTIONAL status String,
+    OPTIONAL looking_glass String,
+    OPTIONAL created String,
+    OPTIONAL notes String,
+    OPTIONAL social_media_website String,
+    OPTIONAL info_prefixes6 String,
+    OPTIONAL website String,
+    OPTIONAL netfac_updated String,
+    OPTIONAL info_ipv6 String,
+    OPTIONAL irr_as_set String,
+    OPTIONAL id String,
+    OPTIONAL name String,
+    OPTIONAL info_traffic String,
+    OPTIONAL info_scope String,
+    OPTIONAL info_prefixes4 String,
+    OPTIONAL asn String,
+    OPTIONAL policy_contracts String,
+    OPTIONAL info_multicast String,
+    OPTIONAL info_types String,
+    OPTIONAL policy_url String,
+    OPTIONAL policy_locations String,
+    OPTIONAL info_ratio String,
+    OPTIONAL info_unicast String,
+    OPTIONAL rir_status String,
+    OPTIONAL info_never_via_route_servers String,
+    OPTIONAL allow_ixp_update String,
+    OPTIONAL route_server String,
+    OPTIONAL policy_ratio String,
+    OPTIONAL status_dashboard String,
+    OPTIONAL social_media_instagram String,
+    OPTIONAL social_media_facebook String,
+    OPTIONAL social_media_tiktok String,
+    OPTIONAL social_media_x String,
+    OPTIONAL social_media_linkedin String,
+    OPTIONAL org_ids String,
+    OPTIONAL contributor String
+  } ]
+-> ( : Name );
+
+CREATE EDGE TYPE
+( : AS )
+- [ :ORIGINATE {
+    OPTIONAL prefix String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL count String,
+    OPTIONAL asn String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL country_id String,
+    OPTIONAL id String,
+    OPTIONAL af String,
+    OPTIONAL rpki_status String,
+    OPTIONAL irr_status String,
+    OPTIONAL delegated_prefix_status String,
+    OPTIONAL delegated_asn_status String,
+    OPTIONAL descr String,
+    OPTIONAL originasn_id String,
+    OPTIONAL visibility String,
+    OPTIONAL moas String,
+    OPTIONAL asn_id String,
+    OPTIONAL hege String,
+    OPTIONAL timebin String,
+    OPTIONAL seen_by_collectors String
+  } ]
+-> ( : BGPPrefix | Prefix | GeoPrefix | PeeringLAN );
+
+CREATE EDGE TYPE
+( : DomainName )
+- [ :PARENT {
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_url_data String
+  } ]
+-> ( : DomainName );
+
+CREATE EDGE TYPE
+( : Tag
+  | HostName
+  | ( AuthoritativeNameServer & HostName )
+  | AtlasProbe
+  | IP
+  | ( IP & Resolver )
+  | BGPPrefix
+  | GeoPrefix
+  | PeeringLAN
+  | Prefix
+  | URL
+)
+- [ :PART_OF {
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_org String,
+    OPTIONAL prefix_types String
+  } ]
+-> ( : Tag
+      | DomainName
+      | AtlasMeasurement
+      | URL
+      | BGPPrefix
+      | GeoPrefix
+      | PeeringLAN
+      | Prefix
+      | HostName
+      | ( AuthoritativeNameServer & HostName )
+   );
+
+CREATE EDGE TYPE
+( : AS )
+- [ :PEERS_WITH {
+    OPTIONAL rel String,
+    OPTIONAL af String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_org String,
+    OPTIONAL asn1 String,
+    OPTIONAL asn2 String,
+    OPTIONAL peers_count String,
+    OPTIONAL paths_count String,
+    OPTIONAL ip String,
+    OPTIONAL num_connected_asns String,
+    OPTIONAL num_v6_pfxs String,
+    OPTIONAL num_v4_pfxs String,
+    OPTIONAL asn String
+  } ]
+-> ( : AS | BGPCollector );
+
+CREATE EDGE TYPE
+( : AS | Country )
+- [ :POPULATION {
+    OPTIONAL percent String,
+    OPTIONAL v6capable String,
+    OPTIONAL autnum String,
+    OPTIONAL cumulative String,
+    OPTIONAL v6preferred String,
+    OPTIONAL rank String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL cc String,
+    OPTIONAL as String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL samples String,
+    OPTIONAL "as-descr" String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL value String
+  } ]
+-> ( : Country | Estimate );
+
+CREATE EDGE TYPE
+( : DomainName )
+- [ :QUERIED_FROM {
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_org String,
+    OPTIONAL value String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL clientCountryAlpha2 String,
+    OPTIONAL clientCountryName String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL clientASN String,
+    OPTIONAL clientASName String
+  } ]
+-> ( : Country | AS );
+
+CREATE EDGE TYPE
+( : AS
+  | DomainName
+  | HostName
+  | ( AuthoritativeNameServer & HostName )
+)
+- [ :RANK {
+    OPTIONAL percent String,
+    OPTIONAL v6capable String,
+    OPTIONAL autnum String,
+    OPTIONAL cumulative String,
+    OPTIONAL v6preferred String,
+    OPTIONAL rank String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL cc String,
+    OPTIONAL as String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL samples String,
+    OPTIONAL "as-descr" String,
+    OPTIONAL reference_name String,
+    OPTIONAL "organization:orgId" String,
+    OPTIONAL "cone:numberAsns" String,
+    OPTIONAL "asnDegree:provider" String,
+    OPTIONAL longitude String,
+    OPTIONAL "asnDegree:total" String,
+    OPTIONAL seen String,
+    OPTIONAL "country:iso" String,
+    OPTIONAL cliqueMember String,
+    OPTIONAL latitude String,
+    OPTIONAL asnName String,
+    OPTIONAL "cone:numberPrefixes" String,
+    OPTIONAL "cone:numberAddresses" String,
+    OPTIONAL "asnDegree:customer" String,
+    OPTIONAL source String,
+    OPTIONAL "asnDegree:peer" String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL asn String,
+    OPTIONAL origin String,
+    OPTIONAL country_code String,
+    OPTIONAL weightscheme String,
+    OPTIONAL asn_name String,
+    OPTIONAL country String,
+    OPTIONAL weight String,
+    OPTIONAL transitonly String,
+    OPTIONAL timebin String,
+    OPTIONAL hege String,
+    OPTIONAL af String
+  } ]
+-> ( : Ranking );
+
+CREATE EDGE TYPE
+( : AS | Prefix | GeoPrefix | PeeringLAN | BGPPrefix )
+- [ :RESERVED {
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL registry String,
+    OPTIONAL reference_name String
+  } ]
+-> ( : OpaqueID );
+
+CREATE EDGE TYPE
+( : HostName | ( AuthoritativeNameServer & HostName ) )
+- [ :RESOLVES_TO {
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL source String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL ttl String,
+    OPTIONAL glue String
+  } ]
+-> ( : IP | ( IP & Resolver ) );
+
+CREATE EDGE TYPE
+( : AS )
+- [ :ROUTE_ORIGIN_AUTHORIZATION {
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_org String,
+    OPTIONAL notBefore String,
+    OPTIONAL reference_name String,
+    OPTIONAL notAfter String,
+    OPTIONAL uri String,
+    OPTIONAL maxLength String
+  } ]
+-> ( : Prefix | BGPPrefix | GeoPrefix | PeeringLAN );
+
+CREATE EDGE TYPE
+( : AS | Organization )
+- [ :SIBLING_OF {
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_url_info String
+  } ]
+-> ( : AS | Organization );
+
+CREATE EDGE TYPE
+( : AtlasMeasurement )
+- [ :TARGET {
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_org String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_url_data String
+  } ]
+-> ( : ( AuthoritativeNameServer & HostName )
+      | IP
+      | HostName
+      | AS
+      | ( IP & Resolver )
+   );
+
+CREATE EDGE TYPE
+( : AS | Organization | Facility | IXP )
+- [ :WEBSITE {
+    OPTIONAL reference_time_modification String,
+    OPTIONAL reference_url_data String,
+    OPTIONAL reference_time_fetch String,
+    OPTIONAL reference_url_info String,
+    OPTIONAL reference_name String,
+    OPTIONAL reference_org String,
+    OPTIONAL rir_status_updated String,
+    OPTIONAL netixlan_updated String,
+    OPTIONAL info_type String,
+    OPTIONAL ix_count String,
+    OPTIONAL org_id String,
+    OPTIONAL fac_count String,
+    OPTIONAL policy_general String,
+    OPTIONAL poc_updated String,
+    OPTIONAL updated String,
+    OPTIONAL aka String,
+    OPTIONAL name_long String,
+    OPTIONAL status String,
+    OPTIONAL looking_glass String,
+    OPTIONAL created String,
+    OPTIONAL notes String,
+    OPTIONAL social_media_website String,
+    OPTIONAL info_prefixes6 String,
+    OPTIONAL website String,
+    OPTIONAL netfac_updated String,
+    OPTIONAL info_ipv6 String,
+    OPTIONAL irr_as_set String,
+    OPTIONAL id String,
+    OPTIONAL name String,
+    OPTIONAL info_traffic String,
+    OPTIONAL info_scope String,
+    OPTIONAL info_prefixes4 String,
+    OPTIONAL asn String,
+    OPTIONAL policy_contracts String,
+    OPTIONAL info_multicast String,
+    OPTIONAL info_types String,
+    OPTIONAL policy_url String,
+    OPTIONAL policy_locations String,
+    OPTIONAL info_ratio String,
+    OPTIONAL info_unicast String,
+    OPTIONAL rir_status String,
+    OPTIONAL info_never_via_route_servers String,
+    OPTIONAL allow_ixp_update String,
+    OPTIONAL route_server String,
+    OPTIONAL policy_ratio String,
+    OPTIONAL status_dashboard String,
+    OPTIONAL social_media_instagram String,
+    OPTIONAL social_media_facebook String,
+    OPTIONAL social_media_tiktok String,
+    OPTIONAL social_media_x String,
+    OPTIONAL social_media_linkedin String
+  } ]
+-> ( : URL );
+
+
+CREATE GRAPH TYPE IYP LOOSE {
+  ASType,
+  AtlasMeasurementType,
+  AtlasProbeType,
+  AuthoritativeNameServerHostNameType,
+  BGPCollectorType,
+  CaidaIXIDType,
+  CaidaOrgIDType,
+  PeeringdbFacIDType,
+  PeeringdbIXIDType,
+  PeeringdbNetIDType,
+  PeeringdbOrgIDType,
+  OpaqueIDType,
+  CountryType,
+  PointType,
+  DomainNameType,
+  HostNameType,
+  NameType,
+  URLType,
+  TagType,
+  RankingType,
+  EstimateType,
+  OrganizationType,
+  FacilityType,
+  IXPType,
+  IPType,
+  IPResolverType,
+  PrefixType,
+  BGPPrefixType,
+  GeoPrefixType,
+  PeeringLANPrefixType,
+  RDNSPrefixType,
+  RIRPrefixType,
+  RPKIPrefixType,
+
+  ALIAS_OF,
+  ASSIGNED,
+  AVAILABLE,
+  CATEGORIZED,
+  CENSORED,
+  COUNTRY,
+  DEPENDS_ON,
+  EXTERNAL_ID,
+  LOCATED_IN,
+  MANAGED_BY,
+  MEMBER_OF,
+  NAME,
+  ORIGINATE,
+  PARENT,
+  PART_OF,
+  PEERS_WITH,
+  POPULATION,
+  QUERIED_FROM,
+  RANK,
+  RESERVED,
+  RESOLVES_TO,
+  ROUTE_ORIGIN_AUTHORIZATION,
+  SIBLING_OF,
+  TARGET,
+  WEBSITE
+};

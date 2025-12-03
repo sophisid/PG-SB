@@ -1,0 +1,679 @@
+﻿[
+  {
+    "nodeType": ":`Address`",
+    "nodeLabels": [
+      "Address"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Integer",
+          "Long"
+        ],
+        "name": "node_id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "status",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "address",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "icij_id",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "note",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "countries",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "country_codes",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "original_address",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "addressID",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "country",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "country_code",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Entity`",
+    "nodeLabels": [
+      "Entity"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Integer",
+          "Long"
+        ],
+        "name": "node_id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "internal_id",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "original_name",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "jurisdiction",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "jurisdiction_description",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "incorporation_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "inactivation_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "struck_off_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "status",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "service_provider",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "address",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "ibcRUC",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "former_name",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "note",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "dorm_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "company_type",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "tax_stat_description",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "countries",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "country_codes",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "company_number",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "type",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "registration_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "closed_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "comments",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "entity_number",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Intermediary`",
+    "nodeLabels": [
+      "Intermediary"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Integer",
+          "Long"
+        ],
+        "name": "node_id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "internal_id",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "status",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "address",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "note",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "countries",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "country_codes",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "registered_office",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Intermediary`:`Officer`",
+    "nodeLabels": [
+      "Intermediary",
+      "Officer"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Integer"
+        ],
+        "name": "node_id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "countries",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "country_codes",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Officer`",
+    "nodeLabels": [
+      "Officer"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Integer",
+          "Long"
+        ],
+        "name": "node_id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "status",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "address",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Integer",
+          "String"
+        ],
+        "name": "icij_id",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "note",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "end_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "countries",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "country_codes",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Other`",
+    "nodeLabels": [
+      "Other"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "node_id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "jurisdiction",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "jurisdiction_description",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "incorporation_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "struck_off_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "note",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "countries",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "country_codes",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "closed_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "type",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": true
+      }
+    ]
+  }
+]

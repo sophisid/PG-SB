@@ -1,0 +1,73 @@
+CREATE NODE TYPE
+( Game : Game {
+    name String
+} );
+
+CREATE NODE TYPE
+( Language : Language {
+    name String
+} );
+
+CREATE NODE TYPE
+( StreamUser : (Stream & User) {
+    name             String,
+    followers        Long,
+    url              String,
+    createdAt        DateTime,
+    id               String,
+    total_view_count Long,
+    description      String
+} );
+
+CREATE NODE TYPE
+( Team : Team {
+    name      String,
+    createdAt DateTime,
+    id        String
+} );
+
+CREATE NODE TYPE
+( User : User {
+    name String
+} );
+
+
+CREATE EDGE TYPE
+( : User
+| : StreamUser
+)-[:CHATTER]->( : StreamUser );
+
+CREATE EDGE TYPE
+( : StreamUser )-[:HAS_LANGUAGE]->( : Language );
+
+CREATE EDGE TYPE
+( : StreamUser )-[:HAS_TEAM]->( : Team );
+
+CREATE EDGE TYPE
+( : User
+| : StreamUser
+)-[:MODERATOR]->( : StreamUser );
+
+CREATE EDGE TYPE
+( : StreamUser )-[:PLAYS]->( : Game );
+
+CREATE EDGE TYPE
+( : User
+| : StreamUser
+)-[:VIP]->( : StreamUser );
+
+
+CREATE GRAPH TYPE TWITCH LOOSE {
+    Game,
+    Language,
+    StreamUser,
+    Team,
+    User,
+
+    CHATTER,
+    HAS_LANGUAGE,
+    HAS_TEAM,
+    MODERATOR,
+    PLAYS,
+    VIP
+};

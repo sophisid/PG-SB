@@ -1,0 +1,5 @@
+﻿relType,sources,targets,properties
+APPEARED_IN,"[Vehicle, Character, Starship, Planet, Species]",[Film],[]
+HOMEWORLD,"[Character, Species]",[Planet],[]
+OF,[Character],[Species],[]
+PILOT,[Character],"[Starship, Vehicle]",[]

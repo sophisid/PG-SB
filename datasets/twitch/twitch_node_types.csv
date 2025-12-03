@@ -1,0 +1,6 @@
+﻿nodeType,properties
+Game,[name]
+Language,[name]
+Stream:User,"[createdAt, followers, name, description, id, total_view_count, url]"
+Team,"[name, createdAt, id]"
+User,[name]

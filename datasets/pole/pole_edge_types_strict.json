@@ -1,0 +1,164 @@
+﻿[
+  {
+    "relType": ":`CALLED`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`CALLER`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`CURRENT_ADDRESS`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`FAMILY_REL`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "rel_type",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_EMAIL`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_PHONE`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_POSTCODE`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`INVESTIGATED_BY`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`INVOLVED_IN`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`KNOWS_LW`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`KNOWS_PHONE`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`KNOWS`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`LOCATION_IN_AREA`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`OCCURRED_AT`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PARTY_TO`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`POSTCODE_IN_AREA`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  }
+]

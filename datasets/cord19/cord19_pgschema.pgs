@@ -1,0 +1,198 @@
+CREATE NODE TYPE
+( AbstractCollection :AbstractCollection {
+  absCollId String
+} );
+
+CREATE NODE TYPE
+( Abstract :Abstract {
+  abstractId String,
+  text String
+} );
+
+CREATE NODE TYPE
+( Affiliation :Affiliation {
+  OPTIONAL laboratory String,
+  OPTIONAL institution String,
+  affId String
+} );
+
+CREATE NODE TYPE
+( AuthorCollection :AuthorCollection {
+  acId String
+} );
+
+CREATE NODE TYPE
+( Author :Author {
+  authorId String,
+  OPTIONAL first String,
+  OPTIONAL middle String,
+  OPTIONAL last String,
+  OPTIONAL email String,
+  OPTIONAL suffix String
+} );
+
+CREATE NODE TYPE
+( BodyTextCollection :BodyTextCollection {
+  bodyCollId String
+} );
+
+CREATE NODE TYPE
+( BodyText :BodyText {
+  OPTIONAL text String,
+  bodyId String,
+  OPTIONAL section String
+} );
+
+CREATE NODE TYPE
+( Citation :Citation {
+  OPTIONAL text String,
+  citId String
+} );
+
+CREATE NODE TYPE
+( Journal :Journal {
+  name String,
+  journalId String
+} );
+
+CREATE NODE TYPE
+( License :License {
+  name String,
+  licenseId String
+} );
+
+CREATE NODE TYPE
+( Location :Location {
+  locId String,
+  OPTIONAL region String,
+  OPTIONAL country String,
+  OPTIONAL postcode String,
+  OPTIONAL settlement String
+} );
+
+CREATE NODE TYPE
+( PaperID :PaperID {
+  paperRefId String,
+  type String,
+  value String
+} );
+
+CREATE NODE TYPE
+( Paper :Paper {
+  OPTIONAL title String,
+  paperId String,
+  cord_uid String,
+  OPTIONAL doi String,
+  OPTIONAL pmcid String,
+  OPTIONAL pubmed_id String,
+  OPTIONAL publish_time String,
+  OPTIONAL journal String,
+  source_x String,
+  OPTIONAL url String
+} );
+
+CREATE NODE TYPE
+( ReferenceCollection :ReferenceCollection {
+  refCollId String
+} );
+
+CREATE NODE TYPE
+( Reference :Reference {
+  refId String,
+  OPTIONAL name String,
+  OPTIONAL title String,
+  OPTIONAL year String,
+  OPTIONAL venue String
+} );
+
+CREATE NODE TYPE
+( Source :Source {
+  name String,
+  sourceId String
+} );
+
+
+-- EDGE TYPES (WITH TYPE + LABEL)
+CREATE EDGE TYPE
+( AbstractCollection ) - [ ABSTRACTCOLLECTION_HAS_ABSTRACT : ABSTRACTCOLLECTION_HAS_ABSTRACT ] -> ( Abstract );
+
+CREATE EDGE TYPE
+( Abstract ) - [ ABSTRACT_HAS_CITATION : ABSTRACT_HAS_CITATION ] -> ( Citation );
+
+CREATE EDGE TYPE
+( Affiliation ) - [ AFFILIATION_HAS_LOCATION : AFFILIATION_HAS_LOCATION ] -> ( Location );
+
+CREATE EDGE TYPE
+( AuthorCollection ) - [ AUTHORCOLLECTION_HAS_AUTHOR : AUTHORCOLLECTION_HAS_AUTHOR ] -> ( Author );
+
+CREATE EDGE TYPE
+( Author ) - [ AUTHOR_HAS_AFFILIATION : AUTHOR_HAS_AFFILIATION ] -> ( Affiliation );
+
+CREATE EDGE TYPE
+( BodyTextCollection ) - [ BODYTEXTCOLLECTION_HAS_BODYTEXT : BODYTEXTCOLLECTION_HAS_BODYTEXT ] -> ( BodyText );
+
+CREATE EDGE TYPE
+( BodyText ) - [ BODYTEXT_HAS_CITATION : BODYTEXT_HAS_CITATION ] -> ( Citation );
+
+CREATE EDGE TYPE
+( Paper ) - [ PAPER_HAS_ABSTRACTCOLLECTION : PAPER_HAS_ABSTRACTCOLLECTION ] -> ( AbstractCollection );
+
+CREATE EDGE TYPE
+( Paper ) - [ PAPER_HAS_AUTHORCOLLECTION : PAPER_HAS_AUTHORCOLLECTION ] -> ( AuthorCollection );
+
+CREATE EDGE TYPE
+( Paper ) - [ PAPER_HAS_BODYTEXTCOLLECTION : PAPER_HAS_BODYTEXTCOLLECTION ] -> ( BodyTextCollection );
+
+CREATE EDGE TYPE
+( Paper ) - [ PAPER_HAS_JOURNAL : PAPER_HAS_JOURNAL ] -> ( Journal );
+
+CREATE EDGE TYPE
+( Paper ) - [ PAPER_HAS_LICENSE : PAPER_HAS_LICENSE ] -> ( License );
+
+CREATE EDGE TYPE
+( Paper ) - [ PAPER_HAS_PAPERID : PAPER_HAS_PAPERID ] -> ( PaperID );
+
+CREATE EDGE TYPE
+( Paper ) - [ PAPER_HAS_REFERENCECOLLECTION : PAPER_HAS_REFERENCECOLLECTION ] -> ( ReferenceCollection );
+
+CREATE EDGE TYPE
+( Paper ) - [ PAPER_HAS_SOURCE : PAPER_HAS_SOURCE ] -> ( Source );
+
+CREATE EDGE TYPE
+( ReferenceCollection ) - [ REFERENCECOLLECTION_HAS_REFERENCE : REFERENCECOLLECTION_HAS_REFERENCE ] -> ( Reference );
+
+
+CREATE GRAPH TYPE CORD19 LOOSE {
+  AbstractCollection,
+  Abstract,
+  Affiliation,
+  AuthorCollection,
+  Author,
+  BodyTextCollection,
+  BodyText,
+  Citation,
+  Journal,
+  License,
+  Location,
+  PaperID,
+  Paper,
+  ReferenceCollection,
+  Reference,
+  Source,
+  ABSTRACTCOLLECTION_HAS_ABSTRACT,
+  ABSTRACT_HAS_CITATION,
+  AFFILIATION_HAS_LOCATION,
+  AUTHORCOLLECTION_HAS_AUTHOR,
+  AUTHOR_HAS_AFFILIATION,
+  BODYTEXTCOLLECTION_HAS_BODYTEXT,
+  BODYTEXT_HAS_CITATION,
+  PAPER_HAS_ABSTRACTCOLLECTION,
+  PAPER_HAS_AUTHORCOLLECTION,
+  PAPER_HAS_BODYTEXTCOLLECTION,
+  PAPER_HAS_JOURNAL,
+  PAPER_HAS_LICENSE,
+  PAPER_HAS_PAPERID,
+  PAPER_HAS_REFERENCECOLLECTION,
+  PAPER_HAS_SOURCE,
+  REFERENCECOLLECTION_HAS_REFERENCE
+};

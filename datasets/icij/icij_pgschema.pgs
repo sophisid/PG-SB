@@ -1,0 +1,305 @@
+CREATE NODE TYPE
+( AddressType : Address {
+  node_id Long,
+  sourceID String,
+  OPTIONAL name String,
+  OPTIONAL status String,
+  OPTIONAL address String,
+  OPTIONAL valid_until String,
+  OPTIONAL icij_id String,
+  OPTIONAL note String,
+  OPTIONAL countries String,
+  OPTIONAL country_codes String,
+  OPTIONAL original_address String,
+  OPTIONAL addressID String,
+  OPTIONAL country String,
+  OPTIONAL country_code String,
+  OPTIONAL lastEditTimestamp String
+} );
+
+CREATE NODE TYPE
+( EntityType : Entity {
+  node_id Long,
+  sourceID String,
+  OPTIONAL internal_id String,
+  OPTIONAL name String,
+  OPTIONAL original_name String,
+  OPTIONAL jurisdiction String,
+  OPTIONAL jurisdiction_description String,
+  OPTIONAL incorporation_date String,
+  OPTIONAL inactivation_date String,
+  OPTIONAL struck_off_date String,
+  OPTIONAL status String,
+  OPTIONAL service_provider String,
+  OPTIONAL address String,
+  OPTIONAL ibcRUC String,
+  OPTIONAL valid_until String,
+  OPTIONAL former_name String,
+  OPTIONAL note String,
+  OPTIONAL dorm_date String,
+  OPTIONAL company_type String,
+  OPTIONAL tax_stat_description String,
+  OPTIONAL countries String,
+  OPTIONAL country_codes String,
+  OPTIONAL company_number String,
+  OPTIONAL type String,
+  OPTIONAL registration_date String,
+  OPTIONAL closed_date String,
+  OPTIONAL comments String,
+  lastEditTimestamp String,
+  OPTIONAL entity_number String
+} );
+
+CREATE NODE TYPE
+( IntermediaryType : Intermediary {
+  node_id Long,
+  sourceID String,
+  OPTIONAL internal_id String,
+  OPTIONAL name String,
+  OPTIONAL status String,
+  OPTIONAL address String,
+  valid_until String,
+  OPTIONAL note String,
+  OPTIONAL countries String,
+  OPTIONAL country_codes String,
+  OPTIONAL registered_office String,
+  lastEditTimestamp String
+} );
+
+CREATE NODE TYPE
+( IntermediaryOfficerType : Intermediary & Officer {
+  node_id Integer,
+  sourceID String,
+  name String,
+  valid_until String,
+  countries String,
+  country_codes String,
+  lastEditTimestamp String
+} );
+
+CREATE NODE TYPE
+( OfficerType : Officer {
+  node_id Long,
+  sourceID String,
+  OPTIONAL name String,
+  OPTIONAL status String,
+  OPTIONAL address String,
+  OPTIONAL valid_until String,
+  OPTIONAL icij_id String,
+  OPTIONAL note String,
+  OPTIONAL end_date String,
+  OPTIONAL countries String,
+  OPTIONAL country_codes String,
+  lastEditTimestamp String
+} );
+
+CREATE NODE TYPE
+( OtherType : Other {
+  node_id Long,
+  sourceID String,
+  name String,
+  OPTIONAL jurisdiction String,
+  OPTIONAL jurisdiction_description String,
+  OPTIONAL incorporation_date String,
+  OPTIONAL struck_off_date String,
+  valid_until String,
+  OPTIONAL note String,
+  OPTIONAL countries String,
+  OPTIONAL country_codes String,
+  OPTIONAL closed_date String,
+  OPTIONAL type String,
+  lastEditTimestamp String
+} );
+
+
+CREATE EDGE TYPE
+( : Other | Officer | Intermediary )
+- [ :connected_to {
+    sourceID String,
+    valid_until String,
+    link String
+  } ]
+-> ( : Entity );
+
+CREATE EDGE TYPE
+( : Intermediary | ( Intermediary & Officer ) )
+- [ :intermediary_of {
+    OPTIONAL sourceID String,
+    OPTIONAL valid_until String,
+    link String,
+    OPTIONAL start_date String,
+    OPTIONAL end_date String,
+    OPTIONAL lastEditTimestamp String
+  } ]
+-> ( : Entity );
+
+CREATE EDGE TYPE
+( : Officer
+  | ( Intermediary & Officer )
+  | Entity
+  | Intermediary
+)
+- [ :officer_of {
+    OPTIONAL sourceID String,
+    OPTIONAL status String,
+    OPTIONAL valid_until String,
+    OPTIONAL link String,
+    OPTIONAL start_date String,
+    OPTIONAL end_date String,
+    OPTIONAL lastEditTimestamp String
+  } ]
+-> ( : Entity
+      | Intermediary
+      | Officer
+      | Other
+   );
+
+
+CREATE EDGE TYPE
+( : Officer )
+- [ :probably_same_officer_as {
+    sourceID String,
+    valid_until String,
+    link String
+  } ]
+-> ( : Officer );
+
+CREATE EDGE TYPE
+( : Entity
+  | Officer
+  | ( Intermediary & Officer )
+  | Intermediary
+  | Other
+)
+- [ :registered_address {
+    OPTIONAL sourceID String,
+    OPTIONAL valid_until String,
+    OPTIONAL link String,
+    OPTIONAL lastEditTimestamp String
+  } ]
+-> ( : Address | Entity );
+
+CREATE EDGE TYPE
+( : Address )
+- [ :same_address_as {
+    sourceID String,
+    valid_until String,
+    link String
+  } ]
+-> ( : Address );
+
+CREATE EDGE TYPE
+( : Entity | Address | Intermediary )
+- [ :same_as {
+    link String
+  } ]
+-> ( : Entity | Address | Officer );
+
+CREATE EDGE TYPE
+( : Entity )
+- [ :same_company_as {
+    sourceID String,
+    valid_until String,
+    link String
+  } ]
+-> ( : Entity );
+
+CREATE EDGE TYPE
+( : Officer )
+- [ :same_id_as {
+    sourceID String,
+    valid_until String,
+    link String
+  } ]
+-> ( : Officer );
+
+
+CREATE EDGE TYPE
+( : Intermediary )
+- [ :same_intermediary_as {
+    sourceID String,
+    valid_until String,
+    link String
+  } ]
+-> ( : Intermediary );
+
+CREATE EDGE TYPE
+( : Intermediary
+  | Officer
+  | Entity
+  | Other
+)
+- [ :same_name_as {
+    OPTIONAL sourceID String,
+    OPTIONAL valid_until String,
+    link String,
+    OPTIONAL lastEditTimestamp String
+  } ]
+-> ( : Intermediary
+      | Officer
+      | ( Intermediary & Officer )
+      | Entity
+      | Other
+   );
+
+CREATE EDGE TYPE
+( : Intermediary
+  | Officer
+  | ( Intermediary & Officer )
+)
+- [ :similar {
+    link String
+  } ]
+-> ( : Intermediary
+      | Officer
+      | ( Intermediary & Officer )
+   );
+
+CREATE EDGE TYPE
+( : Entity )
+- [ :similar_company_as {
+    sourceID String,
+    valid_until String,
+    link String
+  } ]
+-> ( : Entity );
+
+CREATE EDGE TYPE
+( : Officer
+  | ( Intermediary & Officer )
+  | Other
+)
+- [ :underlying {
+    OPTIONAL sourceID String,
+    OPTIONAL valid_until String,
+    link String,
+    OPTIONAL lastEditTimestamp String
+  } ]
+-> ( : Officer
+      | ( Intermediary & Officer )
+      | Entity
+   );
+
+
+CREATE GRAPH TYPE ICIJ LOOSE {
+  AddressType,
+  EntityType,
+  IntermediaryType,
+  IntermediaryOfficerType,
+  OfficerType,
+  OtherType,
+  connected_to,
+  intermediary_of,
+  officer_of,
+  probably_same_officer_as,
+  registered_address,
+  same_address_as,
+  same_as,
+  same_company_as,
+  same_id_as,
+  same_intermediary_as,
+  same_name_as,
+  similar,
+  similar_company_as,
+  underlying
+};

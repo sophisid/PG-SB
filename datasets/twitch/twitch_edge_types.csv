@@ -1,0 +1,7 @@
+﻿relType,sources,targets,properties
+CHATTER,"[User, Stream:User]",[Stream:User],[]
+HAS_LANGUAGE,[Stream:User],[Language],[]
+HAS_TEAM,[Stream:User],[Team],[]
+MODERATOR,"[User, Stream:User]",[Stream:User],[]
+PLAYS,[Stream:User],[Game],[]
+VIP,"[User, Stream:User]",[Stream:User],[]

@@ -1,0 +1,502 @@
+﻿[
+  {
+    "relType": ":`associates`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "StringArray"
+        ],
+        "name": "sources",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`binds`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "StringArray"
+        ],
+        "name": "urls",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "StringArray"
+        ],
+        "name": "pubmed_ids",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "StringArray"
+        ],
+        "name": "sources",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "affinity_nM",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "StringArray"
+        ],
+        "name": "actions",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`causes`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`covaries`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`downregulates`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "method",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "z_score",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "log2_fold_change",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`expresses`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "StringArray"
+        ],
+        "name": "sources",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`includes`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`interacts`",
+    "properties": [
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "StringArray"
+        ],
+        "name": "sources",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`localizes`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`palliates`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`participates`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`presents`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`regulates`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "method",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "StringArray"
+        ],
+        "name": "subtypes",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`resembles`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "similarity",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`treats`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`upregulates`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "license",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "method",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "z_score",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "unbiased",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "log2_fold_change",
+        "mandatory": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+﻿nodeType,properties
+AREA,"[areaCode, id]"
+Crime,"[date, id, source_id, last_outcome, type]"
+Email,"[id, email_address]"
+Location,"[postcode, id, address, latitude, longitude]"
+Object,"[description, source_id, id, type]"
+Officer,"[name, rank, badge_no, id, surname]"
+Person,"[name, nhs_no, id, surname, age]"
+Phone,"[phoneNo, id]"
+PhoneCall,"[call_time, call_date, id, call_type, call_duration]"
+PostCode,"[id, code]"
+Vehicle,"[model, id, year, reg, make]"

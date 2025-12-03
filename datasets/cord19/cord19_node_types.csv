@@ -1,0 +1,17 @@
+﻿nodeType,properties
+Abstract,"[abstractId, text]"
+AbstractCollection,[absCollId]
+Affiliation,"[institution, laboratory, affId]"
+Author,"[middle, authorId, last, first, email]"
+AuthorCollection,[acId]
+BodyText,"[section, bodyId, text]"
+BodyTextCollection,[bodyCollId]
+Citation,"[citId, text]"
+Journal,"[name, journalId]"
+License,"[licenseId, name]"
+Location,"[postcode, country, region, locId, settlement]"
+Paper,"[pubmed_id, cord_uid, source_x, journal, publish_time, title, pmcid, paperId, url, doi]"
+PaperID,"[type, paperRefId, value]"
+Reference,"[name, venue, refId, title, year]"
+ReferenceCollection,[refCollId]
+Source,"[sourceId, name]"

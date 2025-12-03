@@ -1,0 +1,131 @@
+CREATE NODE TYPE
+( Character : Character {
+    created     String,
+    edited      String,
+    url         String,
+    name        String,
+    birth_year  String,
+    eye_color   String,
+    height      String,
+    gender      String,
+    skin_color  String,
+    mass        String,
+    hair_color  String
+} );
+
+CREATE NODE TYPE
+( Film : Film {
+    created       String,
+    edited        String,
+    url           String,
+    producer      String,
+    title         String,
+    release_date  String,
+    director      String,
+    opening_crawl String,
+    episode_id    Long
+} );
+
+CREATE NODE TYPE
+( Planet : Planet {
+    created          String,
+    edited           String,
+    url              String,
+    name             String,
+    gravity          String,
+    terrain          String,
+    diameter         String,
+    climate          String,
+    population       String,
+    rotation_period  String,
+    orbital_period   String,
+    surface_water    String
+} );
+
+CREATE NODE TYPE
+( Species : Species {
+    created          String,
+    edited           String,
+    url              String,
+    name             String,
+    average_height   String,
+    average_lifespan String,
+    skin_colors      String,
+    hair_colors      String,
+    eye_colors       String,
+    classification   String,
+    language         String,
+    designation      String
+} );
+
+CREATE NODE TYPE
+( Starship : Starship {
+    consumables            String,
+    created                String,
+    edited                 String,
+    url                    String,
+    name                   String,
+    cargo_capacity         String,
+    passengers             String,
+    cost_in_credits        String,
+    model                  String,
+    max_atmosphering_speed String,
+    manufacturer           String,
+    length                 String,
+    crew                   String,
+    starship_class         String,
+    MGLT                   String,
+    hyperdrive_rating      String
+} );
+
+CREATE NODE TYPE
+( Vehicle : Vehicle {
+    consumables            String,
+    created                String,
+    edited                 String,
+    url                    String,
+    name                   String,
+    cargo_capacity         String,
+    passengers             String,
+    cost_in_credits        String,
+    model                  String,
+    max_atmosphering_speed String,
+    manufacturer           String,
+    length                 String,
+    crew                   String,
+    vehicle_class          String
+} );
+
+
+CREATE EDGE TYPE
+( : Character
+| : Vehicle
+| : Starship
+| : Planet
+| : Species
+)-[:APPEARED_IN]->( : Film );
+
+CREATE EDGE TYPE
+( : Character
+| : Species
+)-[:HOMEWORLD]->( : Planet );
+
+CREATE EDGE TYPE
+( : Character )-[:OF]->( : Species );
+
+CREATE EDGE TYPE
+( : Character )-[:PILOT]->( : Starship | : Vehicle );
+
+CREATE GRAPH TYPE STARWARS LOOSE {
+    Character,
+    Film,
+    Planet,
+    Species,
+    Starship,
+    Vehicle,
+
+    APPEARED_IN,
+    HOMEWORLD,
+    OF,
+    PILOT
+};

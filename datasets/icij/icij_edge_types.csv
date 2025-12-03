@@ -1,0 +1,15 @@
+﻿relType,sources,targets,properties
+connected_to,"[Other, Officer, Intermediary]",[Entity],"[sourceID, link, valid_until]"
+intermediary_of,"[Intermediary, Intermediary:Officer]",[Entity],"[valid_until, sourceID, link, end_date, start_date, lastEditTimestamp]"
+officer_of,"[Officer, Intermediary:Officer, Entity, Intermediary]","[Entity, Intermediary, Officer, Other]","[valid_until, link, end_date, sourceID, start_date, status, lastEditTimestamp]"
+probably_same_officer_as,[Officer],[Officer],"[link, valid_until, sourceID]"
+registered_address,"[Entity, Officer, Intermediary:Officer, Intermediary, Other]","[Address, Entity]","[link, sourceID, valid_until, lastEditTimestamp]"
+same_address_as,[Address],[Address],"[valid_until, sourceID, link]"
+same_as,"[Entity, Address, Intermediary]","[Entity, Address, Officer]",[link]
+same_company_as,[Entity],[Entity],"[valid_until, sourceID, link]"
+same_id_as,[Officer],[Officer],"[sourceID, link, valid_until]"
+same_intermediary_as,[Intermediary],[Intermediary],"[link, valid_until, sourceID]"
+same_name_as,"[Intermediary, Officer, Entity, Other]","[Intermediary, Officer, Intermediary:Officer, Entity, Other]","[valid_until, sourceID, link, lastEditTimestamp]"
+similar,"[Intermediary, Officer, Intermediary:Officer]","[Intermediary, Officer, Intermediary:Officer]",[link]
+similar_company_as,[Entity],[Entity],"[valid_until, sourceID, link]"
+underlying,"[Officer, Intermediary:Officer, Other]","[Officer, Intermediary:Officer, Entity]","[link, valid_until, sourceID, lastEditTimestamp]"

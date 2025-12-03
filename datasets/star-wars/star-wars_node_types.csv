@@ -1,0 +1,7 @@
+﻿nodeType,properties
+Character,"[eye_color, gender, edited, skin_color, created, mass, name, url, birth_year, height, hair_color]"
+Film,"[episode_id, release_date, edited, created, director, producer, opening_crawl, title, url]"
+Planet,"[orbital_period, surface_water, diameter, edited, created, gravity, name, climate, terrain, rotation_period, url, population]"
+Species,"[average_height, skin_colors, edited, created, name, eye_colors, language, designation, average_lifespan, classification, url, hair_colors]"
+Starship,"[max_atmosphering_speed, cargo_capacity, passengers, edited, consumables, created, MGLT, length, starship_class, url, manufacturer, crew, hyperdrive_rating, cost_in_credits, name, model]"
+Vehicle,"[max_atmosphering_speed, cargo_capacity, passengers, edited, consumables, created, length, url, manufacturer, crew, vehicle_class, cost_in_credits, name, model]"

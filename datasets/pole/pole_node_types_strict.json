@@ -1,0 +1,398 @@
+﻿[
+  {
+    "nodeType": ":`AREA`",
+    "nodeLabels": [
+      "AREA"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "areaCode",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Crime`",
+    "nodeLabels": [
+      "Crime"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "last_outcome",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "type",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "date",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source_id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "note",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "charge",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Email`",
+    "nodeLabels": [
+      "Email"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "email_address",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Location`",
+    "nodeLabels": [
+      "Location"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "address",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "postcode",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "latitude",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "longitude",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Object`",
+    "nodeLabels": [
+      "Object"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "type",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "source_id",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "description",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Officer`",
+    "nodeLabels": [
+      "Officer"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "rank",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "surname",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "badge_no",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Person`",
+    "nodeLabels": [
+      "Person"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "surname",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "nhs_no",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "age",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PhoneCall`",
+    "nodeLabels": [
+      "PhoneCall"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "call_type",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "call_time",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "call_date",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "call_duration",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Phone`",
+    "nodeLabels": [
+      "Phone"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "phoneNo",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`PostCode`",
+    "nodeLabels": [
+      "PostCode"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "code",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Vehicle`",
+    "nodeLabels": [
+      "Vehicle"
+    ],
+    "properties": [
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "reg",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "model",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "year",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "make",
+        "mandatory": true
+      }
+    ]
+  }
+]

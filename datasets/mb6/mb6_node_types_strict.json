@@ -1,0 +1,405 @@
+﻿[
+  {
+    "nodeType": ":`Meta`:`medulla7column_Meta`",
+    "nodeLabels": [
+      "Meta",
+      "medulla7column_Meta"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "logo",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "postHighAccuracyThreshold",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "preHPThreshold",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "postHPThreshold",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "meshHost",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "uuid",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "neuroglancerInfo",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "neuroglancerMeta",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "statusDefinitions",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "latestMutationId",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "totalPreCount",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "totalPostCount",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastDatabaseEdit",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "StringArray"
+        ],
+        "name": "superLevelRois",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "StringArray"
+        ],
+        "name": "primaryRois",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "roiInfo",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "roiHierarchy",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "dataset",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Neuron`:`Segment`:`mushroombody_Neuron`:`mushroombody_Segment`",
+    "nodeLabels": [
+      "Neuron",
+      "Segment",
+      "mushroombody_Neuron",
+      "mushroombody_Segment"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "roiInfo",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "type",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "alpha3",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "alpha2",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "alpha1",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "bodyId",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "pre",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "post",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "status",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "statusLabel",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "instance",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "size",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "cropped",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Neuron`:`Segment`:`mushroombody_Segment`",
+    "nodeLabels": [
+      "Neuron",
+      "Segment",
+      "mushroombody_Segment"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "roiInfo",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "type",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "alpha3",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "alpha2",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "alpha1",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "bodyId",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "pre",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "post",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "status",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "statusLabel",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "instance",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Long"
+        ],
+        "name": "size",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "cropped",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`SynapseSet`:`mushroombody_SynapseSet`",
+    "nodeLabels": [
+      "SynapseSet",
+      "mushroombody_SynapseSet"
+    ],
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Synapse`:`mushroombody_Synapse`",
+    "nodeLabels": [
+      "Synapse",
+      "mushroombody_Synapse"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "type",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Double"
+        ],
+        "name": "confidence",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Point"
+        ],
+        "name": "location",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "alpha3",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "alpha2",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "Boolean"
+        ],
+        "name": "alpha1",
+        "mandatory": false
+      }
+    ]
+  }
+]

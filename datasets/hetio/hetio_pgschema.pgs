@@ -1,0 +1,310 @@
+CREATE NODE TYPE
+( AnatomyType :(Anatomy & HetionetNode) {
+  uid String,
+  name String,
+  mesh_id String,
+  license String,
+  source String,
+  url String,
+  OPTIONAL bto_id String
+} );
+
+CREATE NODE TYPE
+( BioProcessType :(Biological Process & HetionetNode) {
+  uid String,
+  name String,
+  license String,
+  source String,
+  url String
+} );
+
+CREATE NODE TYPE
+( CellComponentType :(Cellular Component & HetionetNode) {
+  uid String,
+  name String,
+  license String,
+  source String,
+  url String
+} );
+
+CREATE NODE TYPE
+( CompoundType :(Compound & HetionetNode) {
+  uid String,
+  name String,
+  license String,
+  source String,
+  url String,
+  inchikey String,
+  inchi String
+} );
+
+CREATE NODE TYPE
+( DiseaseType :(Disease & HetionetNode) {
+  uid String,
+  name String,
+  license String,
+  source String,
+  url String
+} );
+
+CREATE NODE TYPE
+( GeneType :(Gene & HetionetNode) {
+  uid String,
+  name String,
+  license String,
+  source String,
+  url String,
+  OPTIONAL chromosome String,
+  description String
+} );
+
+CREATE NODE TYPE
+( MolFunctionType :(HetionetNode & Molecular Function) {
+  uid String,
+  name String,
+  license String,
+  source String,
+  url String
+} );
+
+CREATE NODE TYPE
+( PathwayType :(HetionetNode & Pathway) {
+  uid String,
+  name String,
+  license String,
+  source String,
+  OPTIONAL url String
+} );
+
+CREATE NODE TYPE
+( PharmClassType :(HetionetNode & Pharmacologic Class) {
+  uid String,
+  name String,
+  license String,
+  source String,
+  url String,
+  class_type String
+} );
+
+CREATE NODE TYPE
+( SideEffectType :(HetionetNode & Side Effect) {
+  uid String,
+  name String,
+  license String,
+  source String,
+  url String
+} );
+
+CREATE NODE TYPE
+( SymptomType :(HetionetNode & Symptom) {
+  uid String,
+  name String,
+  license String,
+  source String,
+  url String
+} );
+
+CREATE EDGE TYPE
+( :(Disease & HetionetNode))
+- [ :associates {
+    OPTIONAL license String,
+    unbiased Boolean,
+    sources StringArray
+  } ]
+-> ( :(Gene & HetionetNode));
+
+CREATE EDGE TYPE
+( :(Compound & HetionetNode))
+- [ :binds {
+    OPTIONAL license String,
+    OPTIONAL urls StringArray,
+    OPTIONAL pubmed_ids StringArray,
+    unbiased Boolean,
+    sources StringArray,
+    OPTIONAL affinity_nM Double,
+    OPTIONAL actions StringArray
+  } ]
+-> ( :(Gene & HetionetNode));
+
+
+CREATE EDGE TYPE
+( :(Compound & HetionetNode))
+- [ :causes {
+    license String,
+    source String,
+    url String,
+    unbiased Boolean
+  } ]
+-> ( :(HetionetNode & Side Effect) );
+
+
+CREATE EDGE TYPE
+( :(Gene & HetionetNode))
+- [ :covaries {
+    source String,
+    unbiased Boolean
+  } ]
+-> ( :(Gene & HetionetNode));
+
+
+CREATE EDGE TYPE
+( :( Anatomy & HetionetNode )
+    | ( Compound & HetionetNode )
+    | ( Disease & HetionetNode )
+)
+- [ :downregulates {
+    OPTIONAL license String,
+    source String,
+    OPTIONAL method String,
+    OPTIONAL z_score Double,
+    unbiased Boolean,
+    OPTIONAL log2_fold_change Double
+  } ]
+-> ( :(Gene & HetionetNode));
+
+CREATE EDGE TYPE
+( :(Anatomy & HetionetNode) )
+- [ :expresses {
+    OPTIONAL license String,
+    unbiased Boolean,
+    sources StringArray
+  } ]
+-> ( :(Gene & HetionetNode));
+
+CREATE EDGE TYPE
+( :(HetionetNode & Pharmacologic Class) )
+- [ :includes {
+    license String,
+    source String,
+    unbiased Boolean
+  } ]
+-> ( :(Compound & HetionetNode) );
+
+
+CREATE EDGE TYPE
+( :(Gene & HetionetNode) )
+- [ :interacts {
+    unbiased Boolean,
+    sources StringArray
+  } ]
+-> ( :(Gene & HetionetNode) );
+
+CREATE EDGE TYPE
+( :(Disease & HetionetNode) )
+- [ :localizes {
+    license String,
+    source String,
+    unbiased Boolean
+  } ]
+-> ( :(Anatomy & HetionetNode) );
+
+CREATE EDGE TYPE
+( :(Compound & HetionetNode) )
+- [ :palliates {
+    license String,
+    source String,
+    unbiased Boolean
+  } ]
+-> ( :(Disease & HetionetNode) );
+
+CREATE EDGE TYPE
+( :(Gene & HetionetNode) )
+- [ :participates {
+    license String,
+    source String,
+    OPTIONAL url String,
+    unbiased Boolean
+  } ]
+-> ( :( Biological Process & HetionetNode )
+      | ( HetionetNode & Pathway )
+      | ( HetionetNode & Molecular Function )
+      | ( Cellular Component & HetionetNode )
+   );
+
+CREATE EDGE TYPE
+( :(Disease & HetionetNode) )
+- [ :presents {
+    license String,
+    source String,
+    unbiased Boolean
+  } ]
+-> ( :(HetionetNode & Symptom) );
+
+CREATE EDGE TYPE
+( :(Gene & HetionetNode) )
+- [ :regulates {
+    source String,
+    method String,
+    unbiased Boolean,
+    subtypes StringArray
+  } ]
+-> ( :(Gene & HetionetNode) );
+
+CREATE EDGE TYPE
+( :( Compound & HetionetNode )
+    | ( Disease & HetionetNode )
+)
+- [ :resembles {
+    license String,
+    source String,
+    unbiased Boolean,
+    OPTIONAL similarity Double
+  } ]
+-> ( :( Compound & HetionetNode )
+      | ( Disease & HetionetNode )
+   );
+
+CREATE EDGE TYPE
+( :(Compound & HetionetNode) )
+- [ :treats {
+    license String,
+    source String,
+    unbiased Boolean
+  } ]
+-> ( :( Disease & HetionetNode ) );
+
+CREATE EDGE TYPE
+( :( Anatomy & HetionetNode )
+    | ( Compound & HetionetNode )
+    | ( Disease & HetionetNode )
+)
+- [ :upregulates {
+    OPTIONAL license String,
+    source String,
+    OPTIONAL method String,
+    OPTIONAL z_score Double,
+    unbiased Boolean,
+    OPTIONAL log2_fold_change Double
+  } ]
+-> ( :(Gene & HetionetNode) );
+
+
+CREATE GRAPH TYPE HETIO LOOSE {
+  AnatomyType,
+  BioProcessType,
+  CellComponentType,
+  CompoundType,
+  DiseaseType,
+  GeneType,
+  MolFunctionType,
+  PathwayType,
+  PharmClassType,
+  SideEffectType,
+  SymptomType,
+  associates,
+  binds,
+  causes,
+  covaries,
+  downregulates,
+  expresses,
+  includes,
+  interacts,
+  localizes,
+  palliates,
+  participates,
+  presents,
+  regulates,
+  resembles,
+  treats,
+  upregulates
+};

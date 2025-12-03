@@ -1,0 +1,169 @@
+CREATE NODE TYPE
+( AREA : AREA {
+    id       Long,
+    areaCode String
+} );
+
+CREATE NODE TYPE
+( Crime : Crime {
+    id          Long,
+    last_outcome String,
+    date        String,
+    source_id   String,
+
+    OPTIONAL type   String,
+    OPTIONAL note   String,
+    OPTIONAL charge String
+} );
+
+CREATE NODE TYPE
+( Email : Email {
+    id            Long,
+    email_address String
+} );
+
+CREATE NODE TYPE
+( Location : Location {
+    id        Long,
+    address   String,
+    postcode  String,
+    latitude  Double,
+    longitude Double
+} );
+
+CREATE NODE TYPE
+( Object : Object {
+    id          Long,
+    type        String,
+    description String,
+    OPTIONAL source_id String
+} );
+
+CREATE NODE TYPE
+( Officer : Officer {
+    id       Long,
+    rank     String,
+    surname  String,
+    badge_no String,
+    name     String
+} );
+
+CREATE NODE TYPE
+( Person : Person {
+    id      Long,
+    surname String,
+    name    String,
+
+    OPTIONAL nhs_no String,
+    OPTIONAL age    String
+} );
+
+CREATE NODE TYPE
+( PhoneCall : PhoneCall {
+    id            Long,
+    call_type     String,
+    call_time     String,
+    call_date     String,
+    call_duration Long
+} );
+
+CREATE NODE TYPE
+( Phone : Phone {
+    id      Long,
+    phoneNo String
+} );
+
+CREATE NODE TYPE
+( PostCode : PostCode {
+    id   Long,
+    code String
+} );
+
+CREATE NODE TYPE
+( Vehicle : Vehicle {
+    id    Long,
+    reg   String,
+    model String,
+    year  Long,
+    make  String
+} );
+
+CREATE EDGE TYPE
+( : PhoneCall )-[:CALLED]->( : Phone );
+
+CREATE EDGE TYPE
+( : PhoneCall )-[:CALLER]->( : Phone );
+
+CREATE EDGE TYPE
+( : Person )-[:CURRENT_ADDRESS]->( : Location );
+
+CREATE EDGE TYPE
+( : Location )-[:HAS_POSTCODE]->( : PostCode );
+
+CREATE EDGE TYPE
+( : Location )-[:LOCATION_IN_AREA]->( : AREA );
+
+CREATE EDGE TYPE
+( : PostCode )-[:POSTCODE_IN_AREA]->( : AREA );
+
+CREATE EDGE TYPE
+( : Person )-[:HAS_EMAIL]->( : Email );
+
+CREATE EDGE TYPE
+( : Person )-[:HAS_PHONE]->( : Phone );
+
+CREATE EDGE TYPE
+( : Person )-[:KNOWS]->( : Person );
+
+CREATE EDGE TYPE
+( : Person )-[:KNOWS_LW]->( : Person );
+
+CREATE EDGE TYPE
+( : Person )-[:KNOWS_PHONE]->( : Person );
+
+CREATE EDGE TYPE
+( : Person )-[:FAMILY_REL {
+      rel_type String
+  }]->( : Person );
+
+CREATE EDGE TYPE
+( : Crime )-[:INVESTIGATED_BY]->( : Officer );
+
+CREATE EDGE TYPE
+( : Object | : Vehicle )-[:INVOLVED_IN]->( : Crime );
+
+CREATE EDGE TYPE
+( : Person )-[:PARTY_TO]->( : Crime );
+
+CREATE EDGE TYPE
+( : Crime )-[:OCCURRED_AT]->( : Location );
+
+CREATE GRAPH TYPE POLE LOOSE {
+  AREA,
+  Crime,
+  Email,
+  Location,
+  Object,
+  Officer,
+  Person,
+  Phone,
+  PhoneCall,
+  PostCode,
+  Vehicle,
+  CALLED,
+  CALLER,
+  CURRENT_ADDRESS,
+  FAMILY_REL,
+  HAS_EMAIL,
+  HAS_PHONE,
+  HAS_POSTCODE,
+  INVESTIGATED_BY,
+  INVOLVED_IN,
+  KNOWS,
+  KNOWS_LW,
+  KNOWS_PHONE,
+  LOCATION_IN_AREA,
+  OCCURRED_AT,
+  PARTY_TO,
+  POSTCODE_IN_AREA
+};

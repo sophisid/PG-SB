@@ -1,0 +1,62 @@
+﻿[
+  {
+    "relType": ":`CHATTER`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_LANGUAGE`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`HAS_TEAM`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`MODERATOR`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PLAYS`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`VIP`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  }
+]

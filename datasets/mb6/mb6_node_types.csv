@@ -1,0 +1,6 @@
+﻿nodeType,properties
+Meta:medulla7column_Meta,"[primaryRois, roiInfo, roiHierarchy, neuroglancerInfo, totalPreCount, lastDatabaseEdit, uuid, statusDefinitions, preHPThreshold, totalPostCount, superLevelRois, latestMutationId, logo, postHighAccuracyThreshold, meshHost, dataset, postHPThreshold, neuroglancerMeta]"
+Neuron:Segment:mushroombody_Neuron:mushroombody_Segment,"[roiInfo, pre, instance, type, statusLabel, post, size, alpha2, alpha3, bodyId, cropped, status, alpha1]"
+Neuron:Segment:mushroombody_Segment,"[roiInfo, pre, instance, type, statusLabel, post, size, alpha2, alpha3, bodyId, cropped, status, alpha1]"
+Synapse:mushroombody_Synapse,"[alpha2, alpha3, location, type, confidence, alpha1]"
+SynapseSet:mushroombody_SynapseSet,[]

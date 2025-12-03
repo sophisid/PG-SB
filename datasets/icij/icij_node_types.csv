@@ -1,0 +1,7 @@
+﻿nodeType,properties
+Address,"[sourceID, country, address, icij_id, countries, addressID, country_code, lastEditTimestamp, valid_until, name, original_address, country_codes, node_id]"
+Entity,"[company_type, note, closed_date, former_name, jurisdiction, dorm_date, type, country_codes, incorporation_date, sourceID, address, comments, internal_id, entity_number, struck_off_date, tax_stat_description, service_provider, countries, jurisdiction_description, lastEditTimestamp, company_number, valid_until, ibcRUC, original_name, name, inactivation_date, status, node_id]"
+Intermediary,"[sourceID, lastEditTimestamp, address, valid_until, internal_id, name, country_codes, countries, registered_office, status, node_id]"
+Intermediary:Officer,"[sourceID, lastEditTimestamp, valid_until, name, country_codes, countries, node_id]"
+Officer,"[sourceID, note, lastEditTimestamp, valid_until, name, icij_id, country_codes, countries, node_id]"
+Other,"[sourceID, note, closed_date, jurisdiction, struck_off_date, countries, jurisdiction_description, type, lastEditTimestamp, valid_until, name, country_codes, incorporation_date, node_id]"

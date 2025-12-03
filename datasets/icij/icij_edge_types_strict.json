@@ -1,0 +1,408 @@
+﻿[
+  {
+    "relType": ":`connected_to`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`intermediary_of`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "start_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "end_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`officer_of`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "status",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "start_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "end_date",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`probably_same_officer_as`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`registered_address`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`same_address_as`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`same_as`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`same_company_as`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`same_id_as`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`same_intermediary_as`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`same_name_as`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`similar_company_as`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`similar`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "relType": ":`underlying`",
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "sourceID",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "valid_until",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "link",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastEditTimestamp",
+        "mandatory": false
+      }
+    ]
+  }
+]

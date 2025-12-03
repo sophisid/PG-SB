@@ -1,0 +1,339 @@
+﻿[
+  {
+    "nodeType": ":`Comment`",
+    "nodeLabels": [
+      "Comment"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "creationDate",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "locationIP",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "browserUsed",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "content",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "length",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Forum`",
+    "nodeLabels": [
+      "Forum"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "creationDate",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "title",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Organisation`",
+    "nodeLabels": [
+      "Organisation"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "type",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Person`",
+    "nodeLabels": [
+      "Person"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "creationDate",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "locationIP",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "browserUsed",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "firstName",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "lastName",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "gender",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "birthday",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Place`",
+    "nodeLabels": [
+      "Place"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "type",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Post`",
+    "nodeLabels": [
+      "Post"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "creationDate",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "locationIP",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "browserUsed",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "content",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "length",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "language",
+        "mandatory": false
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "imageFile",
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "nodeType": ":`TagClass`",
+    "nodeLabels": [
+      "TagClass"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      }
+    ]
+  },
+  {
+    "nodeType": ":`Tag`",
+    "nodeLabels": [
+      "Tag"
+    ],
+    "properties": [
+      {
+        "types": [
+          "String"
+        ],
+        "name": "id",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "name",
+        "mandatory": true
+      },
+      {
+        "types": [
+          "String"
+        ],
+        "name": "url",
+        "mandatory": true
+      }
+    ]
+  }
+]

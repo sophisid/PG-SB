@@ -1,0 +1,12 @@
+﻿nodeType,properties
+Anatomy:HetionetNode,"[uid, license, name, mesh_id, source, bto_id, url]"
+Biological Process:HetionetNode,"[name, uid, license, source, url]"
+Cellular Component:HetionetNode,"[name, uid, license, source, url]"
+Compound:HetionetNode,"[uid, license, inchikey, inchi, name, source, url]"
+Disease:HetionetNode,"[name, uid, license, source, url]"
+Gene:HetionetNode,"[uid, license, chromosome, name, description, source, url]"
+HetionetNode:Molecular Function,"[name, license, uid, source, url]"
+HetionetNode:Pathway,"[name, uid, license, source, url]"
+HetionetNode:Pharmacologic Class,"[name, license, uid, source, class_type, url]"
+HetionetNode:Side Effect,"[name, uid, license, source, url]"
+HetionetNode:Symptom,"[name, uid, license, source, url]"

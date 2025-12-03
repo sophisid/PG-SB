@@ -1,0 +1,42 @@
+﻿[
+  {
+    "relType": ":`APPEARED_IN`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`HOMEWORLD`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`OF`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PILOT`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  }
+]

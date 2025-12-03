@@ -1,0 +1,162 @@
+﻿[
+  {
+    "relType": ":`ABSTRACTCOLLECTION_HAS_ABSTRACT`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`ABSTRACT_HAS_CITATION`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`AFFILIATION_HAS_LOCATION`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`AUTHORCOLLECTION_HAS_AUTHOR`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`AUTHOR_HAS_AFFILIATION`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`BODYTEXTCOLLECTION_HAS_BODYTEXT`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`BODYTEXT_HAS_CITATION`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PAPER_HAS_ABSTRACTCOLLECTION`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PAPER_HAS_AUTHORCOLLECTION`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PAPER_HAS_BODYTEXTCOLLECTION`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PAPER_HAS_JOURNAL`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PAPER_HAS_LICENSE`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PAPER_HAS_PAPERID`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PAPER_HAS_REFERENCECOLLECTION`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`PAPER_HAS_SOURCE`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "relType": ":`REFERENCECOLLECTION_HAS_REFERENCE`",
+    "properties": [
+      {
+        "types": null,
+        "name": null,
+        "mandatory": false
+      }
+    ]
+  }
+]
