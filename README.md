@@ -174,7 +174,74 @@ Each CSV contains *one value per line* (any single column is accepted).
 
 ---
 
-## **8. Artifacts**
+## **8. Evaluation Input Format**
+
+To run evaluation correctly, add a --eval flag. Each schema discovery method must output **four CSV files** per run:
+
+```
+original_nodes.csv
+original_edges.csv
+predicted_nodes.csv
+predicted_edges.csv
+```
+
+with the following required columns:
+
+### **a. original_nodes.csv**
+
+| Column           | Description                           |
+| ---------------- | ------------------------------------- |
+| `_nodeId`        | Unique node ID                        |
+| `original_label` | Ground-truth labels (comma-separated) |
+
+Example:
+`1,Person,Student`
+
+---
+
+### **b. predicted_nodes.csv**
+
+| Column              | Description                        |
+| ------------------- | ---------------------------------- |
+| `merged_cluster_id` | ID of discovered node pattern      |
+| `sortedLabels`      | Predicted labels (colon-separated) |
+| `nodeIdsInCluster`  | Node IDs (semicolon-separated)     |
+
+Example:
+`A01,Person:Student,1;2;5`
+
+---
+
+### **c. original_edges.csv**
+
+| Column             | Description            |
+| ------------------ | ---------------------- |
+| `srcId`            | Source node            |
+| `dstId`            | Target node            |
+| `relationshipType` | Ground-truth edge type |
+| `srcType`          | Ground-truth src label |
+| `dstType`          | Ground-truth dst label |
+
+Example:
+`1,2,LIKES,Person,Person`
+
+---
+
+### **4. predicted_edges.csv**
+
+| Column              | Description                                    |                                  |
+| ------------------- | ---------------------------------------------- | -------------------------------- |
+| `merged_cluster_id` | ID of discovered edge pattern                  |                                  |
+| `relationshipTypes` | Predicted relationship types (comma-separated) |                                  |
+| `srcLabels`         | Predicted src labels (comma-separated)         |                                  |
+| `dstLabels`         | Predicted dst labels (comma-separated)         |                                  |
+| `edgeIdsInCluster`  | Edges as `src                                  | dst` pairs (semicolon-separated) |
+
+Example:
+`E10,LIKES,Person,Person,1|2;7|9`
+
+---
+## **9. Artifacts**
 
 The datasets used and their sources are listed as:
 
@@ -211,7 +278,7 @@ The datasets used and their sources are listed as:
 
 ---
 
-## **9. Contributions**
+## **10. Contributions**
 
 Contributions are very welcome.
 

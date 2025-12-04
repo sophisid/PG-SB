@@ -4,4 +4,5 @@ config.json
 output/
 dataset_dumps/
 datasets/
+datasets_simple/
 datasets.zip

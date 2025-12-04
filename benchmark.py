@@ -8,6 +8,8 @@ import csv
 import json
 import argparse
 
+from evaluation import evaluate_run_from_csvs
+
 DATASETS_BASE_DIR = None
 OUTPUT_BASE_DIR = None
 COMMANDS_FILE = None
@@ -16,19 +18,14 @@ NEO4J_PORT = None
 NOISE_LEVELS = None
 LABEL_PERCENTS = None
 NEO4J_DIRS = None
+EVAL_ENABLED = False
 
 
 def run(cmd, cwd=None, log_file=None, check=True):
     print(f"[RUN] {cmd} (cwd={cwd})")
     if log_file:
         with open(log_file, "a") as f:
-            proc = subprocess.run(
-                cmd,
-                cwd=cwd,
-                shell=True,
-                stdout=f,
-                stderr=subprocess.STDOUT
-            )
+            proc = subprocess.run(cmd, cwd=cwd, shell=True, stdout=f, stderr=subprocess.STDOUT)
     else:
         proc = subprocess.run(cmd, cwd=cwd, shell=True)
     if check and proc.returncode != 0:
@@ -44,7 +41,6 @@ def detect_dump_and_version(dataset_dir: str):
     dump_file = sorted(dumps)[0]
     base = os.path.basename(dump_file)
 
-    # Robust regex for version X.Y.Z
     m = re.search(r"neo4j-(\d+\.\d+\.\d+)", base)
     if not m:
         raise ValueError(
@@ -52,9 +48,8 @@ def detect_dump_and_version(dataset_dir: str):
             f"Expected something like '*neo4j-X.Y.Z.dump'."
         )
 
-    version = m.group(1).strip()
+    return dump_file, m.group(1).strip()
 
-    return dump_file, version
 
 def neo4j_dir_for_version(version: str) -> str:
     global NEO4J_DIRS
@@ -95,11 +90,9 @@ def stop_neo4j(neo4j_dir: str):
     if status_code == 0:
         raise RuntimeError("Neo4j failed to stop")
 
-    # Kill any leftover process on Bolt port
-    print("Killing any process on port", NEO4J_PORT)
+    print(f"Killing any process on port {NEO4J_PORT}")
     subprocess.run(f"lsof -t -i :{NEO4J_PORT} | xargs -r kill -9", shell=True)
 
-    # Remove store_lock
     store_lock = neo4j_store_lock_path(neo4j_dir)
     if os.path.exists(store_lock):
         print(f"Removing store_lock {store_lock}")
@@ -118,7 +111,7 @@ def load_dump(neo4j_dir: str, dump_file: str, version: str):
 def start_neo4j_and_wait(neo4j_dir: str, timeout_s: int = 300):
     global NEO4J_PASSWORD
     print("Starting Neo4j...")
-    run(f"{neo4j_dir}/bin/neo4j start", check=True)
+    run(f"{neo4j_dir}/bin/neo4j start")
     print("Waiting for Neo4j to be ready...")
     start = time.time()
     while True:
@@ -174,8 +167,7 @@ def read_csv_list(csv_path: str):
                     break
             if not first:
                 continue
-            low = first.lower()
-            if low in {"property", "properties", "label", "labels", "name", "relationship", "type"}:
+            if first.lower() in {"property", "properties", "label", "labels", "name", "relationship", "type"}:
                 continue
             values.append(first)
     print(f"[INFO] Loaded {len(values)} items from {csv_path}")
@@ -183,12 +175,6 @@ def read_csv_list(csv_path: str):
 
 
 def load_commands(path: str):
-    """
-    Διαβάζει ένα JSON με λίστα από:
-    { "name": "...", "cwd": "...", "cmd": "..." }
-    και το επιστρέφει ως λίστα dicts.
-    Αν το αρχείο δεν υπάρχει, επιστρέφει [].
-    """
     if not os.path.exists(path):
         print(f"[INFO] Commands file not found ({path}), no external commands will be run.")
         return []
@@ -200,24 +186,25 @@ def load_commands(path: str):
         raise ValueError(f"Commands file {path} must contain a JSON list")
 
     for idx, cmd in enumerate(data):
-        if not isinstance(cmd, dict):
-            raise ValueError(f"Command #{idx} is not an object")
         if "name" not in cmd or "cmd" not in cmd:
             raise ValueError(f"Command #{idx} must have 'name' and 'cmd' fields")
 
     print(f"[INFO] Loaded {len(data)} commands from {path}")
     return data
 
-def run_noise_injection_and_algorithms(dataset_name: str,
-                                       dataset_dir: str,
-                                       neo4j_dir: str,
-                                       version: str,
-                                       node_properties,
-                                       edge_properties,
-                                       relationship_types,
-                                       node_labels,
-                                       commands):
-    global OUTPUT_BASE_DIR, NOISE_LEVELS, LABEL_PERCENTS
+
+def run_noise_injection_and_algorithms(
+    dataset_name: str,
+    dataset_dir: str,
+    neo4j_dir: str,
+    version: str,
+    node_properties,
+    edge_properties,
+    relationship_types,
+    node_labels,
+    commands
+):
+    global OUTPUT_BASE_DIR, NOISE_LEVELS, LABEL_PERCENTS, EVAL_ENABLED
 
     output_dir = os.path.join(OUTPUT_BASE_DIR, dataset_name)
     os.makedirs(output_dir, exist_ok=True)
@@ -227,7 +214,6 @@ def run_noise_injection_and_algorithms(dataset_name: str,
         print(f"Dataset: {dataset_name} | Noise: {noise}%")
         print("=" * 40)
 
-        # Restart DB from clean dump
         stop_neo4j(neo4j_dir)
         dump_file, _ = detect_dump_and_version(dataset_dir)
         load_dump(neo4j_dir, dump_file, version)
@@ -243,11 +229,7 @@ def run_noise_injection_and_algorithms(dataset_name: str,
         frac = noise / 100.0
 
         for prop in node_properties:
-            print(f"Removing node property {prop} with fraction {frac}")
-            query = (
-                f"MATCH (n) WHERE rand() < {frac} AND '{prop}' IN keys(n) "
-                f"REMOVE n.`{prop}`"
-            )
+            query = f"MATCH (n) WHERE rand() < {frac} AND '{prop}' IN keys(n) REMOVE n.`{prop}`"
             cypher(
                 neo4j_dir,
                 query,
@@ -256,35 +238,27 @@ def run_noise_injection_and_algorithms(dataset_name: str,
 
         cypher(
             neo4j_dir,
-            "MATCH (n) UNWIND keys(n) AS k "
-            "RETURN k, count(*) AS cnt ORDER BY k LIMIT 10",
+            "MATCH (n) UNWIND keys(n) AS k RETURN k, count(*) AS cnt ORDER BY k LIMIT 10",
             log_path=os.path.join(output_dir, f"node_props_noise{noise}.txt")
         )
 
         for prop in edge_properties:
-            print(f"Removing relationship property {prop} with fraction {frac}")
-            query = (
-                f"MATCH ()-[r]-() WHERE rand() < {frac} AND '{prop}' IN keys(r) "
-                f"REMOVE r.`{prop}`"
-            )
+            query = f"MATCH ()-[r]-() WHERE rand() < {frac} AND '{prop}' IN keys(r) REMOVE r.`{prop}`"
             cypher(
                 neo4j_dir,
                 query,
                 log_path=os.path.join(output_dir, f"log_noise{noise}_rel_{prop}.txt")
             )
 
-        # Debug relationships
         cypher(
             neo4j_dir,
-            "MATCH ()-[r]-() UNWIND keys(r) AS k "
-            "RETURN k, count(*) AS cnt ORDER BY k LIMIT 10",
+            "MATCH ()-[r]-() UNWIND keys(r) AS k RETURN k, count(*) AS cnt ORDER BY k LIMIT 10",
             log_path=os.path.join(output_dir, f"rel_props_noise{noise}.txt")
         )
 
         cypher(
             neo4j_dir,
-            "MATCH ()-[r]->() RETURN type(r) AS rel_type, count(*) AS cnt "
-            "ORDER BY rel_type LIMIT 10",
+            "MATCH ()-[r]->() RETURN type(r) AS rel_type, count(*) AS cnt ORDER BY rel_type LIMIT 10",
             log_path=os.path.join(output_dir, f"rel_types_noise{noise}.txt")
         )
 
@@ -292,29 +266,23 @@ def run_noise_injection_and_algorithms(dataset_name: str,
             print(f"Removing labels for fraction {perc}")
             if node_labels:
                 labels_str = ":".join(node_labels)
-                query = (
-                    f"MATCH (n) WHERE rand() < {perc} "
-                    f"REMOVE n:{labels_str}"
-                )
+                query = f"MATCH (n) WHERE rand() < {perc} REMOVE n:{labels_str}"
                 cypher(
                     neo4j_dir,
                     query,
                     log_path=os.path.join(output_dir, f"log_noise{noise}_labels{perc}.txt")
                 )
             else:
-                print(f"[INFO] No node_labels for dataset {dataset_name} – skipping label removal.")
+                print(f"[INFO] No node_labels for dataset {dataset_name}")
 
             time.sleep(2)
 
-            # Debug labels
             cypher(
                 neo4j_dir,
-                "MATCH (n) UNWIND labels(n) AS l "
-                "RETURN l, count(*) AS cnt ORDER BY l",
+                "MATCH (n) UNWIND labels(n) AS l RETURN l, count(*) AS cnt ORDER BY l",
                 log_path=os.path.join(output_dir, f"labels_noise{noise}_perc{perc}.txt")
             )
 
-            # === Run user-defined commands ===
             ds_upper = dataset_name.upper()
 
             for cmd_def in commands:
@@ -325,10 +293,47 @@ def run_noise_injection_and_algorithms(dataset_name: str,
                 log_filename = f"output_{ds_upper}_noise{noise}_labels{perc}_{name}.txt"
                 log_path = os.path.join(output_dir, log_filename)
 
-                print(f"Running command '{name}' for dataset={dataset_name}, "
-                      f"noise={noise}, labels={perc}")
+                print(f"Running command '{name}'")
                 run(cmd, cwd=cwd, log_file=log_path)
                 clean_spark_tmp()
+
+                if not EVAL_ENABLED:
+                    print("[EVAL] Disabled – skipping.")
+                    continue
+
+                label_str = f"{perc:.2f}".replace(",", ".")
+                base = f"{ds_upper}_noise{noise}_labels{label_str}_{name.upper()}"
+
+                original_nodes_csv = os.path.join(output_dir, f"original_nodes_{base}.csv")
+                predicted_nodes_csv = os.path.join(output_dir, f"predicted_nodes_{base}.csv")
+                original_edges_csv = os.path.join(output_dir, f"original_edges_{base}.csv")
+                predicted_edges_csv = os.path.join(output_dir, f"predicted_edges_{base}.csv")
+
+                required = [
+                    original_nodes_csv,
+                    predicted_nodes_csv,
+                    original_edges_csv,
+                    predicted_edges_csv
+                ]
+
+                if all(os.path.exists(p) for p in required):
+                    print(
+                        f"[EVAL] Running evaluation for {dataset_name}, "
+                        f"noise={noise}, labels={perc}, method={name}"
+                    )
+                    evaluate_run_from_csvs(
+                        output_dir=output_dir,
+                        dataset=dataset_name,
+                        method=name,
+                        noise=noise,
+                        label_percent=perc,
+                        original_nodes_csv=original_nodes_csv,
+                        predicted_nodes_csv=predicted_nodes_csv,
+                        original_edges_csv=original_edges_csv,
+                        predicted_edges_csv=predicted_edges_csv
+                    )
+                else:
+                    print(f"[EVAL] Missing CSVs → skipping evaluation for method {name}")
 
         stop_neo4j(neo4j_dir)
 
@@ -383,19 +388,15 @@ def load_config(config_path: str):
 
 
 def main():
+    global EVAL_ENABLED
     parser = argparse.ArgumentParser(description="Property Graph Benchmark")
-    parser.add_argument(
-        "--config",
-        "-c",
-        default="benchmark_config.json",
-        help="Path to benchmark_config.json (default: ./benchmark_config.json)"
-    )
+    parser.add_argument("--config", "-c", default="benchmark_config.json")
+    parser.add_argument("--eval", action="store_true", help="Run evaluation if CSVs exist")
     args = parser.parse_args()
+    EVAL_ENABLED = args.eval
 
     load_config(args.config)
-
     os.makedirs(OUTPUT_BASE_DIR, exist_ok=True)
-
     commands = load_commands(COMMANDS_FILE)
 
     for entry in sorted(os.listdir(DATASETS_BASE_DIR)):
