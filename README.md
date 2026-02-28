@@ -1,6 +1,6 @@
 # PG-Schema-Bench
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17801336.svg)](https://doi.org/10.5281/zenodo.17801336)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17801335.svg)](https://doi.org/10.5281/zenodo.17801335)
 
 Benchmarking utilities for schema discovery on property graphs, plus scripts for exporting graph statistics.
 
