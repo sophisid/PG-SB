@@ -1,0 +1,1381 @@
+{
+  "summary_counts": {
+    "nodes": 5485296,
+    "edges": 5720776,
+    "node_types": 16,
+    "edge_types": 16,
+    "node_labels": 16,
+    "edge_labels": 16,
+    "node_patterns": 90,
+    "edge_patterns": 16,
+    "total_properties": 43
+  },
+  "global_stats": {
+    "total_nodes": 5485296,
+    "total_edges": 5720776
+  },
+  "node_labels": [
+    "Abstract",
+    "AbstractCollection",
+    "Affiliation",
+    "Author",
+    "AuthorCollection",
+    "BodyText",
+    "BodyTextCollection",
+    "Citation",
+    "Journal",
+    "License",
+    "Location",
+    "Paper",
+    "PaperID",
+    "Reference",
+    "ReferenceCollection",
+    "Source"
+  ],
+  "node_label_counts": [
+    {
+      "label": "Reference",
+      "count": 2815762
+    },
+    {
+      "label": "Citation",
+      "count": 880891
+    },
+    {
+      "label": "PaperID",
+      "count": 388973
+    },
+    {
+      "label": "Author",
+      "count": 355672
+    },
+    {
+      "label": "BodyText",
+      "count": 283036
+    },
+    {
+      "label": "AbstractCollection",
+      "count": 128492
+    },
+    {
+      "label": "AuthorCollection",
+      "count": 128492
+    },
+    {
+      "label": "BodyTextCollection",
+      "count": 128492
+    },
+    {
+      "label": "Paper",
+      "count": 128492
+    },
+    {
+      "label": "ReferenceCollection",
+      "count": 128492
+    },
+    {
+      "label": "Affiliation",
+      "count": 48913
+    },
+    {
+      "label": "Location",
+      "count": 44504
+    },
+    {
+      "label": "Journal",
+      "count": 15157
+    },
+    {
+      "label": "Abstract",
+      "count": 9878
+    },
+    {
+      "label": "Source",
+      "count": 33
+    },
+    {
+      "label": "License",
+      "count": 17
+    }
+  ],
+  "relationship_types": [
+    "ABSTRACTCOLLECTION_HAS_ABSTRACT",
+    "ABSTRACT_HAS_CITATION",
+    "AFFILIATION_HAS_LOCATION",
+    "AUTHORCOLLECTION_HAS_AUTHOR",
+    "AUTHOR_HAS_AFFILIATION",
+    "BODYTEXTCOLLECTION_HAS_BODYTEXT",
+    "BODYTEXT_HAS_CITATION",
+    "PAPER_HAS_ABSTRACTCOLLECTION",
+    "PAPER_HAS_AUTHORCOLLECTION",
+    "PAPER_HAS_BODYTEXTCOLLECTION",
+    "PAPER_HAS_JOURNAL",
+    "PAPER_HAS_LICENSE",
+    "PAPER_HAS_PAPERID",
+    "PAPER_HAS_REFERENCECOLLECTION",
+    "PAPER_HAS_SOURCE",
+    "REFERENCECOLLECTION_HAS_REFERENCE"
+  ],
+  "relationship_type_counts": [
+    {
+      "relType": "REFERENCECOLLECTION_HAS_REFERENCE",
+      "count": 2815762
+    },
+    {
+      "relType": "BODYTEXT_HAS_CITATION",
+      "count": 878733
+    },
+    {
+      "relType": "PAPER_HAS_PAPERID",
+      "count": 388973
+    },
+    {
+      "relType": "AUTHORCOLLECTION_HAS_AUTHOR",
+      "count": 355672
+    },
+    {
+      "relType": "BODYTEXTCOLLECTION_HAS_BODYTEXT",
+      "count": 283036
+    },
+    {
+      "relType": "PAPER_HAS_ABSTRACTCOLLECTION",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_AUTHORCOLLECTION",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_BODYTEXTCOLLECTION",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_LICENSE",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_REFERENCECOLLECTION",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_SOURCE",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_JOURNAL",
+      "count": 122195
+    },
+    {
+      "relType": "AUTHOR_HAS_AFFILIATION",
+      "count": 48913
+    },
+    {
+      "relType": "AFFILIATION_HAS_LOCATION",
+      "count": 44504
+    },
+    {
+      "relType": "ABSTRACTCOLLECTION_HAS_ABSTRACT",
+      "count": 9878
+    },
+    {
+      "relType": "ABSTRACT_HAS_CITATION",
+      "count": 2158
+    }
+  ],
+  "node_property_keys": [
+    "absCollId",
+    "abstractId",
+    "acId",
+    "affId",
+    "authorId",
+    "bodyCollId",
+    "bodyId",
+    "citId",
+    "cord_uid",
+    "country",
+    "doi",
+    "email",
+    "first",
+    "institution",
+    "journal",
+    "journalId",
+    "laboratory",
+    "last",
+    "licenseId",
+    "locId",
+    "middle",
+    "name",
+    "paperId",
+    "paperRefId",
+    "pmcid",
+    "postcode",
+    "publish_time",
+    "pubmed_id",
+    "refCollId",
+    "refId",
+    "region",
+    "section",
+    "settlement",
+    "sourceId",
+    "source_x",
+    "suffix",
+    "text",
+    "title",
+    "type",
+    "url",
+    "value",
+    "venue",
+    "year"
+  ],
+  "edge_property_keys": [],
+  "all_property_keys": [
+    "absCollId",
+    "abstractId",
+    "acId",
+    "affId",
+    "authorId",
+    "bodyCollId",
+    "bodyId",
+    "citId",
+    "cord_uid",
+    "country",
+    "doi",
+    "email",
+    "first",
+    "institution",
+    "journal",
+    "journalId",
+    "laboratory",
+    "last",
+    "licenseId",
+    "locId",
+    "middle",
+    "name",
+    "paperId",
+    "paperRefId",
+    "pmcid",
+    "postcode",
+    "publish_time",
+    "pubmed_id",
+    "refCollId",
+    "refId",
+    "region",
+    "section",
+    "settlement",
+    "sourceId",
+    "source_x",
+    "suffix",
+    "text",
+    "title",
+    "type",
+    "url",
+    "value",
+    "venue",
+    "year"
+  ],
+  "node_types": [
+    {
+      "nodeType": "Abstract",
+      "properties": [
+        "abstractId",
+        "text"
+      ]
+    },
+    {
+      "nodeType": "AbstractCollection",
+      "properties": [
+        "absCollId"
+      ]
+    },
+    {
+      "nodeType": "Affiliation",
+      "properties": [
+        "institution",
+        "laboratory",
+        "affId"
+      ]
+    },
+    {
+      "nodeType": "Author",
+      "properties": [
+        "middle",
+        "authorId",
+        "last",
+        "suffix",
+        "first",
+        "email"
+      ]
+    },
+    {
+      "nodeType": "AuthorCollection",
+      "properties": [
+        "acId"
+      ]
+    },
+    {
+      "nodeType": "BodyText",
+      "properties": [
+        "section",
+        "bodyId",
+        "text"
+      ]
+    },
+    {
+      "nodeType": "BodyTextCollection",
+      "properties": [
+        "bodyCollId"
+      ]
+    },
+    {
+      "nodeType": "Citation",
+      "properties": [
+        "citId",
+        "text"
+      ]
+    },
+    {
+      "nodeType": "Journal",
+      "properties": [
+        "name",
+        "journalId"
+      ]
+    },
+    {
+      "nodeType": "License",
+      "properties": [
+        "licenseId",
+        "name"
+      ]
+    },
+    {
+      "nodeType": "Location",
+      "properties": [
+        "postcode",
+        "country",
+        "region",
+        "locId",
+        "settlement"
+      ]
+    },
+    {
+      "nodeType": "Paper",
+      "properties": [
+        "pubmed_id",
+        "cord_uid",
+        "source_x",
+        "journal",
+        "publish_time",
+        "title",
+        "pmcid",
+        "paperId",
+        "url",
+        "doi"
+      ]
+    },
+    {
+      "nodeType": "PaperID",
+      "properties": [
+        "type",
+        "paperRefId",
+        "value"
+      ]
+    },
+    {
+      "nodeType": "Reference",
+      "properties": [
+        "name",
+        "venue",
+        "refId",
+        "title",
+        "year"
+      ]
+    },
+    {
+      "nodeType": "ReferenceCollection",
+      "properties": [
+        "refCollId"
+      ]
+    },
+    {
+      "nodeType": "Source",
+      "properties": [
+        "sourceId",
+        "name"
+      ]
+    }
+  ],
+  "node_type_counts": [
+    {
+      "nodeType": "Reference",
+      "count": 2815762
+    },
+    {
+      "nodeType": "Citation",
+      "count": 880891
+    },
+    {
+      "nodeType": "PaperID",
+      "count": 388973
+    },
+    {
+      "nodeType": "Author",
+      "count": 355672
+    },
+    {
+      "nodeType": "BodyText",
+      "count": 283036
+    },
+    {
+      "nodeType": "AbstractCollection",
+      "count": 128492
+    },
+    {
+      "nodeType": "AuthorCollection",
+      "count": 128492
+    },
+    {
+      "nodeType": "BodyTextCollection",
+      "count": 128492
+    },
+    {
+      "nodeType": "Paper",
+      "count": 128492
+    },
+    {
+      "nodeType": "ReferenceCollection",
+      "count": 128492
+    },
+    {
+      "nodeType": "Affiliation",
+      "count": 48913
+    },
+    {
+      "nodeType": "Location",
+      "count": 44504
+    },
+    {
+      "nodeType": "Journal",
+      "count": 15157
+    },
+    {
+      "nodeType": "Abstract",
+      "count": 9878
+    },
+    {
+      "nodeType": "Source",
+      "count": 33
+    },
+    {
+      "nodeType": "License",
+      "count": 17
+    }
+  ],
+  "node_patterns": [
+    {
+      "nodeType": "Reference",
+      "propSet": "name:refId:title:venue:year",
+      "count": 2071878
+    },
+    {
+      "nodeType": "Citation",
+      "propSet": "citId",
+      "count": 701835
+    },
+    {
+      "nodeType": "PaperID",
+      "propSet": "paperRefId:type:value",
+      "count": 388973
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "refId:title:venue:year",
+      "count": 320359
+    },
+    {
+      "nodeType": "BodyText",
+      "propSet": "bodyId:section:text",
+      "count": 248970
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:first:last",
+      "count": 205690
+    },
+    {
+      "nodeType": "Citation",
+      "propSet": "citId:text",
+      "count": 179056
+    },
+    {
+      "nodeType": "AbstractCollection",
+      "propSet": "absCollId",
+      "count": 128492
+    },
+    {
+      "nodeType": "AuthorCollection",
+      "propSet": "acId",
+      "count": 128492
+    },
+    {
+      "nodeType": "BodyTextCollection",
+      "propSet": "bodyCollId",
+      "count": 128492
+    },
+    {
+      "nodeType": "ReferenceCollection",
+      "propSet": "refCollId",
+      "count": 128492
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "refId",
+      "count": 101046
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "name:refId:venue:year",
+      "count": 81675
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:first:last:middle",
+      "count": 79900
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "name:refId:title:year",
+      "count": 60632
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:email:first:last",
+      "count": 44862
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "refId:venue:year",
+      "count": 40670
+    },
+    {
+      "nodeType": "Affiliation",
+      "propSet": "affId:institution",
+      "count": 39850
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:journal:paperId:publish_time:pubmed_id:source_x:title",
+      "count": 34809
+    },
+    {
+      "nodeType": "BodyText",
+      "propSet": "bodyId:text",
+      "count": 33805
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:journal:paperId:pmcid:publish_time:pubmed_id:source_x:title:url",
+      "count": 30706
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "refId:title",
+      "count": 27951
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "name:refId:title",
+      "count": 25992
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "name:refId:title:venue",
+      "count": 23290
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "name:refId:year",
+      "count": 22395
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:email:first:last:middle",
+      "count": 18496
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "refId:title:year",
+      "count": 17268
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:journal:paperId:publish_time:pubmed_id:source_x:title",
+      "count": 16908
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:journal:paperId:pmcid:publish_time:pubmed_id:source_x:title",
+      "count": 15850
+    },
+    {
+      "nodeType": "Journal",
+      "propSet": "journalId:name",
+      "count": 15157
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:journal:paperId:pmcid:publish_time:source_x:title:url",
+      "count": 12608
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "country:locId:settlement",
+      "count": 12461
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "country:locId:postcode:settlement",
+      "count": 11707
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "refId:title:venue",
+      "count": 10527
+    },
+    {
+      "nodeType": "Abstract",
+      "propSet": "abstractId:text",
+      "count": 9878
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:journal:paperId:publish_time:source_x:title",
+      "count": 8524
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "refId:year",
+      "count": 7132
+    },
+    {
+      "nodeType": "Affiliation",
+      "propSet": "affId:institution:laboratory",
+      "count": 7061
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "country:locId:postcode:region:settlement",
+      "count": 4181
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "country:locId:region:settlement",
+      "count": 3949
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "refId:venue",
+      "count": 3264
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "country:locId",
+      "count": 3219
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:first:middle",
+      "count": 2067
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "locId:settlement",
+      "count": 2053
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "locId:postcode:region:settlement",
+      "count": 2051
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:paperId:publish_time:source_x:title:url",
+      "count": 2012
+    },
+    {
+      "nodeType": "Affiliation",
+      "propSet": "affId:laboratory",
+      "count": 2002
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:first",
+      "count": 1947
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:last",
+      "count": 1874
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "locId:region:settlement",
+      "count": 1863
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:paperId:publish_time:source_x:title",
+      "count": 1284
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:paperId:publish_time:source_x:title:url",
+      "count": 1273
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "name:refId",
+      "count": 1098
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:journal:paperId:publish_time:source_x:title",
+      "count": 1091
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "locId:postcode:settlement",
+      "count": 887
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:journal:paperId:publish_time:source_x:title:url",
+      "count": 847
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:paperId:pmcid:publish_time:source_x:title:url",
+      "count": 841
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:paperId:publish_time:source_x:title",
+      "count": 661
+    },
+    {
+      "nodeType": "Reference",
+      "propSet": "name:refId:venue",
+      "count": 585
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "country:locId:region",
+      "count": 569
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "country:locId:postcode:region",
+      "count": 471
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "locId:postcode:region",
+      "count": 367
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:journal:paperId:pmcid:publish_time:pubmed_id:source_x:title:url",
+      "count": 342
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:first:last:middle:suffix",
+      "count": 325
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "country:locId:postcode",
+      "count": 322
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:journal:paperId:publish_time:pubmed_id:source_x:title:url",
+      "count": 264
+    },
+    {
+      "nodeType": "BodyText",
+      "propSet": "bodyId:section",
+      "count": 261
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "locId:region",
+      "count": 227
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:last:middle",
+      "count": 210
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "locId:postcode",
+      "count": 177
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:journal:paperId:pmcid:publish_time:source_x:title",
+      "count": 153
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:paperId:pmcid:publish_time:pubmed_id:source_x:title:url",
+      "count": 128
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:first:last:suffix",
+      "count": 101
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:paperId:pmcid:publish_time:pubmed_id:source_x:title:url",
+      "count": 89
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:email:first:last:middle:suffix",
+      "count": 80
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:journal:paperId:pmcid:publish_time:source_x:title:url",
+      "count": 48
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:email:first:last:suffix",
+      "count": 41
+    },
+    {
+      "nodeType": "Source",
+      "propSet": "name:sourceId",
+      "count": 33
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:journal:paperId:publish_time:pubmed_id:source_x",
+      "count": 28
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:email:last",
+      "count": 25
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:middle",
+      "count": 21
+    },
+    {
+      "nodeType": "License",
+      "propSet": "licenseId:name",
+      "count": 17
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:email:first",
+      "count": 16
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:email:first:middle",
+      "count": 15
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:journal:paperId:source_x:title",
+      "count": 8
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:paperId:pmcid:publish_time:source_x:title:url",
+      "count": 6
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:journal:paperId:publish_time:source_x:title:url",
+      "count": 5
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:doi:journal:paperId:source_x:title:url",
+      "count": 4
+    },
+    {
+      "nodeType": "Paper",
+      "propSet": "cord_uid:paperId:source_x:title",
+      "count": 3
+    },
+    {
+      "nodeType": "Author",
+      "propSet": "authorId:email:last:middle",
+      "count": 2
+    }
+  ],
+  "edge_types": [
+    {
+      "relType": "ABSTRACTCOLLECTION_HAS_ABSTRACT",
+      "sources": [
+        "AbstractCollection"
+      ],
+      "targets": [
+        "Abstract"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "ABSTRACT_HAS_CITATION",
+      "sources": [
+        "Abstract"
+      ],
+      "targets": [
+        "Citation"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "AFFILIATION_HAS_LOCATION",
+      "sources": [
+        "Affiliation"
+      ],
+      "targets": [
+        "Location"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "AUTHORCOLLECTION_HAS_AUTHOR",
+      "sources": [
+        "AuthorCollection"
+      ],
+      "targets": [
+        "Author"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "AUTHOR_HAS_AFFILIATION",
+      "sources": [
+        "Author"
+      ],
+      "targets": [
+        "Affiliation"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "BODYTEXTCOLLECTION_HAS_BODYTEXT",
+      "sources": [
+        "BodyTextCollection"
+      ],
+      "targets": [
+        "BodyText"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "BODYTEXT_HAS_CITATION",
+      "sources": [
+        "BodyText"
+      ],
+      "targets": [
+        "Citation"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PAPER_HAS_ABSTRACTCOLLECTION",
+      "sources": [
+        "Paper"
+      ],
+      "targets": [
+        "AbstractCollection"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PAPER_HAS_AUTHORCOLLECTION",
+      "sources": [
+        "Paper"
+      ],
+      "targets": [
+        "AuthorCollection"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PAPER_HAS_BODYTEXTCOLLECTION",
+      "sources": [
+        "Paper"
+      ],
+      "targets": [
+        "BodyTextCollection"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PAPER_HAS_JOURNAL",
+      "sources": [
+        "Paper"
+      ],
+      "targets": [
+        "Journal"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PAPER_HAS_LICENSE",
+      "sources": [
+        "Paper"
+      ],
+      "targets": [
+        "License"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PAPER_HAS_PAPERID",
+      "sources": [
+        "Paper"
+      ],
+      "targets": [
+        "PaperID"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PAPER_HAS_REFERENCECOLLECTION",
+      "sources": [
+        "Paper"
+      ],
+      "targets": [
+        "ReferenceCollection"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PAPER_HAS_SOURCE",
+      "sources": [
+        "Paper"
+      ],
+      "targets": [
+        "Source"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "REFERENCECOLLECTION_HAS_REFERENCE",
+      "sources": [
+        "ReferenceCollection"
+      ],
+      "targets": [
+        "Reference"
+      ],
+      "properties": []
+    }
+  ],
+  "edge_type_counts": [
+    {
+      "relType": "REFERENCECOLLECTION_HAS_REFERENCE",
+      "sourceLabelCombo": "ReferenceCollection",
+      "targetLabelCombo": "Reference",
+      "count": 2815762
+    },
+    {
+      "relType": "BODYTEXT_HAS_CITATION",
+      "sourceLabelCombo": "BodyText",
+      "targetLabelCombo": "Citation",
+      "count": 878733
+    },
+    {
+      "relType": "PAPER_HAS_PAPERID",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "PaperID",
+      "count": 388973
+    },
+    {
+      "relType": "AUTHORCOLLECTION_HAS_AUTHOR",
+      "sourceLabelCombo": "AuthorCollection",
+      "targetLabelCombo": "Author",
+      "count": 355672
+    },
+    {
+      "relType": "BODYTEXTCOLLECTION_HAS_BODYTEXT",
+      "sourceLabelCombo": "BodyTextCollection",
+      "targetLabelCombo": "BodyText",
+      "count": 283036
+    },
+    {
+      "relType": "PAPER_HAS_ABSTRACTCOLLECTION",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "AbstractCollection",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_AUTHORCOLLECTION",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "AuthorCollection",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_BODYTEXTCOLLECTION",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "BodyTextCollection",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_LICENSE",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "License",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_REFERENCECOLLECTION",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "ReferenceCollection",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_SOURCE",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "Source",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_JOURNAL",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "Journal",
+      "count": 122195
+    },
+    {
+      "relType": "AUTHOR_HAS_AFFILIATION",
+      "sourceLabelCombo": "Author",
+      "targetLabelCombo": "Affiliation",
+      "count": 48913
+    },
+    {
+      "relType": "AFFILIATION_HAS_LOCATION",
+      "sourceLabelCombo": "Affiliation",
+      "targetLabelCombo": "Location",
+      "count": 44504
+    },
+    {
+      "relType": "ABSTRACTCOLLECTION_HAS_ABSTRACT",
+      "sourceLabelCombo": "AbstractCollection",
+      "targetLabelCombo": "Abstract",
+      "count": 9878
+    },
+    {
+      "relType": "ABSTRACT_HAS_CITATION",
+      "sourceLabelCombo": "Abstract",
+      "targetLabelCombo": "Citation",
+      "count": 2158
+    }
+  ],
+  "edge_patterns": [
+    {
+      "relType": "REFERENCECOLLECTION_HAS_REFERENCE",
+      "sourceLabelCombo": "ReferenceCollection",
+      "targetLabelCombo": "Reference",
+      "propSet": "",
+      "count": 2815762
+    },
+    {
+      "relType": "BODYTEXT_HAS_CITATION",
+      "sourceLabelCombo": "BodyText",
+      "targetLabelCombo": "Citation",
+      "propSet": "",
+      "count": 878733
+    },
+    {
+      "relType": "PAPER_HAS_PAPERID",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "PaperID",
+      "propSet": "",
+      "count": 388973
+    },
+    {
+      "relType": "AUTHORCOLLECTION_HAS_AUTHOR",
+      "sourceLabelCombo": "AuthorCollection",
+      "targetLabelCombo": "Author",
+      "propSet": "",
+      "count": 355672
+    },
+    {
+      "relType": "BODYTEXTCOLLECTION_HAS_BODYTEXT",
+      "sourceLabelCombo": "BodyTextCollection",
+      "targetLabelCombo": "BodyText",
+      "propSet": "",
+      "count": 283036
+    },
+    {
+      "relType": "PAPER_HAS_ABSTRACTCOLLECTION",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "AbstractCollection",
+      "propSet": "",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_AUTHORCOLLECTION",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "AuthorCollection",
+      "propSet": "",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_BODYTEXTCOLLECTION",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "BodyTextCollection",
+      "propSet": "",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_LICENSE",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "License",
+      "propSet": "",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_REFERENCECOLLECTION",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "ReferenceCollection",
+      "propSet": "",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_SOURCE",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "Source",
+      "propSet": "",
+      "count": 128492
+    },
+    {
+      "relType": "PAPER_HAS_JOURNAL",
+      "sourceLabelCombo": "Paper",
+      "targetLabelCombo": "Journal",
+      "propSet": "",
+      "count": 122195
+    },
+    {
+      "relType": "AUTHOR_HAS_AFFILIATION",
+      "sourceLabelCombo": "Author",
+      "targetLabelCombo": "Affiliation",
+      "propSet": "",
+      "count": 48913
+    },
+    {
+      "relType": "AFFILIATION_HAS_LOCATION",
+      "sourceLabelCombo": "Affiliation",
+      "targetLabelCombo": "Location",
+      "propSet": "",
+      "count": 44504
+    },
+    {
+      "relType": "ABSTRACTCOLLECTION_HAS_ABSTRACT",
+      "sourceLabelCombo": "AbstractCollection",
+      "targetLabelCombo": "Abstract",
+      "propSet": "",
+      "count": 9878
+    },
+    {
+      "relType": "ABSTRACT_HAS_CITATION",
+      "sourceLabelCombo": "Abstract",
+      "targetLabelCombo": "Citation",
+      "propSet": "",
+      "count": 2158
+    }
+  ],
+  "node_types_properties_counts": [
+    {
+      "nodeType": "Reference",
+      "count": 2815762,
+      "properties": "name|refId|title|venue|year"
+    },
+    {
+      "nodeType": "Citation",
+      "count": 880891,
+      "properties": "citId|text"
+    },
+    {
+      "nodeType": "PaperID",
+      "count": 388973,
+      "properties": "paperRefId|type|value"
+    },
+    {
+      "nodeType": "Author",
+      "count": 355672,
+      "properties": "authorId|email|first|last|middle|suffix"
+    },
+    {
+      "nodeType": "BodyText",
+      "count": 283036,
+      "properties": "bodyId|section|text"
+    },
+    {
+      "nodeType": "AbstractCollection",
+      "count": 128492,
+      "properties": "absCollId"
+    },
+    {
+      "nodeType": "AuthorCollection",
+      "count": 128492,
+      "properties": "acId"
+    },
+    {
+      "nodeType": "BodyTextCollection",
+      "count": 128492,
+      "properties": "bodyCollId"
+    },
+    {
+      "nodeType": "Paper",
+      "count": 128492,
+      "properties": "cord_uid|doi|journal|paperId|pmcid|publish_time|pubmed_id|source_x|title|url"
+    },
+    {
+      "nodeType": "ReferenceCollection",
+      "count": 128492,
+      "properties": "refCollId"
+    },
+    {
+      "nodeType": "Affiliation",
+      "count": 48913,
+      "properties": "affId|institution|laboratory"
+    },
+    {
+      "nodeType": "Location",
+      "count": 44504,
+      "properties": "country|locId|postcode|region|settlement"
+    },
+    {
+      "nodeType": "Journal",
+      "count": 15157,
+      "properties": "journalId|name"
+    },
+    {
+      "nodeType": "Abstract",
+      "count": 9878,
+      "properties": "abstractId|text"
+    },
+    {
+      "nodeType": "Source",
+      "count": 33,
+      "properties": "name|sourceId"
+    },
+    {
+      "nodeType": "License",
+      "count": 17,
+      "properties": "licenseId|name"
+    }
+  ]
+}

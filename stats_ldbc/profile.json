@@ -1,0 +1,835 @@
+{
+  "summary_counts": {
+    "nodes": 3181724,
+    "edges": 12505476,
+    "node_types": 8,
+    "edge_types": 21,
+    "node_labels": 8,
+    "edge_labels": 15,
+    "node_patterns": 9,
+    "edge_patterns": 21,
+    "total_properties": 19
+  },
+  "global_stats": {
+    "total_nodes": 3181724,
+    "total_edges": 12505476
+  },
+  "node_labels": [
+    "Comment",
+    "Forum",
+    "Organisation",
+    "Person",
+    "Place",
+    "Post",
+    "Tag",
+    "TagClass"
+  ],
+  "node_label_counts": [
+    {
+      "label": "Comment",
+      "count": 2052169
+    },
+    {
+      "label": "Post",
+      "count": 1003605
+    },
+    {
+      "label": "Forum",
+      "count": 90492
+    },
+    {
+      "label": "Tag",
+      "count": 16080
+    },
+    {
+      "label": "Person",
+      "count": 9892
+    },
+    {
+      "label": "Organisation",
+      "count": 7955
+    },
+    {
+      "label": "Place",
+      "count": 1460
+    },
+    {
+      "label": "TagClass",
+      "count": 71
+    }
+  ],
+  "relationship_types": [
+    "CONTAINER_OF",
+    "HAS_CREATOR",
+    "HAS_INTEREST",
+    "HAS_MEMBER",
+    "HAS_MODERATOR",
+    "HAS_TAG",
+    "HAS_TYPE",
+    "IS_LOCATED_IN",
+    "IS_PART_OF",
+    "IS_SUBCLASS_OF",
+    "KNOWS",
+    "LIKES",
+    "REPLY_OF",
+    "STUDIES_AT",
+    "WORKS_AT"
+  ],
+  "relationship_type_counts": [
+    {
+      "relType": "HAS_CREATOR",
+      "count": 3055774
+    },
+    {
+      "relType": "LIKES",
+      "count": 2190095
+    },
+    {
+      "relType": "REPLY_OF",
+      "count": 2052169
+    },
+    {
+      "relType": "HAS_MEMBER",
+      "count": 1611869
+    },
+    {
+      "relType": "HAS_TAG",
+      "count": 1023024
+    },
+    {
+      "relType": "IS_LOCATED_IN",
+      "count": 1021452
+    },
+    {
+      "relType": "CONTAINER_OF",
+      "count": 1003605
+    },
+    {
+      "relType": "HAS_INTEREST",
+      "count": 229166
+    },
+    {
+      "relType": "KNOWS",
+      "count": 180623
+    },
+    {
+      "relType": "HAS_MODERATOR",
+      "count": 90492
+    },
+    {
+      "relType": "WORKS_AT",
+      "count": 21654
+    },
+    {
+      "relType": "HAS_TYPE",
+      "count": 16080
+    },
+    {
+      "relType": "STUDIES_AT",
+      "count": 7949
+    },
+    {
+      "relType": "IS_PART_OF",
+      "count": 1454
+    },
+    {
+      "relType": "IS_SUBCLASS_OF",
+      "count": 70
+    }
+  ],
+  "node_property_keys": [
+    "birthday",
+    "browserUsed",
+    "content",
+    "creationDate",
+    "firstName",
+    "gender",
+    "id",
+    "imageFile",
+    "language",
+    "lastName",
+    "length",
+    "locationIP",
+    "name",
+    "title",
+    "type",
+    "url"
+  ],
+  "edge_property_keys": [
+    "classYear",
+    "creationDate",
+    "joinDate",
+    "workFrom"
+  ],
+  "all_property_keys": [
+    "birthday",
+    "browserUsed",
+    "classYear",
+    "content",
+    "creationDate",
+    "firstName",
+    "gender",
+    "id",
+    "imageFile",
+    "joinDate",
+    "language",
+    "lastName",
+    "length",
+    "locationIP",
+    "name",
+    "title",
+    "type",
+    "url",
+    "workFrom"
+  ],
+  "node_types": [
+    {
+      "nodeType": "Comment",
+      "properties": [
+        "browserUsed",
+        "length",
+        "locationIP",
+        "id",
+        "creationDate",
+        "content"
+      ]
+    },
+    {
+      "nodeType": "Forum",
+      "properties": [
+        "title",
+        "creationDate",
+        "id"
+      ]
+    },
+    {
+      "nodeType": "Organisation",
+      "properties": [
+        "name",
+        "id",
+        "type",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "Person",
+      "properties": [
+        "birthday",
+        "firstName",
+        "lastName",
+        "gender",
+        "browserUsed",
+        "locationIP",
+        "id",
+        "creationDate"
+      ]
+    },
+    {
+      "nodeType": "Place",
+      "properties": [
+        "name",
+        "id",
+        "type",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "Post",
+      "properties": [
+        "imageFile",
+        "browserUsed",
+        "length",
+        "locationIP",
+        "language",
+        "id",
+        "creationDate",
+        "content"
+      ]
+    },
+    {
+      "nodeType": "Tag",
+      "properties": [
+        "name",
+        "url",
+        "id"
+      ]
+    },
+    {
+      "nodeType": "TagClass",
+      "properties": [
+        "name",
+        "url",
+        "id"
+      ]
+    }
+  ],
+  "node_type_counts": [
+    {
+      "nodeType": "Comment",
+      "count": 2052169
+    },
+    {
+      "nodeType": "Post",
+      "count": 1003605
+    },
+    {
+      "nodeType": "Forum",
+      "count": 90492
+    },
+    {
+      "nodeType": "Tag",
+      "count": 16080
+    },
+    {
+      "nodeType": "Person",
+      "count": 9892
+    },
+    {
+      "nodeType": "Organisation",
+      "count": 7955
+    },
+    {
+      "nodeType": "Place",
+      "count": 1460
+    },
+    {
+      "nodeType": "TagClass",
+      "count": 71
+    }
+  ],
+  "node_patterns": [
+    {
+      "nodeType": "Comment",
+      "propSet": "browserUsed:content:creationDate:id:length:locationIP",
+      "count": 2052169
+    },
+    {
+      "nodeType": "Post",
+      "propSet": "browserUsed:creationDate:id:imageFile:length:locationIP",
+      "count": 796633
+    },
+    {
+      "nodeType": "Post",
+      "propSet": "browserUsed:content:creationDate:id:language:length:locationIP",
+      "count": 206972
+    },
+    {
+      "nodeType": "Forum",
+      "propSet": "creationDate:id:title",
+      "count": 90492
+    },
+    {
+      "nodeType": "Tag",
+      "propSet": "id:name:url",
+      "count": 16080
+    },
+    {
+      "nodeType": "Person",
+      "propSet": "birthday:browserUsed:creationDate:firstName:gender:id:lastName:locationIP",
+      "count": 9892
+    },
+    {
+      "nodeType": "Organisation",
+      "propSet": "id:name:type:url",
+      "count": 7955
+    },
+    {
+      "nodeType": "Place",
+      "propSet": "id:name:type:url",
+      "count": 1460
+    },
+    {
+      "nodeType": "TagClass",
+      "propSet": "id:name:url",
+      "count": 71
+    }
+  ],
+  "edge_types": [
+    {
+      "relType": "CONTAINER_OF",
+      "sources": [
+        "Forum"
+      ],
+      "targets": [
+        "Post"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "HAS_CREATOR",
+      "sources": [
+        "Post",
+        "Person"
+      ],
+      "targets": [
+        "Person",
+        "Comment"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "HAS_INTEREST",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Tag"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "HAS_MEMBER",
+      "sources": [
+        "Forum"
+      ],
+      "targets": [
+        "Person"
+      ],
+      "properties": [
+        "joinDate"
+      ]
+    },
+    {
+      "relType": "HAS_MODERATOR",
+      "sources": [
+        "Forum"
+      ],
+      "targets": [
+        "Person"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "HAS_TAG",
+      "sources": [
+        "Post",
+        "Forum"
+      ],
+      "targets": [
+        "Tag"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "HAS_TYPE",
+      "sources": [
+        "Tag"
+      ],
+      "targets": [
+        "TagClass"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "IS_LOCATED_IN",
+      "sources": [
+        "Organisation",
+        "Post",
+        "Person"
+      ],
+      "targets": [
+        "Place"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "IS_PART_OF",
+      "sources": [
+        "Place"
+      ],
+      "targets": [
+        "Place"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "IS_SUBCLASS_OF",
+      "sources": [
+        "TagClass"
+      ],
+      "targets": [
+        "TagClass"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "KNOWS",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Person"
+      ],
+      "properties": [
+        "creationDate"
+      ]
+    },
+    {
+      "relType": "LIKES",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Comment",
+        "Post"
+      ],
+      "properties": [
+        "creationDate"
+      ]
+    },
+    {
+      "relType": "REPLY_OF",
+      "sources": [
+        "Comment"
+      ],
+      "targets": [
+        "Post",
+        "Comment"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "STUDIES_AT",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Organisation"
+      ],
+      "properties": [
+        "classYear"
+      ]
+    },
+    {
+      "relType": "WORKS_AT",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Organisation"
+      ],
+      "properties": [
+        "workFrom"
+      ]
+    }
+  ],
+  "edge_type_counts": [
+    {
+      "relType": "HAS_CREATOR",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Comment",
+      "count": 2052169
+    },
+    {
+      "relType": "HAS_MEMBER",
+      "sourceLabelCombo": "Forum",
+      "targetLabelCombo": "Person",
+      "count": 1611869
+    },
+    {
+      "relType": "LIKES",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Comment",
+      "count": 1438418
+    },
+    {
+      "relType": "REPLY_OF",
+      "sourceLabelCombo": "Comment",
+      "targetLabelCombo": "Comment",
+      "count": 1040749
+    },
+    {
+      "relType": "REPLY_OF",
+      "sourceLabelCombo": "Comment",
+      "targetLabelCombo": "Post",
+      "count": 1011420
+    },
+    {
+      "relType": "CONTAINER_OF",
+      "sourceLabelCombo": "Forum",
+      "targetLabelCombo": "Post",
+      "count": 1003605
+    },
+    {
+      "relType": "HAS_CREATOR",
+      "sourceLabelCombo": "Post",
+      "targetLabelCombo": "Person",
+      "count": 1003605
+    },
+    {
+      "relType": "IS_LOCATED_IN",
+      "sourceLabelCombo": "Post",
+      "targetLabelCombo": "Place",
+      "count": 1003605
+    },
+    {
+      "relType": "LIKES",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Post",
+      "count": 751677
+    },
+    {
+      "relType": "HAS_TAG",
+      "sourceLabelCombo": "Post",
+      "targetLabelCombo": "Tag",
+      "count": 713258
+    },
+    {
+      "relType": "HAS_TAG",
+      "sourceLabelCombo": "Forum",
+      "targetLabelCombo": "Tag",
+      "count": 309766
+    },
+    {
+      "relType": "HAS_INTEREST",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Tag",
+      "count": 229166
+    },
+    {
+      "relType": "KNOWS",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Person",
+      "count": 180623
+    },
+    {
+      "relType": "HAS_MODERATOR",
+      "sourceLabelCombo": "Forum",
+      "targetLabelCombo": "Person",
+      "count": 90492
+    },
+    {
+      "relType": "WORKS_AT",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Organisation",
+      "count": 21654
+    },
+    {
+      "relType": "HAS_TYPE",
+      "sourceLabelCombo": "Tag",
+      "targetLabelCombo": "TagClass",
+      "count": 16080
+    },
+    {
+      "relType": "IS_LOCATED_IN",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Place",
+      "count": 9892
+    },
+    {
+      "relType": "IS_LOCATED_IN",
+      "sourceLabelCombo": "Organisation",
+      "targetLabelCombo": "Place",
+      "count": 7955
+    },
+    {
+      "relType": "STUDIES_AT",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Organisation",
+      "count": 7949
+    },
+    {
+      "relType": "IS_PART_OF",
+      "sourceLabelCombo": "Place",
+      "targetLabelCombo": "Place",
+      "count": 1454
+    },
+    {
+      "relType": "IS_SUBCLASS_OF",
+      "sourceLabelCombo": "TagClass",
+      "targetLabelCombo": "TagClass",
+      "count": 70
+    }
+  ],
+  "edge_patterns": [
+    {
+      "relType": "HAS_CREATOR",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Comment",
+      "propSet": "",
+      "count": 2052169
+    },
+    {
+      "relType": "HAS_MEMBER",
+      "sourceLabelCombo": "Forum",
+      "targetLabelCombo": "Person",
+      "propSet": "joinDate",
+      "count": 1611869
+    },
+    {
+      "relType": "LIKES",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Comment",
+      "propSet": "creationDate",
+      "count": 1438418
+    },
+    {
+      "relType": "REPLY_OF",
+      "sourceLabelCombo": "Comment",
+      "targetLabelCombo": "Comment",
+      "propSet": "",
+      "count": 1040749
+    },
+    {
+      "relType": "REPLY_OF",
+      "sourceLabelCombo": "Comment",
+      "targetLabelCombo": "Post",
+      "propSet": "",
+      "count": 1011420
+    },
+    {
+      "relType": "CONTAINER_OF",
+      "sourceLabelCombo": "Forum",
+      "targetLabelCombo": "Post",
+      "propSet": "",
+      "count": 1003605
+    },
+    {
+      "relType": "HAS_CREATOR",
+      "sourceLabelCombo": "Post",
+      "targetLabelCombo": "Person",
+      "propSet": "",
+      "count": 1003605
+    },
+    {
+      "relType": "IS_LOCATED_IN",
+      "sourceLabelCombo": "Post",
+      "targetLabelCombo": "Place",
+      "propSet": "",
+      "count": 1003605
+    },
+    {
+      "relType": "LIKES",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Post",
+      "propSet": "creationDate",
+      "count": 751677
+    },
+    {
+      "relType": "HAS_TAG",
+      "sourceLabelCombo": "Post",
+      "targetLabelCombo": "Tag",
+      "propSet": "",
+      "count": 713258
+    },
+    {
+      "relType": "HAS_TAG",
+      "sourceLabelCombo": "Forum",
+      "targetLabelCombo": "Tag",
+      "propSet": "",
+      "count": 309766
+    },
+    {
+      "relType": "HAS_INTEREST",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Tag",
+      "propSet": "",
+      "count": 229166
+    },
+    {
+      "relType": "KNOWS",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Person",
+      "propSet": "creationDate",
+      "count": 180623
+    },
+    {
+      "relType": "HAS_MODERATOR",
+      "sourceLabelCombo": "Forum",
+      "targetLabelCombo": "Person",
+      "propSet": "",
+      "count": 90492
+    },
+    {
+      "relType": "WORKS_AT",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Organisation",
+      "propSet": "workFrom",
+      "count": 21654
+    },
+    {
+      "relType": "HAS_TYPE",
+      "sourceLabelCombo": "Tag",
+      "targetLabelCombo": "TagClass",
+      "propSet": "",
+      "count": 16080
+    },
+    {
+      "relType": "IS_LOCATED_IN",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Place",
+      "propSet": "",
+      "count": 9892
+    },
+    {
+      "relType": "IS_LOCATED_IN",
+      "sourceLabelCombo": "Organisation",
+      "targetLabelCombo": "Place",
+      "propSet": "",
+      "count": 7955
+    },
+    {
+      "relType": "STUDIES_AT",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Organisation",
+      "propSet": "classYear",
+      "count": 7949
+    },
+    {
+      "relType": "IS_PART_OF",
+      "sourceLabelCombo": "Place",
+      "targetLabelCombo": "Place",
+      "propSet": "",
+      "count": 1454
+    },
+    {
+      "relType": "IS_SUBCLASS_OF",
+      "sourceLabelCombo": "TagClass",
+      "targetLabelCombo": "TagClass",
+      "propSet": "",
+      "count": 70
+    }
+  ],
+  "node_types_properties_counts": [
+    {
+      "nodeType": "Comment",
+      "count": 2052169,
+      "properties": "browserUsed|content|creationDate|id|length|locationIP"
+    },
+    {
+      "nodeType": "Post",
+      "count": 1003605,
+      "properties": "browserUsed|content|creationDate|id|imageFile|language|length|locationIP"
+    },
+    {
+      "nodeType": "Forum",
+      "count": 90492,
+      "properties": "creationDate|id|title"
+    },
+    {
+      "nodeType": "Tag",
+      "count": 16080,
+      "properties": "id|name|url"
+    },
+    {
+      "nodeType": "Person",
+      "count": 9892,
+      "properties": "birthday|browserUsed|creationDate|firstName|gender|id|lastName|locationIP"
+    },
+    {
+      "nodeType": "Organisation",
+      "count": 7955,
+      "properties": "id|name|type|url"
+    },
+    {
+      "nodeType": "Place",
+      "count": 1460,
+      "properties": "id|name|type|url"
+    },
+    {
+      "nodeType": "TagClass",
+      "count": 71,
+      "properties": "id|name|url"
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "summary_counts": {
+    "nodes": 4680870,
+    "edges": 10076938,
+    "node_types": 5,
+    "edge_types": 9,
+    "node_labels": 5,
+    "edge_labels": 6,
+    "node_patterns": 6,
+    "edge_patterns": 9,
+    "total_properties": 7
+  },
+  "global_stats": {
+    "total_nodes": 4680870,
+    "total_edges": 10076938
+  },
+  "node_labels": [
+    "Game",
+    "Language",
+    "Stream",
+    "Team",
+    "User"
+  ],
+  "node_label_counts": [
+    {
+      "label": "User",
+      "count": 4678779
+    },
+    {
+      "label": "Stream",
+      "count": 4540
+    },
+    {
+      "label": "Team",
+      "count": 1468
+    },
+    {
+      "label": "Game",
+      "count": 594
+    },
+    {
+      "label": "Language",
+      "count": 29
+    }
+  ],
+  "relationship_types": [
+    "CHATTER",
+    "HAS_LANGUAGE",
+    "HAS_TEAM",
+    "MODERATOR",
+    "PLAYS",
+    "VIP"
+  ],
+  "relationship_type_counts": [
+    {
+      "relType": "CHATTER",
+      "count": 10018281
+    },
+    {
+      "relType": "MODERATOR",
+      "count": 29746
+    },
+    {
+      "relType": "VIP",
+      "count": 15694
+    },
+    {
+      "relType": "PLAYS",
+      "count": 5696
+    },
+    {
+      "relType": "HAS_LANGUAGE",
+      "count": 4541
+    },
+    {
+      "relType": "HAS_TEAM",
+      "count": 2980
+    }
+  ],
+  "node_property_keys": [
+    "createdAt",
+    "description",
+    "followers",
+    "id",
+    "name",
+    "total_view_count",
+    "url"
+  ],
+  "edge_property_keys": [],
+  "all_property_keys": [
+    "createdAt",
+    "description",
+    "followers",
+    "id",
+    "name",
+    "total_view_count",
+    "url"
+  ],
+  "node_types": [
+    {
+      "nodeType": "Game",
+      "properties": [
+        "name"
+      ]
+    },
+    {
+      "nodeType": "Language",
+      "properties": [
+        "name"
+      ]
+    },
+    {
+      "nodeType": "Stream:User",
+      "properties": [
+        "createdAt",
+        "followers",
+        "name",
+        "description",
+        "id",
+        "total_view_count",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "Team",
+      "properties": [
+        "name",
+        "createdAt",
+        "id"
+      ]
+    },
+    {
+      "nodeType": "User",
+      "properties": [
+        "name"
+      ]
+    }
+  ],
+  "node_type_counts": [
+    {
+      "nodeType": "User",
+      "count": 4674239
+    },
+    {
+      "nodeType": "Stream:User",
+      "count": 4540
+    },
+    {
+      "nodeType": "Team",
+      "count": 1468
+    },
+    {
+      "nodeType": "Game",
+      "count": 594
+    },
+    {
+      "nodeType": "Language",
+      "count": 29
+    }
+  ],
+  "node_patterns": [
+    {
+      "nodeType": "User",
+      "propSet": "name",
+      "count": 4674239
+    },
+    {
+      "nodeType": "Stream:User",
+      "propSet": "createdAt:description:followers:id:name:total_view_count:url",
+      "count": 4498
+    },
+    {
+      "nodeType": "Team",
+      "propSet": "createdAt:id:name",
+      "count": 1468
+    },
+    {
+      "nodeType": "Game",
+      "propSet": "name",
+      "count": 594
+    },
+    {
+      "nodeType": "Stream:User",
+      "propSet": "followers:name:url",
+      "count": 42
+    },
+    {
+      "nodeType": "Language",
+      "propSet": "name",
+      "count": 29
+    }
+  ],
+  "edge_types": [
+    {
+      "relType": "CHATTER",
+      "sources": [
+        "User",
+        "Stream:User"
+      ],
+      "targets": [
+        "Stream:User"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "HAS_LANGUAGE",
+      "sources": [
+        "Stream:User"
+      ],
+      "targets": [
+        "Language"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "HAS_TEAM",
+      "sources": [
+        "Stream:User"
+      ],
+      "targets": [
+        "Team"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "MODERATOR",
+      "sources": [
+        "User",
+        "Stream:User"
+      ],
+      "targets": [
+        "Stream:User"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PLAYS",
+      "sources": [
+        "Stream:User"
+      ],
+      "targets": [
+        "Game"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "VIP",
+      "sources": [
+        "User",
+        "Stream:User"
+      ],
+      "targets": [
+        "Stream:User"
+      ],
+      "properties": []
+    }
+  ],
+  "edge_type_counts": [
+    {
+      "relType": "CHATTER",
+      "sourceLabelCombo": "User",
+      "targetLabelCombo": "Stream:User",
+      "count": 10015267
+    },
+    {
+      "relType": "MODERATOR",
+      "sourceLabelCombo": "User",
+      "targetLabelCombo": "Stream:User",
+      "count": 29024
+    },
+    {
+      "relType": "VIP",
+      "sourceLabelCombo": "User",
+      "targetLabelCombo": "Stream:User",
+      "count": 15178
+    },
+    {
+      "relType": "PLAYS",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Game",
+      "count": 5696
+    },
+    {
+      "relType": "HAS_LANGUAGE",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Language",
+      "count": 4541
+    },
+    {
+      "relType": "CHATTER",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Stream:User",
+      "count": 3014
+    },
+    {
+      "relType": "HAS_TEAM",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Team",
+      "count": 2980
+    },
+    {
+      "relType": "MODERATOR",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Stream:User",
+      "count": 722
+    },
+    {
+      "relType": "VIP",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Stream:User",
+      "count": 516
+    }
+  ],
+  "edge_patterns": [
+    {
+      "relType": "CHATTER",
+      "sourceLabelCombo": "User",
+      "targetLabelCombo": "Stream:User",
+      "propSet": "",
+      "count": 10015267
+    },
+    {
+      "relType": "MODERATOR",
+      "sourceLabelCombo": "User",
+      "targetLabelCombo": "Stream:User",
+      "propSet": "",
+      "count": 29024
+    },
+    {
+      "relType": "VIP",
+      "sourceLabelCombo": "User",
+      "targetLabelCombo": "Stream:User",
+      "propSet": "",
+      "count": 15178
+    },
+    {
+      "relType": "PLAYS",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Game",
+      "propSet": "",
+      "count": 5696
+    },
+    {
+      "relType": "HAS_LANGUAGE",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Language",
+      "propSet": "",
+      "count": 4541
+    },
+    {
+      "relType": "CHATTER",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Stream:User",
+      "propSet": "",
+      "count": 3014
+    },
+    {
+      "relType": "HAS_TEAM",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Team",
+      "propSet": "",
+      "count": 2980
+    },
+    {
+      "relType": "MODERATOR",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Stream:User",
+      "propSet": "",
+      "count": 722
+    },
+    {
+      "relType": "VIP",
+      "sourceLabelCombo": "Stream:User",
+      "targetLabelCombo": "Stream:User",
+      "propSet": "",
+      "count": 516
+    }
+  ],
+  "node_types_properties_counts": [
+    {
+      "nodeType": "User",
+      "count": 4674239,
+      "properties": "name"
+    },
+    {
+      "nodeType": "Stream:User",
+      "count": 4540,
+      "properties": "createdAt|description|followers|id|name|total_view_count|url"
+    },
+    {
+      "nodeType": "Team",
+      "count": 1468,
+      "properties": "createdAt|id|name"
+    },
+    {
+      "nodeType": "Game",
+      "count": 594,
+      "properties": "name"
+    },
+    {
+      "nodeType": "Language",
+      "count": 29,
+      "properties": "name"
+    }
+  ]
+}

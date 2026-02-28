@@ -1,7 +1,22 @@
 [
   {
-    "name": "schemadiscovery",
-    "cwd": "./schemadiscovery",
-    "cmd": "sbt run "
+    "name": "PG_HIVE_ELSH",
+    "repo": "https://github.com/sophisid/PG-HIVE.git",
+    "branch": "master",
+    "clone_dir": "./external/PG-HIVE",
+    "cwd": "./external/PG-HIVE/schemadiscovery",
+    "setup_cmd": "sbt compile",
+    "cmd": "sbt \"run LSH\"",
+    "update_existing": true
+  },
+  {
+    "name": "PG_HIVE_MINHASH",
+    "repo": "https://github.com/sophisid/PG-HIVE.git",
+    "branch": "master",
+    "clone_dir": "./external/PG-HIVE",
+    "cwd": "./external/PG-HIVE/schemadiscovery",
+    "setup_cmd": "sbt compile",
+    "cmd": "sbt \"run MINHASH\"",
+    "update_existing": true
   }
 ]

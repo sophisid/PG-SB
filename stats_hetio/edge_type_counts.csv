@@ -1,0 +1,25 @@
+relType,sourceLabelCombo,targetLabelCombo,count
+participates,Gene:HetionetNode,Biological Process:HetionetNode,559504
+expresses,Anatomy:HetionetNode,Gene:HetionetNode,526407
+regulates,Gene:HetionetNode,Gene:HetionetNode,265672
+interacts,Gene:HetionetNode,Gene:HetionetNode,147164
+causes,Compound:HetionetNode,HetionetNode:Side Effect,138944
+downregulates,Anatomy:HetionetNode,Gene:HetionetNode,102240
+upregulates,Anatomy:HetionetNode,Gene:HetionetNode,97848
+participates,Gene:HetionetNode,HetionetNode:Molecular Function,97222
+participates,Gene:HetionetNode,HetionetNode:Pathway,84372
+participates,Gene:HetionetNode,Cellular Component:HetionetNode,73566
+covaries,Gene:HetionetNode,Gene:HetionetNode,61690
+downregulates,Compound:HetionetNode,Gene:HetionetNode,21102
+upregulates,Compound:HetionetNode,Gene:HetionetNode,18756
+associates,Disease:HetionetNode,Gene:HetionetNode,12623
+binds,Compound:HetionetNode,Gene:HetionetNode,11571
+upregulates,Disease:HetionetNode,Gene:HetionetNode,7731
+downregulates,Disease:HetionetNode,Gene:HetionetNode,7623
+resembles,Compound:HetionetNode,Compound:HetionetNode,6486
+localizes,Disease:HetionetNode,Anatomy:HetionetNode,3602
+presents,Disease:HetionetNode,HetionetNode:Symptom,3357
+includes,HetionetNode:Pharmacologic Class,Compound:HetionetNode,1029
+treats,Compound:HetionetNode,Disease:HetionetNode,755
+resembles,Disease:HetionetNode,Disease:HetionetNode,543
+palliates,Compound:HetionetNode,Disease:HetionetNode,390

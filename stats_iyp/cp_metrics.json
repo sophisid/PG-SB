@@ -1,0 +1,21 @@
+{
+  "dataset": "IYP",
+  "nodes": 35244113,
+  "edges": 172330798,
+  "node_types": 89,
+  "edge_types": 835,
+  "node_labels": 33,
+  "edge_labels": 25,
+  "node_patterns": 1210,
+  "edge_patterns": 1708,
+  "total_properties": 524,
+  "cp8_nodes_plus_edges": 207574911,
+  "cp1_avg_node_patterns_per_node_type": 13.595505617977528,
+  "cp2_unlabeled_nodes_percent": 0.0,
+  "cp3_avg_label_cardinality_per_node": 1.3508432174190361,
+  "cp5_total_node_patterns": 1210,
+  "cp7_avg_edge_patterns_per_edge_type": 2.045508982035928,
+  "cp7_skipped": false,
+  "cp7_mode": "per-reltype",
+  "computed_at": "2026-02-27 02:00:24"
+}

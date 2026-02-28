@@ -1,0 +1,7 @@
+nodeType,propSet,count
+Character,birth_year:created:edited:eye_color:gender:hair_color:height:mass:name:skin_color:url,82
+Planet,climate:created:diameter:edited:gravity:name:orbital_period:population:rotation_period:surface_water:terrain:url,60
+Vehicle,cargo_capacity:consumables:cost_in_credits:created:crew:edited:length:manufacturer:max_atmosphering_speed:model:name:passengers:url:vehicle_class,39
+Species,average_height:average_lifespan:classification:created:designation:edited:eye_colors:hair_colors:language:name:skin_colors:url,37
+Starship,MGLT:cargo_capacity:consumables:cost_in_credits:created:crew:edited:hyperdrive_rating:length:manufacturer:max_atmosphering_speed:model:name:passengers:starship_class:url,36
+Film,created:director:edited:episode_id:opening_crawl:producer:release_date:title:url,6

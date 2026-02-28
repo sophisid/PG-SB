@@ -1,0 +1,2483 @@
+{
+  "summary_counts": {
+    "nodes": 2016523,
+    "edges": 3339267,
+    "node_types": 6,
+    "edge_types": 14,
+    "node_labels": 5,
+    "edge_labels": 14,
+    "node_patterns": 208,
+    "edge_patterns": 102,
+    "total_properties": 38
+  },
+  "cp_operationalization": {
+    "cp1_avg_node_patterns_per_node_type": 34.666666666666664,
+    "cp2_unlabeled_nodes_percent": 0.0,
+    "cp3_avg_label_cardinality_per_node": 1.0005648336269906,
+    "cp5_total_node_patterns_typed": 208,
+    "cp5_global_distinct_property_sets": 187,
+    "cp7_avg_edge_patterns_per_edge_type": 7.285714285714286,
+    "cp8_nodes_plus_edges": 5355790
+  },
+  "global_stats": {
+    "total_nodes": 2016523,
+    "total_edges": 3339267
+  },
+  "node_labels": [
+    "Address",
+    "Entity",
+    "Intermediary",
+    "Officer",
+    "Other"
+  ],
+  "node_label_counts": [
+    {
+      "label": "Entity",
+      "count": 814344
+    },
+    {
+      "label": "Officer",
+      "count": 771315
+    },
+    {
+      "label": "Address",
+      "count": 402246
+    },
+    {
+      "label": "Intermediary",
+      "count": 26768
+    },
+    {
+      "label": "Other",
+      "count": 2989
+    }
+  ],
+  "relationship_types": [
+    "connected_to",
+    "intermediary_of",
+    "officer_of",
+    "probably_same_officer_as",
+    "registered_address",
+    "same_address_as",
+    "same_as",
+    "same_company_as",
+    "same_id_as",
+    "same_intermediary_as",
+    "same_name_as",
+    "similar",
+    "similar_company_as",
+    "underlying"
+  ],
+  "relationship_type_counts": [
+    {
+      "relType": "officer_of",
+      "count": 1720357
+    },
+    {
+      "relType": "registered_address",
+      "count": 832721
+    },
+    {
+      "relType": "intermediary_of",
+      "count": 598546
+    },
+    {
+      "relType": "same_name_as",
+      "count": 104170
+    },
+    {
+      "relType": "similar",
+      "count": 46761
+    },
+    {
+      "relType": "same_company_as",
+      "count": 15523
+    },
+    {
+      "relType": "connected_to",
+      "count": 12145
+    },
+    {
+      "relType": "same_as",
+      "count": 4272
+    },
+    {
+      "relType": "same_id_as",
+      "count": 3120
+    },
+    {
+      "relType": "underlying",
+      "count": 1308
+    },
+    {
+      "relType": "similar_company_as",
+      "count": 203
+    },
+    {
+      "relType": "probably_same_officer_as",
+      "count": 132
+    },
+    {
+      "relType": "same_address_as",
+      "count": 5
+    },
+    {
+      "relType": "same_intermediary_as",
+      "count": 4
+    }
+  ],
+  "node_property_keys": [
+    "address",
+    "addressID",
+    "closed_date",
+    "comments",
+    "company_number",
+    "company_type",
+    "countries",
+    "country",
+    "country_code",
+    "country_codes",
+    "dorm_date",
+    "end_date",
+    "entity_number",
+    "former_name",
+    "ibcRUC",
+    "icij_id",
+    "inactivation_date",
+    "incorporation_date",
+    "internal_id",
+    "jurisdiction",
+    "jurisdiction_description",
+    "lastEditTimestamp",
+    "name",
+    "node_id",
+    "note",
+    "original_address",
+    "original_name",
+    "registered_office",
+    "registration_date",
+    "service_provider",
+    "sourceID",
+    "status",
+    "struck_off_date",
+    "tax_stat_description",
+    "type",
+    "valid_until"
+  ],
+  "edge_property_keys": [
+    "end_date",
+    "lastEditTimestamp",
+    "link",
+    "sourceID",
+    "start_date",
+    "status",
+    "valid_until"
+  ],
+  "all_property_keys": [
+    "address",
+    "addressID",
+    "closed_date",
+    "comments",
+    "company_number",
+    "company_type",
+    "countries",
+    "country",
+    "country_code",
+    "country_codes",
+    "dorm_date",
+    "end_date",
+    "entity_number",
+    "former_name",
+    "ibcRUC",
+    "icij_id",
+    "inactivation_date",
+    "incorporation_date",
+    "internal_id",
+    "jurisdiction",
+    "jurisdiction_description",
+    "lastEditTimestamp",
+    "link",
+    "name",
+    "node_id",
+    "note",
+    "original_address",
+    "original_name",
+    "registered_office",
+    "registration_date",
+    "service_provider",
+    "sourceID",
+    "start_date",
+    "status",
+    "struck_off_date",
+    "tax_stat_description",
+    "type",
+    "valid_until"
+  ],
+  "node_types": [
+    {
+      "nodeType": "Address",
+      "properties": [
+        "sourceID",
+        "note",
+        "country",
+        "address",
+        "icij_id",
+        "countries",
+        "addressID",
+        "country_code",
+        "lastEditTimestamp",
+        "valid_until",
+        "name",
+        "original_address",
+        "country_codes",
+        "node_id"
+      ]
+    },
+    {
+      "nodeType": "Entity",
+      "properties": [
+        "company_type",
+        "note",
+        "closed_date",
+        "former_name",
+        "jurisdiction",
+        "dorm_date",
+        "type",
+        "country_codes",
+        "incorporation_date",
+        "sourceID",
+        "address",
+        "internal_id",
+        "entity_number",
+        "struck_off_date",
+        "tax_stat_description",
+        "service_provider",
+        "countries",
+        "jurisdiction_description",
+        "lastEditTimestamp",
+        "company_number",
+        "valid_until",
+        "ibcRUC",
+        "original_name",
+        "name",
+        "inactivation_date",
+        "status",
+        "node_id"
+      ]
+    },
+    {
+      "nodeType": "Intermediary",
+      "properties": [
+        "sourceID",
+        "lastEditTimestamp",
+        "valid_until",
+        "address",
+        "internal_id",
+        "name",
+        "country_codes",
+        "countries",
+        "registered_office",
+        "status",
+        "node_id"
+      ]
+    },
+    {
+      "nodeType": "Intermediary:Officer",
+      "properties": [
+        "sourceID",
+        "lastEditTimestamp",
+        "valid_until",
+        "name",
+        "country_codes",
+        "countries",
+        "node_id"
+      ]
+    },
+    {
+      "nodeType": "Officer",
+      "properties": [
+        "sourceID",
+        "note",
+        "lastEditTimestamp",
+        "valid_until",
+        "name",
+        "icij_id",
+        "country_codes",
+        "countries",
+        "node_id"
+      ]
+    },
+    {
+      "nodeType": "Other",
+      "properties": [
+        "sourceID",
+        "note",
+        "closed_date",
+        "jurisdiction",
+        "struck_off_date",
+        "countries",
+        "jurisdiction_description",
+        "type",
+        "lastEditTimestamp",
+        "valid_until",
+        "name",
+        "country_codes",
+        "incorporation_date",
+        "node_id"
+      ]
+    }
+  ],
+  "node_type_counts": [
+    {
+      "nodeType": "Entity",
+      "count": 814344
+    },
+    {
+      "nodeType": "Officer",
+      "count": 770176
+    },
+    {
+      "nodeType": "Address",
+      "count": 402246
+    },
+    {
+      "nodeType": "Intermediary",
+      "count": 25629
+    },
+    {
+      "nodeType": "Other",
+      "count": 2989
+    },
+    {
+      "nodeType": "Intermediary:Officer",
+      "count": 1139
+    }
+  ],
+  "node_patterns": [
+    {
+      "nodeType": "Officer",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 320049
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:countries:country_codes:ibcRUC:inactivation_date:incorporation_date:internal_id:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:original_name:service_provider:sourceID:status:struck_off_date:valid_until",
+      "count": 206393
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 206083
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "former_name:ibcRUC:incorporation_date:internal_id:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:original_name:sourceID:struck_off_date:valid_until",
+      "count": 175887
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "countries:country_codes:icij_id:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 144722
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:addressID:country:country_code:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 123088
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "icij_id:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 93625
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:countries:country_codes:icij_id:lastEditTimestamp:node_id:sourceID:valid_until",
+      "count": 92507
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:countries:country_codes:lastEditTimestamp:node_id:sourceID:valid_until",
+      "count": 83691
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:countries:country_codes:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 79483
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 63160
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 57482
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_number:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:struck_off_date:type:valid_until",
+      "count": 50611
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_number:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:type:valid_until",
+      "count": 35161
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 26034
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:type:valid_until",
+      "count": 20284
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:dorm_date:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 19814
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 19722
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:type:valid_until",
+      "count": 18636
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_number:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:type:valid_until",
+      "count": 15858
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 15573
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "address:countries:country_codes:internal_id:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 12595
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:struck_off_date:valid_until",
+      "count": 11870
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 11371
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 10581
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 9882
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 8873
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:service_provider:sourceID:tax_stat_description:valid_until",
+      "count": 8613
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:struck_off_date:type:valid_until",
+      "count": 8576
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:countries:country_codes:former_name:ibcRUC:inactivation_date:incorporation_date:internal_id:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:original_name:service_provider:sourceID:status:struck_off_date:valid_until",
+      "count": 6435
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:company_number:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:type:valid_until",
+      "count": 5193
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 5085
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 4019
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "ibcRUC:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 3831
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:company_number:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:type:valid_until",
+      "count": 3586
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "ibcRUC:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 3372
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 2598
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 2102
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 1781
+    },
+    {
+      "nodeType": "Other",
+      "propSet": "lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 1645
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 1546
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:entity_number:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 1546
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "internal_id:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 1488
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:status:valid_until",
+      "count": 1365
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 1244
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "country_codes:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 1176
+    },
+    {
+      "nodeType": "Intermediary:Officer",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 1139
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 1090
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:icij_id:lastEditTimestamp:node_id:sourceID:valid_until",
+      "count": 867
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:ibcRUC:inactivation_date:incorporation_date:internal_id:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:original_name:service_provider:sourceID:status:struck_off_date:valid_until",
+      "count": 767
+    },
+    {
+      "nodeType": "Other",
+      "propSet": "incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:type:valid_until",
+      "count": 726
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:countries:country_codes:lastEditTimestamp:node_id:sourceID",
+      "count": 708
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 708
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 655
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "comments:company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 557
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 556
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "countries:country_codes:internal_id:lastEditTimestamp:name:node_id:registered_office:sourceID:valid_until",
+      "count": 539
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:countries:country_codes:icij_id:lastEditTimestamp:node_id:original_address:sourceID:valid_until",
+      "count": 528
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:lastEditTimestamp:node_id:sourceID:valid_until",
+      "count": 469
+    },
+    {
+      "nodeType": "Other",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 386
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 374
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:valid_until",
+      "count": 373
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:company_number:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:struck_off_date:type:valid_until",
+      "count": 352
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 339
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:service_provider:sourceID:tax_stat_description:valid_until",
+      "count": 337
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:countries:country_codes:dorm_date:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 337
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 337
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_number:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:type:valid_until",
+      "count": 313
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 304
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 295
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 283
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:countries:country_codes:ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 258
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:sourceID",
+      "count": 247
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 244
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "lastEditTimestamp:name:node_id:sourceID",
+      "count": 206
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 203
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_number:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:type:valid_until",
+      "count": 185
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 175
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 164
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 154
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 148
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID",
+      "count": 144
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 140
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:struck_off_date:valid_until",
+      "count": 130
+    },
+    {
+      "nodeType": "Other",
+      "propSet": "closed_date:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:type:valid_until",
+      "count": 117
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 114
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 112
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 109
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:company_type:countries:country_codes:former_name:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:status:valid_until",
+      "count": 104
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:addressID:countries:country:country_code:country_codes:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 98
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 94
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 90
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "country_codes:lastEditTimestamp:name:node_id:sourceID",
+      "count": 86
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 79
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:valid_until",
+      "count": 78
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:countries:country_codes:icij_id:lastEditTimestamp:node_id:note:sourceID:valid_until",
+      "count": 74
+    },
+    {
+      "nodeType": "Other",
+      "propSet": "jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 70
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 58
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "countries:country_codes:lastEditTimestamp:node_id:sourceID:valid_until",
+      "count": 58
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:countries:country_codes:dorm_date:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 51
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "lastEditTimestamp:name:node_id:sourceID",
+      "count": 50
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:entity_number:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 49
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 49
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:addressID:countries:country:country_code:country_codes:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 45
+    },
+    {
+      "nodeType": "Other",
+      "propSet": "incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:struck_off_date:type:valid_until",
+      "count": 45
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:countries:country_codes:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 44
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 44
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "icij_id:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 44
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_number:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:type:valid_until",
+      "count": 40
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 36
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 35
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 34
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:countries:country_codes:lastEditTimestamp:node_id:note:sourceID:valid_until",
+      "count": 30
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:service_provider:sourceID:valid_until",
+      "count": 30
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 26
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:valid_until",
+      "count": 25
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_number:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:struck_off_date:type:valid_until",
+      "count": 25
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 25
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:struck_off_date:valid_until",
+      "count": 24
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:former_name:ibcRUC:inactivation_date:incorporation_date:internal_id:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:original_name:service_provider:sourceID:status:struck_off_date:valid_until",
+      "count": 23
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "address:internal_id:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 23
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:node_id:sourceID:valid_until",
+      "count": 21
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 20
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 18
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 18
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "country_codes:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 17
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 15
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:countries:country_codes:ibcRUC:inactivation_date:incorporation_date:internal_id:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:original_name:service_provider:sourceID:status:struck_off_date:valid_until",
+      "count": 13
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:tax_stat_description:valid_until",
+      "count": 13
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 12
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:valid_until",
+      "count": 12
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:valid_until",
+      "count": 11
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "countries:country_codes:icij_id:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 11
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 10
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:valid_until",
+      "count": 10
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 10
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:lastEditTimestamp:node_id:sourceID",
+      "count": 9
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:company_type:countries:country_codes:ibcRUC:inactivation_date:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 9
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 9
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:valid_until",
+      "count": 8
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 7
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID",
+      "count": 7
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 6
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "addressID:country:country_code:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 5
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 5
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_number:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:struck_off_date:type:valid_until",
+      "count": 5
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:addressID:country:country_code:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 4
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:status:valid_until",
+      "count": 4
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:former_name:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 4
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:inactivation_date:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 4
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:status:valid_until",
+      "count": 4
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:node_id:sourceID:valid_until",
+      "count": 4
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "ibcRUC:lastEditTimestamp:name:node_id:sourceID",
+      "count": 4
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:struck_off_date:valid_until",
+      "count": 4
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:valid_until",
+      "count": 4
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 4
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:node_id:note:sourceID:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:tax_stat_description:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:countries:country_codes:ibcRUC:inactivation_date:incorporation_date:internal_id:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:original_name:service_provider:sourceID:struck_off_date:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_number:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:type:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:former_name:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:struck_off_date:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:tax_stat_description:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:service_provider:sourceID:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "address:countries:country_codes:internal_id:lastEditTimestamp:name:node_id:note:sourceID:status:valid_until",
+      "count": 3
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:countries:country_codes:icij_id:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "countries:country_codes:icij_id:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:dorm_date:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:company_number:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:type:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:type:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_number:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:struck_off_date:type:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:status:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID",
+      "count": 2
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "countries:country_codes:internal_id:lastEditTimestamp:name:node_id:note:registered_office:sourceID:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "countries:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "end_date:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 2
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:country_codes:icij_id:lastEditTimestamp:node_id:note:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "address:icij_id:lastEditTimestamp:node_id:note:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Address",
+      "propSet": "lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:dorm_date:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:dorm_date:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:dorm_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:tax_stat_description:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:ibcRUC:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "address:company_type:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:tax_stat_description:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:company_number:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:struck_off_date:type:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "closed_date:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:registration_date:sourceID:status:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:status:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:incorporation_date:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "company_type:countries:country_codes:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:ibcRUC:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:service_provider:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:incorporation_date:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:incorporation_date:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "countries:country_codes:lastEditTimestamp:name:node_id:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "former_name:ibcRUC:incorporation_date:internal_id:jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:original_name:sourceID:struck_off_date:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:status:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Entity",
+      "propSet": "jurisdiction:jurisdiction_description:lastEditTimestamp:name:node_id:sourceID:status:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "countries:country_codes:lastEditTimestamp:node_id:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Intermediary",
+      "propSet": "internal_id:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "address:countries:country_codes:lastEditTimestamp:name:node_id:note:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "lastEditTimestamp:node_id:sourceID:valid_until",
+      "count": 1
+    }
+  ],
+  "edge_types": [
+    {
+      "relType": "connected_to",
+      "sources": [
+        "Other",
+        "Officer",
+        "Intermediary"
+      ],
+      "targets": [
+        "Entity"
+      ],
+      "properties": [
+        "sourceID",
+        "link",
+        "valid_until"
+      ]
+    },
+    {
+      "relType": "intermediary_of",
+      "sources": [
+        "Intermediary",
+        "Intermediary:Officer"
+      ],
+      "targets": [
+        "Entity"
+      ],
+      "properties": [
+        "valid_until",
+        "sourceID",
+        "link",
+        "end_date",
+        "start_date",
+        "lastEditTimestamp"
+      ]
+    },
+    {
+      "relType": "officer_of",
+      "sources": [
+        "Officer",
+        "Intermediary:Officer",
+        "Entity",
+        "Intermediary"
+      ],
+      "targets": [
+        "Entity",
+        "Intermediary",
+        "Officer",
+        "Other"
+      ],
+      "properties": [
+        "valid_until",
+        "link",
+        "end_date",
+        "sourceID",
+        "start_date",
+        "status",
+        "lastEditTimestamp"
+      ]
+    },
+    {
+      "relType": "probably_same_officer_as",
+      "sources": [
+        "Officer"
+      ],
+      "targets": [
+        "Officer"
+      ],
+      "properties": [
+        "link",
+        "valid_until",
+        "sourceID"
+      ]
+    },
+    {
+      "relType": "registered_address",
+      "sources": [
+        "Entity",
+        "Officer",
+        "Intermediary:Officer",
+        "Intermediary",
+        "Other"
+      ],
+      "targets": [
+        "Address",
+        "Entity"
+      ],
+      "properties": [
+        "link",
+        "sourceID",
+        "valid_until",
+        "lastEditTimestamp"
+      ]
+    },
+    {
+      "relType": "same_address_as",
+      "sources": [
+        "Address"
+      ],
+      "targets": [
+        "Address"
+      ],
+      "properties": [
+        "valid_until",
+        "sourceID",
+        "link"
+      ]
+    },
+    {
+      "relType": "same_as",
+      "sources": [
+        "Entity",
+        "Address",
+        "Intermediary"
+      ],
+      "targets": [
+        "Entity",
+        "Address",
+        "Officer"
+      ],
+      "properties": [
+        "link"
+      ]
+    },
+    {
+      "relType": "same_company_as",
+      "sources": [
+        "Entity"
+      ],
+      "targets": [
+        "Entity"
+      ],
+      "properties": [
+        "valid_until",
+        "sourceID",
+        "link"
+      ]
+    },
+    {
+      "relType": "same_id_as",
+      "sources": [
+        "Officer"
+      ],
+      "targets": [
+        "Officer"
+      ],
+      "properties": [
+        "sourceID",
+        "link",
+        "valid_until"
+      ]
+    },
+    {
+      "relType": "same_intermediary_as",
+      "sources": [
+        "Intermediary"
+      ],
+      "targets": [
+        "Intermediary"
+      ],
+      "properties": [
+        "link",
+        "valid_until",
+        "sourceID"
+      ]
+    },
+    {
+      "relType": "same_name_as",
+      "sources": [
+        "Intermediary",
+        "Officer",
+        "Entity",
+        "Other"
+      ],
+      "targets": [
+        "Intermediary",
+        "Officer",
+        "Intermediary:Officer",
+        "Entity",
+        "Other"
+      ],
+      "properties": [
+        "valid_until",
+        "sourceID",
+        "link",
+        "lastEditTimestamp"
+      ]
+    },
+    {
+      "relType": "similar",
+      "sources": [
+        "Intermediary",
+        "Officer",
+        "Intermediary:Officer"
+      ],
+      "targets": [
+        "Intermediary",
+        "Officer",
+        "Intermediary:Officer"
+      ],
+      "properties": [
+        "link"
+      ]
+    },
+    {
+      "relType": "similar_company_as",
+      "sources": [
+        "Entity"
+      ],
+      "targets": [
+        "Entity"
+      ],
+      "properties": [
+        "valid_until",
+        "sourceID",
+        "link"
+      ]
+    },
+    {
+      "relType": "underlying",
+      "sources": [
+        "Officer",
+        "Intermediary:Officer",
+        "Other"
+      ],
+      "targets": [
+        "Officer",
+        "Intermediary:Officer",
+        "Entity"
+      ],
+      "properties": [
+        "link",
+        "valid_until",
+        "sourceID",
+        "lastEditTimestamp"
+      ]
+    }
+  ],
+  "edge_type_counts": [
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Entity|Intermediary|Intermediary:Officer|Officer",
+      "targetLabelCombo": "Entity|Intermediary|Officer|Other",
+      "properties": "end_date|lastEditTimestamp|link|sourceID|start_date|status|valid_until",
+      "count": 1720357
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Entity|Intermediary|Intermediary:Officer|Officer|Other",
+      "targetLabelCombo": "Address|Entity",
+      "properties": "lastEditTimestamp|link|sourceID|valid_until",
+      "count": 832721
+    },
+    {
+      "relType": "intermediary_of",
+      "sourceLabelCombo": "Intermediary|Intermediary:Officer",
+      "targetLabelCombo": "Entity",
+      "properties": "end_date|lastEditTimestamp|link|sourceID|start_date|valid_until",
+      "count": 598546
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Entity|Intermediary|Officer|Other",
+      "targetLabelCombo": "Entity|Intermediary|Intermediary:Officer|Officer|Other",
+      "properties": "lastEditTimestamp|link|sourceID|valid_until",
+      "count": 104170
+    },
+    {
+      "relType": "similar",
+      "sourceLabelCombo": "Intermediary|Intermediary:Officer|Officer",
+      "targetLabelCombo": "Intermediary|Intermediary:Officer|Officer",
+      "properties": "link",
+      "count": 46761
+    },
+    {
+      "relType": "same_company_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Entity",
+      "properties": "link|sourceID|valid_until",
+      "count": 15523
+    },
+    {
+      "relType": "connected_to",
+      "sourceLabelCombo": "Intermediary|Officer|Other",
+      "targetLabelCombo": "Entity",
+      "properties": "link|sourceID|valid_until",
+      "count": 12145
+    },
+    {
+      "relType": "same_as",
+      "sourceLabelCombo": "Address|Entity|Intermediary",
+      "targetLabelCombo": "Address|Entity|Officer",
+      "properties": "link",
+      "count": 4272
+    },
+    {
+      "relType": "same_id_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "properties": "link|sourceID|valid_until",
+      "count": 3120
+    },
+    {
+      "relType": "underlying",
+      "sourceLabelCombo": "Intermediary:Officer|Officer|Other",
+      "targetLabelCombo": "Entity|Intermediary:Officer|Officer",
+      "properties": "lastEditTimestamp|link|sourceID|valid_until",
+      "count": 1308
+    },
+    {
+      "relType": "similar_company_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Entity",
+      "properties": "link|sourceID|valid_until",
+      "count": 203
+    },
+    {
+      "relType": "probably_same_officer_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "properties": "link|sourceID|valid_until",
+      "count": 132
+    },
+    {
+      "relType": "same_address_as",
+      "sourceLabelCombo": "Address",
+      "targetLabelCombo": "Address",
+      "properties": "link|sourceID|valid_until",
+      "count": 5
+    },
+    {
+      "relType": "same_intermediary_as",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Intermediary",
+      "properties": "link|sourceID|valid_until",
+      "count": 4
+    }
+  ],
+  "edge_patterns": [
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 653180
+    },
+    {
+      "relType": "intermediary_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 509943
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Address",
+      "propSet": "link:sourceID:valid_until",
+      "count": 440586
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:sourceID:start_date:valid_until",
+      "count": 376526
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:start_date:valid_until",
+      "count": 272202
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Address",
+      "propSet": "link:sourceID:valid_until",
+      "count": 261620
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:start_date",
+      "count": 142893
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:sourceID:start_date:status:valid_until",
+      "count": 126936
+    },
+    {
+      "relType": "intermediary_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "link",
+      "count": 78818
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Address",
+      "propSet": "link",
+      "count": 62478
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "link",
+      "count": 56505
+    },
+    {
+      "relType": "similar",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "link",
+      "count": 46387
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:start_date:status:valid_until",
+      "count": 41252
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary:Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 36539
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Address",
+      "propSet": "link",
+      "count": 25273
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link",
+      "count": 24181
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 21887
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "lastEditTimestamp:link",
+      "count": 19771
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "lastEditTimestamp:link",
+      "count": 19378
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Address",
+      "propSet": "lastEditTimestamp:link",
+      "count": 17881
+    },
+    {
+      "relType": "same_company_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 15523
+    },
+    {
+      "relType": "connected_to",
+      "sourceLabelCombo": "Other",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 10822
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Address",
+      "propSet": "link:sourceID:valid_until",
+      "count": 9157
+    },
+    {
+      "relType": "intermediary_of",
+      "sourceLabelCombo": "Intermediary:Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 8450
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Address",
+      "propSet": "lastEditTimestamp:link",
+      "count": 7525
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary:Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:start_date:valid_until",
+      "count": 6548
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Address",
+      "propSet": "link:sourceID",
+      "count": 5310
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "lastEditTimestamp:link:start_date",
+      "count": 5026
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:start_date",
+      "count": 3635
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:start_date:status:valid_until",
+      "count": 3523
+    },
+    {
+      "relType": "same_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Entity",
+      "propSet": "link",
+      "count": 3146
+    },
+    {
+      "relType": "same_id_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 3120
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 2208
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 2095
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Entity",
+      "propSet": "lastEditTimestamp:link",
+      "count": 1912
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Other",
+      "propSet": "link:sourceID:start_date:valid_until",
+      "count": 1717
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:sourceID:start_date:status:valid_until",
+      "count": 1429
+    },
+    {
+      "relType": "intermediary_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:start_date",
+      "count": 1334
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Intermediary:Officer",
+      "targetLabelCombo": "Address",
+      "propSet": "link:sourceID:valid_until",
+      "count": 1193
+    },
+    {
+      "relType": "underlying",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 1187
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:status:valid_until",
+      "count": 1143
+    },
+    {
+      "relType": "connected_to",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 1099
+    },
+    {
+      "relType": "same_as",
+      "sourceLabelCombo": "Address",
+      "targetLabelCombo": "Address",
+      "propSet": "link",
+      "count": 960
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Other",
+      "targetLabelCombo": "Address",
+      "propSet": "link:sourceID:valid_until",
+      "count": 888
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 622
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 595
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Other",
+      "propSet": "link:sourceID:valid_until",
+      "count": 552
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:sourceID:status:valid_until",
+      "count": 533
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Officer",
+      "propSet": "lastEditTimestamp:link",
+      "count": 420
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:sourceID:valid_until",
+      "count": 340
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "lastEditTimestamp:start_date",
+      "count": 300
+    },
+    {
+      "relType": "similar",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Intermediary",
+      "propSet": "link",
+      "count": 300
+    },
+    {
+      "relType": "connected_to",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 224
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Other",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 219
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary:Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:sourceID:start_date:valid_until",
+      "count": 216
+    },
+    {
+      "relType": "similar_company_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 203
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 185
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:lastEditTimestamp:link:start_date",
+      "count": 166
+    },
+    {
+      "relType": "same_as",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Officer",
+      "propSet": "link",
+      "count": 166
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Address",
+      "propSet": "link",
+      "count": 146
+    },
+    {
+      "relType": "probably_same_officer_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 132
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:status:valid_until",
+      "count": 120
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "lastEditTimestamp:link",
+      "count": 92
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 74
+    },
+    {
+      "relType": "underlying",
+      "sourceLabelCombo": "Other",
+      "targetLabelCombo": "Entity",
+      "propSet": "lastEditTimestamp:link",
+      "count": 70
+    },
+    {
+      "relType": "underlying",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Intermediary:Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 46
+    },
+    {
+      "relType": "similar",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Officer",
+      "propSet": "link",
+      "count": 43
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "lastEditTimestamp:link",
+      "count": 40
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Officer",
+      "propSet": "lastEditTimestamp:link",
+      "count": 36
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:lastEditTimestamp:start_date",
+      "count": 35
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Address",
+      "propSet": "sourceID:valid_until",
+      "count": 24
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Intermediary",
+      "propSet": "link:sourceID:valid_until",
+      "count": 22
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Other",
+      "targetLabelCombo": "Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 22
+    },
+    {
+      "relType": "registered_address",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Address",
+      "propSet": "sourceID:valid_until",
+      "count": 18
+    },
+    {
+      "relType": "similar",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Intermediary",
+      "propSet": "link",
+      "count": 16
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "",
+      "count": 12
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:sourceID:status:valid_until",
+      "count": 10
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:lastEditTimestamp:link",
+      "count": 9
+    },
+    {
+      "relType": "similar",
+      "sourceLabelCombo": "Intermediary:Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "link",
+      "count": 8
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 7
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Other",
+      "targetLabelCombo": "Other",
+      "propSet": "lastEditTimestamp:link",
+      "count": 6
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 5
+    },
+    {
+      "relType": "same_address_as",
+      "sourceLabelCombo": "Address",
+      "targetLabelCombo": "Address",
+      "propSet": "link:sourceID:valid_until",
+      "count": 5
+    },
+    {
+      "relType": "underlying",
+      "sourceLabelCombo": "Intermediary:Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 5
+    },
+    {
+      "relType": "same_intermediary_as",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Intermediary",
+      "propSet": "link:sourceID:valid_until",
+      "count": 4
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Intermediary:Officer",
+      "propSet": "link:sourceID:valid_until",
+      "count": 4
+    },
+    {
+      "relType": "similar",
+      "sourceLabelCombo": "Intermediary:Officer",
+      "targetLabelCombo": "Intermediary",
+      "propSet": "link",
+      "count": 4
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Entity",
+      "propSet": "link:sourceID:valid_until",
+      "count": 3
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:sourceID:start_date:valid_until",
+      "count": 3
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:sourceID:valid_until",
+      "count": 3
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link",
+      "count": 2
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Intermediary",
+      "propSet": "lastEditTimestamp:link",
+      "count": 2
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Other",
+      "targetLabelCombo": "Other",
+      "propSet": "link:sourceID:valid_until",
+      "count": 2
+    },
+    {
+      "relType": "similar",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Intermediary:Officer",
+      "propSet": "link",
+      "count": 2
+    },
+    {
+      "relType": "intermediary_of",
+      "sourceLabelCombo": "Intermediary",
+      "targetLabelCombo": "Entity",
+      "propSet": "lastEditTimestamp:link",
+      "count": 1
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Intermediary:Officer",
+      "targetLabelCombo": "Entity",
+      "propSet": "end_date:link:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Intermediary",
+      "propSet": "link:sourceID:valid_until",
+      "count": 1
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Officer",
+      "propSet": "link:sourceID:start_date:valid_until",
+      "count": 1
+    },
+    {
+      "relType": "officer_of",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Other",
+      "propSet": "end_date:link:sourceID:start_date:valid_until",
+      "count": 1
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Entity",
+      "targetLabelCombo": "Entity",
+      "propSet": "link",
+      "count": 1
+    },
+    {
+      "relType": "same_name_as",
+      "sourceLabelCombo": "Officer",
+      "targetLabelCombo": "Intermediary",
+      "propSet": "lastEditTimestamp:link",
+      "count": 1
+    },
+    {
+      "relType": "similar",
+      "sourceLabelCombo": "Intermediary:Officer",
+      "targetLabelCombo": "Intermediary:Officer",
+      "propSet": "link",
+      "count": 1
+    }
+  ],
+  "node_types_properties_counts": [
+    {
+      "nodeType": "Entity",
+      "count": 814344,
+      "properties": "address|closed_date|company_number|company_type|countries|country_codes|dorm_date|entity_number|former_name|ibcRUC|inactivation_date|incorporation_date|internal_id|jurisdiction|jurisdiction_description|lastEditTimestamp|name|node_id|note|original_name|service_provider|sourceID|status|struck_off_date|tax_stat_description|type|valid_until"
+    },
+    {
+      "nodeType": "Officer",
+      "count": 770176,
+      "properties": "countries|country_codes|icij_id|lastEditTimestamp|name|node_id|note|sourceID|valid_until"
+    },
+    {
+      "nodeType": "Address",
+      "count": 402246,
+      "properties": "address|addressID|countries|country|country_code|country_codes|icij_id|lastEditTimestamp|name|node_id|note|original_address|sourceID|valid_until"
+    },
+    {
+      "nodeType": "Intermediary",
+      "count": 25629,
+      "properties": "address|countries|country_codes|internal_id|lastEditTimestamp|name|node_id|registered_office|sourceID|status|valid_until"
+    },
+    {
+      "nodeType": "Other",
+      "count": 2989,
+      "properties": "closed_date|countries|country_codes|incorporation_date|jurisdiction|jurisdiction_description|lastEditTimestamp|name|node_id|note|sourceID|struck_off_date|type|valid_until"
+    },
+    {
+      "nodeType": "Intermediary:Officer",
+      "count": 1139,
+      "properties": "countries|country_codes|lastEditTimestamp|name|node_id|sourceID|valid_until"
+    }
+  ]
+}

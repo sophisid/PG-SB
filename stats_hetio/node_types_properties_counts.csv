@@ -1,0 +1,12 @@
+nodeType,count,properties
+Gene:HetionetNode,20945,chromosome|description|license|name|source|uid|url
+Biological Process:HetionetNode,11381,license|name|source|uid|url
+HetionetNode:Side Effect,5734,license|name|source|uid|url
+HetionetNode:Molecular Function,2884,license|name|source|uid|url
+HetionetNode:Pathway,1822,license|name|source|uid|url
+Compound:HetionetNode,1552,inchi|inchikey|license|name|source|uid|url
+Cellular Component:HetionetNode,1391,license|name|source|uid|url
+HetionetNode:Symptom,438,license|name|source|uid|url
+Anatomy:HetionetNode,402,bto_id|license|mesh_id|name|source|uid|url
+HetionetNode:Pharmacologic Class,345,class_type|license|name|source|uid|url
+Disease:HetionetNode,137,license|name|source|uid|url

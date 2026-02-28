@@ -1,0 +1,716 @@
+{
+  "summary_counts": {
+    "nodes": 486267,
+    "edges": 961571,
+    "node_types": 5,
+    "edge_types": 9,
+    "node_labels": 10,
+    "edge_labels": 3,
+    "node_patterns": 52,
+    "edge_patterns": 9,
+    "total_properties": 34
+  },
+  "global_stats": {
+    "total_nodes": 486267,
+    "total_edges": 961571
+  },
+  "node_labels": [
+    "Meta",
+    "Neuron",
+    "Segment",
+    "Synapse",
+    "SynapseSet",
+    "medulla7column_Meta",
+    "mushroombody_Neuron",
+    "mushroombody_Segment",
+    "mushroombody_Synapse",
+    "mushroombody_SynapseSet"
+  ],
+  "node_label_counts": [
+    {
+      "label": "Synapse",
+      "count": 317986
+    },
+    {
+      "label": "mushroombody_Synapse",
+      "count": 317986
+    },
+    {
+      "label": "SynapseSet",
+      "count": 160516
+    },
+    {
+      "label": "mushroombody_SynapseSet",
+      "count": 160516
+    },
+    {
+      "label": "Neuron",
+      "count": 7764
+    },
+    {
+      "label": "Segment",
+      "count": 7764
+    },
+    {
+      "label": "mushroombody_Segment",
+      "count": 7764
+    },
+    {
+      "label": "mushroombody_Neuron",
+      "count": 1213
+    },
+    {
+      "label": "Meta",
+      "count": 1
+    },
+    {
+      "label": "medulla7column_Meta",
+      "count": 1
+    }
+  ],
+  "relationship_types": [
+    "CONNECTS_TO",
+    "CONTAINS",
+    "SYNAPSES_TO"
+  ],
+  "relationship_type_counts": [
+    {
+      "relType": "CONTAINS",
+      "count": 574503
+    },
+    {
+      "relType": "SYNAPSES_TO",
+      "count": 226552
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "count": 160516
+    }
+  ],
+  "node_property_keys": [
+    "alpha1",
+    "alpha2",
+    "alpha3",
+    "bodyId",
+    "confidence",
+    "cropped",
+    "dataset",
+    "instance",
+    "lastDatabaseEdit",
+    "latestMutationId",
+    "location",
+    "logo",
+    "meshHost",
+    "neuroglancerInfo",
+    "neuroglancerMeta",
+    "post",
+    "postHPThreshold",
+    "postHighAccuracyThreshold",
+    "pre",
+    "preHPThreshold",
+    "primaryRois",
+    "roiHierarchy",
+    "roiInfo",
+    "size",
+    "status",
+    "statusDefinitions",
+    "statusLabel",
+    "superLevelRois",
+    "totalPostCount",
+    "totalPreCount",
+    "type",
+    "uuid"
+  ],
+  "edge_property_keys": [
+    "roiInfo",
+    "weight",
+    "weightHP"
+  ],
+  "all_property_keys": [
+    "alpha1",
+    "alpha2",
+    "alpha3",
+    "bodyId",
+    "confidence",
+    "cropped",
+    "dataset",
+    "instance",
+    "lastDatabaseEdit",
+    "latestMutationId",
+    "location",
+    "logo",
+    "meshHost",
+    "neuroglancerInfo",
+    "neuroglancerMeta",
+    "post",
+    "postHPThreshold",
+    "postHighAccuracyThreshold",
+    "pre",
+    "preHPThreshold",
+    "primaryRois",
+    "roiHierarchy",
+    "roiInfo",
+    "size",
+    "status",
+    "statusDefinitions",
+    "statusLabel",
+    "superLevelRois",
+    "totalPostCount",
+    "totalPreCount",
+    "type",
+    "uuid",
+    "weight",
+    "weightHP"
+  ],
+  "node_types": [
+    {
+      "nodeType": "Meta:medulla7column_Meta",
+      "properties": [
+        "primaryRois",
+        "roiInfo",
+        "roiHierarchy",
+        "neuroglancerInfo",
+        "totalPreCount",
+        "lastDatabaseEdit",
+        "uuid",
+        "statusDefinitions",
+        "preHPThreshold",
+        "totalPostCount",
+        "superLevelRois",
+        "latestMutationId",
+        "logo",
+        "postHighAccuracyThreshold",
+        "meshHost",
+        "dataset",
+        "postHPThreshold",
+        "neuroglancerMeta"
+      ]
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "properties": [
+        "roiInfo",
+        "pre",
+        "instance",
+        "type",
+        "statusLabel",
+        "post",
+        "size",
+        "alpha2",
+        "alpha3",
+        "bodyId",
+        "cropped",
+        "status",
+        "alpha1"
+      ]
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "properties": [
+        "roiInfo",
+        "pre",
+        "instance",
+        "type",
+        "statusLabel",
+        "post",
+        "size",
+        "alpha2",
+        "alpha3",
+        "bodyId",
+        "cropped",
+        "status",
+        "alpha1"
+      ]
+    },
+    {
+      "nodeType": "Synapse:mushroombody_Synapse",
+      "properties": [
+        "alpha2",
+        "alpha3",
+        "location",
+        "type",
+        "confidence",
+        "alpha1"
+      ]
+    },
+    {
+      "nodeType": "SynapseSet:mushroombody_SynapseSet",
+      "properties": []
+    }
+  ],
+  "node_type_counts": [
+    {
+      "nodeType": "Synapse:mushroombody_Synapse",
+      "count": 317986
+    },
+    {
+      "nodeType": "SynapseSet:mushroombody_SynapseSet",
+      "count": 160516
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "count": 6551
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "count": 1213
+    },
+    {
+      "nodeType": "Meta:medulla7column_Meta",
+      "count": 1
+    }
+  ],
+  "node_patterns": [
+    {
+      "nodeType": "SynapseSet:mushroombody_SynapseSet",
+      "propSet": "",
+      "count": 160516
+    },
+    {
+      "nodeType": "Synapse:mushroombody_Synapse",
+      "propSet": "alpha3:confidence:location:type",
+      "count": 121319
+    },
+    {
+      "nodeType": "Synapse:mushroombody_Synapse",
+      "propSet": "alpha1:confidence:location:type",
+      "count": 120870
+    },
+    {
+      "nodeType": "Synapse:mushroombody_Synapse",
+      "propSet": "alpha2:confidence:location:type",
+      "count": 71933
+    },
+    {
+      "nodeType": "Synapse:mushroombody_Synapse",
+      "propSet": "confidence:location:type",
+      "count": 3864
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha1:bodyId:post:pre:roiInfo:size",
+      "count": 2519
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha3:bodyId:post:pre:roiInfo:size",
+      "count": 1941
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha2:bodyId:post:pre:roiInfo:size",
+      "count": 1288
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:alpha2:alpha3:bodyId:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 946
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "bodyId:post:pre:roiInfo:size",
+      "count": 310
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha3:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 242
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha2:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 163
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha3:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 67
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha2:alpha3:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 35
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha3:bodyId:post:pre:roiInfo:size:status:statusLabel",
+      "count": 34
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 25
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:bodyId:post:pre:roiInfo:size:status:statusLabel",
+      "count": 20
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha2:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 17
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha1:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 14
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 13
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha2:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 10
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha3:bodyId:post:pre:roiInfo:size:status:statusLabel",
+      "count": 9
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 8
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:bodyId:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 8
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha2:alpha3:bodyId:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 8
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "bodyId:post:pre:roiInfo:size:status:statusLabel",
+      "count": 8
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha3:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 8
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:alpha2:alpha3:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 7
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:alpha2:bodyId:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 7
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha2:bodyId:post:pre:roiInfo:size:status:statusLabel",
+      "count": 7
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 6
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:alpha2:alpha3:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 5
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha2:alpha3:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 5
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha2:alpha3:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 4
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:alpha2:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 3
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha2:alpha3:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 3
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha1:alpha2:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 3
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:alpha2:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 2
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 2
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha3:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 2
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "bodyId:cropped:post:pre:roiInfo:size:status:statusLabel",
+      "count": 2
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha1:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 2
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha1:bodyId:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 2
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha2:bodyId:post:pre:roiInfo:size:status:statusLabel",
+      "count": 2
+    },
+    {
+      "nodeType": "Meta:medulla7column_Meta",
+      "propSet": "dataset:lastDatabaseEdit:latestMutationId:logo:meshHost:neuroglancerInfo:neuroglancerMeta:postHPThreshold:postHighAccuracyThreshold:preHPThreshold:primaryRois:roiHierarchy:roiInfo:statusDefinitions:superLevelRois:totalPostCount:totalPreCount:uuid",
+      "count": 1
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:alpha2:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 1
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha1:alpha3:bodyId:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 1
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha2:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 1
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha2:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 1
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "alpha3:bodyId:cropped:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 1
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "alpha3:bodyId:cropped:post:pre:roiInfo:size:status:statusLabel",
+      "count": 1
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "bodyId:post:pre:roiInfo:size:status:statusLabel",
+      "count": 1
+    }
+  ],
+  "edge_types": [
+    {
+      "relType": "CONNECTS_TO",
+      "sources": [
+        "SynapseSet:mushroombody_SynapseSet",
+        "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+        "Neuron:Segment:mushroombody_Segment"
+      ],
+      "targets": [
+        "SynapseSet:mushroombody_SynapseSet",
+        "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+        "Neuron:Segment:mushroombody_Segment"
+      ],
+      "properties": [
+        "weight",
+        "weightHP",
+        "roiInfo"
+      ]
+    },
+    {
+      "relType": "CONTAINS",
+      "sources": [
+        "SynapseSet:mushroombody_SynapseSet",
+        "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+        "Neuron:Segment:mushroombody_Segment"
+      ],
+      "targets": [
+        "Synapse:mushroombody_Synapse",
+        "SynapseSet:mushroombody_SynapseSet"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "SYNAPSES_TO",
+      "sources": [
+        "Synapse:mushroombody_Synapse"
+      ],
+      "targets": [
+        "Synapse:mushroombody_Synapse"
+      ],
+      "properties": []
+    }
+  ],
+  "edge_type_counts": [
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "SynapseSet:mushroombody_SynapseSet",
+      "targetLabelCombo": "Synapse:mushroombody_Synapse",
+      "count": 413987
+    },
+    {
+      "relType": "SYNAPSES_TO",
+      "sourceLabelCombo": "Synapse:mushroombody_Synapse",
+      "targetLabelCombo": "Synapse:mushroombody_Synapse",
+      "count": 226552
+    },
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "targetLabelCombo": "SynapseSet:mushroombody_SynapseSet",
+      "count": 147656
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "SynapseSet:mushroombody_SynapseSet",
+      "targetLabelCombo": "SynapseSet:mushroombody_SynapseSet",
+      "count": 80258
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "targetLabelCombo": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "count": 68287
+    },
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Segment",
+      "targetLabelCombo": "SynapseSet:mushroombody_SynapseSet",
+      "count": 12860
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "targetLabelCombo": "Neuron:Segment:mushroombody_Segment",
+      "count": 7135
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Segment",
+      "targetLabelCombo": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "count": 3947
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Segment",
+      "targetLabelCombo": "Neuron:Segment:mushroombody_Segment",
+      "count": 889
+    }
+  ],
+  "edge_patterns": [
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "SynapseSet:mushroombody_SynapseSet",
+      "targetLabelCombo": "Synapse:mushroombody_Synapse",
+      "propSet": "",
+      "count": 413987
+    },
+    {
+      "relType": "SYNAPSES_TO",
+      "sourceLabelCombo": "Synapse:mushroombody_Synapse",
+      "targetLabelCombo": "Synapse:mushroombody_Synapse",
+      "propSet": "",
+      "count": 226552
+    },
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "targetLabelCombo": "SynapseSet:mushroombody_SynapseSet",
+      "propSet": "",
+      "count": 147656
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "SynapseSet:mushroombody_SynapseSet",
+      "targetLabelCombo": "SynapseSet:mushroombody_SynapseSet",
+      "propSet": "",
+      "count": 80258
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "targetLabelCombo": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "roiInfo:weight:weightHP",
+      "count": 68287
+    },
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Segment",
+      "targetLabelCombo": "SynapseSet:mushroombody_SynapseSet",
+      "propSet": "",
+      "count": 12860
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "targetLabelCombo": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "roiInfo:weight:weightHP",
+      "count": 7135
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Segment",
+      "targetLabelCombo": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "propSet": "roiInfo:weight:weightHP",
+      "count": 3947
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:mushroombody_Segment",
+      "targetLabelCombo": "Neuron:Segment:mushroombody_Segment",
+      "propSet": "roiInfo:weight:weightHP",
+      "count": 889
+    }
+  ],
+  "node_types_properties_counts": [
+    {
+      "nodeType": "Synapse:mushroombody_Synapse",
+      "count": 317986,
+      "properties": "alpha1|alpha2|alpha3|confidence|location|type"
+    },
+    {
+      "nodeType": "SynapseSet:mushroombody_SynapseSet",
+      "count": 160516,
+      "properties": ""
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Segment",
+      "count": 6551,
+      "properties": "alpha1|alpha2|alpha3|bodyId|cropped|instance|post|pre|roiInfo|size|status|statusLabel|type"
+    },
+    {
+      "nodeType": "Neuron:Segment:mushroombody_Neuron:mushroombody_Segment",
+      "count": 1213,
+      "properties": "alpha1|alpha2|alpha3|bodyId|cropped|instance|post|pre|roiInfo|size|status|statusLabel|type"
+    },
+    {
+      "nodeType": "Meta:medulla7column_Meta",
+      "count": 1,
+      "properties": "dataset|lastDatabaseEdit|latestMutationId|logo|meshHost|neuroglancerInfo|neuroglancerMeta|postHPThreshold|postHighAccuracyThreshold|preHPThreshold|primaryRois|roiHierarchy|roiInfo|statusDefinitions|superLevelRois|totalPostCount|totalPreCount|uuid"
+    }
+  ]
+}

@@ -1,85 +1,100 @@
-# PG-Schema-Bench: A Benchmark for Schema Discovery in Property Graphs
+# PG-Schema-Bench
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17801336.svg)](https://doi.org/10.5281/zenodo.17801336)
 
-A configurable benchmarking system for evaluating schema discovery systems on Property Graphs.
+Benchmarking utilities for schema discovery on property graphs, plus scripts for exporting graph statistics.
 
+## Overview
 
-## **1. Repository Structure**
+This repository does three main things:
 
-```
-PG_bench/
-│
-├── benchmark.py               # main benchmark runner
-├── benchmark_config.json      # configuration for paths, Neo4j versions, noise levels
-├── benchmark_commands.json    # algorithms or scripts to run at each noise level
-│
-├── datasets/                  # dataset folders (CSV + metadata – NO DUMPS)
-│   ├── fib25/
-│   ├── mb6/
-│   ├── hetio/
-│   ├── icij/
-│   ├── cord19/
-│   └── ...
-│
-└── output/                    # results generated automatically
-```
+- loads Neo4j dump files for multiple datasets
+- applies benchmark perturbations such as property noise and label removal
+- runs one or more schema discovery approaches on every benchmark case
 
----
+Main scripts:
 
-## **2. Downloading the Neo4j Dumps**
+- `run.sh`: installs Python requirements and starts the benchmark
+- `benchmark.py`: main benchmark runner
+- `evaluation.py`: computes evaluation metrics from exported CSVs
+- `stats.py`: exports graph statistics from a running Neo4j database
+- `cp_metrics.py`: computes CP metrics
 
-Neo4j dumps **are not stored in this repository** because of GitHub size limits.
+Main folders:
 
-Instead:
+- `datasets/`: dataset folders with metadata CSVs and Neo4j dump files
+- `output/`: benchmark logs and method outputs
+- `stats_*`: precomputed statistics for several datasets
 
-### **Download all dataset dumps from Zenodo:**
+## Download the dumps first
 
-**Zenodo link:**
-[https://zenodo.org/records/17801336](https://zenodo.org/records/17801336)
+Before running the benchmark, download the dataset dump files from Zenodo:
 
-After downloading, place each dataset dump inside its folder:
+- https://zenodo.org/records/17801336
 
-```
-./datasets/<dataset_name>/
-```
+After downloading them, place each dump inside the matching dataset folder under `datasets/`.
 
-For example:
+Examples:
 
-```
+```text
+datasets/star-wars/star-wars-neo4j-4.4.0.dump
 datasets/fib25/fib25-neo4j-4.4.0.dump
-datasets/pole/pole-neo4j-4.4.0.dump
+datasets/icij/icij-neo4j-4.4.0.dump
 datasets/iyp/iyp-neo4j-5.25.1.dump
 ```
 
----
+The benchmark expects the dump to already be in the correct dataset directory before it starts.
 
-## **3. Downloading Neo4j Community Editions**
+## Dataset layout
 
-Different datasets use different Neo4j versions (e.g., `4.4.0`, `5.1.0`, `5.25.1`).
-These cannot be stored in GitHub either.
+Each dataset folder under `datasets/` is expected to contain:
 
-Download Neo4j Community Edition from the official website:
+- a dump named like `*neo4j-X.Y.Z.dump`
+- `node_properties.csv`
+- `edge_properties.csv`
+- `node_labels.csv`
+- optionally `edge_labels.csv`
 
-**Neo4j Download Center:**
-[https://neo4j.com/download-center/](https://neo4j.com/download-center/)
 
-After downloading, extract them somewhere on your machine, e.g.:
-
-```
-./neo4j-community-4.4.0/
-./neo4j-community-5.1.0/
-./neo4j-community-5.25.1/
-```
-
-Then reference these paths in the **benchmark_config.json**.
-
----
-
-## **4. Configuration (benchmark_config.json)**
-
-This file defines *all* paths, Neo4j versions, and benchmark settings.
+The benchmark detects the Neo4j version directly from the dump filename.
 
 Example:
+
+```text
+datasets/fib25/fib25-neo4j-4.4.0.dump
+datasets/iyp/iyp-neo4j-5.25.1.dump
+```
+
+## Neo4j modes
+
+The benchmark supports two Neo4j runtime modes.
+
+### Community mode
+
+Use `neo4j_mode: "community"` if you want this repo to manage Neo4j installs directly.
+
+Behavior:
+
+- uses a configured Community install if it already exists
+- downloads Neo4j Community automatically if it is missing and `neo4j_auto_download` is `true`
+- updates `conf/neo4j.conf` with the configured memory settings
+- loads the dump with `neo4j-admin`
+
+### Desktop mode
+
+Use `neo4j_mode: "desktop"` if you want to reuse a DBMS managed by Neo4j Desktop.
+
+Important:
+
+- point `neo4j_desktop_dirs` to the actual DBMS home directory, not the Desktop app
+- the benchmark then uses that DBMS's `bin/neo4j`, `bin/neo4j-admin`, and `bin/cypher-shell`
+- dump loading is still automated; you do not need to import the dump manually through the Desktop UI each time
+
+## Configuration
+
+The benchmark reads [config.json](/Users/sophia-euthymiasideris/Desktop/PG_bench/config.json). A template is available in [config_template.json](/Users/sophia-euthymiasideris/Desktop/PG_bench/config_template.json).
+
+Current example:
 
 ```json
 {
@@ -88,202 +103,219 @@ Example:
   "commands_file": "./benchmark_commands.json",
   "neo4j_password": "password",
   "neo4j_port": 7687,
-
   "noise_levels": [0, 10, 20, 30, 40],
   "label_percents": [0.0, 0.5, 1.0],
-
+  "neo4j_mode": "community",
   "neo4j_dirs": {
     "4.4.0": "./neo4j-community-4.4.0",
     "5.1.0": "./neo4j-community-5.1.0",
     "5.25.1": "./neo4j-community-5.25.1"
-  }
+  },
+  "neo4j_desktop_dirs": {},
+  "neo4j_auto_download": true,
+  "neo4j_download_dir": "./neo4j_runtimes",
+  "neo4j_memory": {
+    "heap_initial": "2G",
+    "heap_max": "4G",
+    "pagecache": "2G"
+  },
+  "dataset_order": [
+    "starwars",
+    "pole",
+    "mb6",
+    "het",
+    "fib",
+    "icij",
+    "cord",
+    "twitch",
+    "ldbc",
+    "iyp"
+  ],
+  "run_external_commands": true,
+  "query_batch_size": 10000
 }
 ```
 
-## **5. Defining Algorithms (benchmark_commands.json)**
+Main keys:
 
-Users define *their own* algorithms/scripts to run during the benchmark.
+- `datasets_dir`: root directory for dataset folders
+- `output_dir`: benchmark outputs and logs
+- `commands_file`: methods to run
+- `neo4j_password`: password used by `cypher-shell`
+- `neo4j_port`: port used by Neo4j
+- `noise_levels`: property-removal percentages
+- `label_percents`: fraction of nodes that lose labels
+- `neo4j_mode`: `community` or `desktop`
+- `neo4j_dirs`: version-to-install-path mapping for Community mode
+- `neo4j_desktop_dirs`: version-to-DBMS-home mapping for Desktop mode
+- `neo4j_auto_download`: auto-download missing Community installs
+- `neo4j_download_dir`: fallback directory for downloaded Community installs
+- `neo4j_memory`: memory settings written into `neo4j.conf`
+- `dataset_order`: benchmark execution order; aliases such as `starwars`, `het`, `fib`, and `cord` are normalized
+- `run_external_commands`: whether schema discovery methods should actually run
+- `query_batch_size`: batch size for the heavy Cypher write operations
 
-Example:
+## Benchmark commands
 
-```json
-[
-  {
-    "name": "LSH_MINHASH",
-    "cwd": "./schemadiscovery",
-    "cmd": "sbt \"run LSH MINHASH\""
-  },
-  {
-    "name": "ELSH",
-    "cwd": "./schemadiscovery",
-    "cmd": "sbt \"run LSH\""
-  },
-  {
-    "name": "KMEANS",
-    "cwd": "./schemadiscovery",
-    "cmd": "sbt \"run KMEANS\""
-  },
-  {
-    "name": "PG",
-    "cwd": "./pg-schemainference",
-    "cmd": "python3 cluster_script.py"
-  }
-]
+Schema discovery methods are defined in [benchmark_commands.json](/Users/sophia-euthymiasideris/Desktop/PG_bench/benchmark_commands.json).
+
+Each command can contain:
+
+- `name`: method label
+- `cmd`: shell command to run
+- `cwd`: working directory
+- `repo`: optional GitHub repo to clone before running
+- `clone_dir`: local checkout path
+- `branch`: branch to clone or pull
+- `update_existing`: whether to pull an existing checkout
+- `setup_cmd`: optional dependency-install or build command, run once per checkout before dataset processing starts
+
+Current methods:
+
+- `PG_HIVE_LSH`
+- `PG_HIVE_MINHASH`
+
+## How the benchmark runs
+
+Recommended entrypoint:
+
+```bash
+./run.sh
 ```
 
-* Add/remove entries freely
-* You can run Python, Scala, Java, shell commands — anything.
-* Each run automatically produces a log file in `output/<dataset>/`.
+With evaluation:
 
----
+```bash
+./run.sh --eval
+```
 
-## **6. Running the Benchmark**
+You can also run the Python script directly:
 
 ```bash
 python3 benchmark.py --config ./config.json
 ```
 
-The script performs:
+Execution flow:
 
-1. Detect dataset dump
-2. Match proper Neo4j version
-3. Stop Neo4j
-4. Load clean dump
-5. Apply noise
-6. Remove labels
-7. Run all user-defined commands
-8. Save logs
-9. Repeat for next noise level & dataset
+1. loads the config
+2. reads `benchmark_commands.json`
+3. clones or updates all external method repositories
+4. runs each method's `setup_cmd` once
+5. iterates through the datasets in `dataset_order`
+6. detects the dump and required Neo4j version
+7. resolves the Neo4j runtime
+8. writes Neo4j memory settings into `neo4j.conf`
+9. stops Neo4j if needed
+10. loads the dump into the `neo4j` database
+11. starts Neo4j and waits until `cypher-shell "RETURN 1"` succeeds
+12. saves original labels
+13. removes properties and labels according to the configured benchmark case
+14. runs all configured methods
+15. optionally runs evaluation if the expected CSVs exist and `--eval` was passed
 
----
+## Important runtime behavior
 
-## **7. Dataset CSV Metadata**
+- each noise level starts from a fresh dump load
+- heavy write queries are batched to reduce memory usage
+- external repos are prepared once at the beginning, not inside every dataset loop
+- if `run_external_commands` is `false`, the benchmark still loads dumps and applies benchmark transformations, but skips the schema discovery methods
 
-Inside each dataset folder has:
+## Outputs
 
-```
-node_properties.csv
-edge_properties.csv
-edge_labels.csv
-node_labels.csv
-```
+Outputs are written under `output/<dataset_name>/`.
 
-These define which properties/labels/noise to apply.
+Common files:
 
-Each CSV contains *one value per line* (any single column is accepted).
+- `log_noise{noise}_*.txt`: benchmark-side logs for the Cypher mutation steps
+- `output_{DATASET}_noise{noise}_labels{percent}_{METHOD}.txt`: stdout/stderr from each external method
+- evaluation CSVs and metric outputs when evaluation is enabled
 
----
+## Evaluation inputs
 
-## **8. Evaluation Input Format**
+Evaluation runs only when:
 
-To run evaluation correctly, add a --eval flag. Each schema discovery method must output **four CSV files** per run:
+- you pass `--eval`
+- all four expected CSV files exist for a dataset / noise / label-percent / method combination
 
-```
-original_nodes.csv
-original_edges.csv
-predicted_nodes.csv
-predicted_edges.csv
-```
+Expected files:
 
-with the following required columns:
+- `original_nodes_...csv`
+- `predicted_nodes_...csv`
+- `original_edges_...csv`
+- `predicted_edges_...csv`
 
-### **a. original_nodes.csv**
+Expected columns:
 
-| Column           | Description                           |
-| ---------------- | ------------------------------------- |
-| `_nodeId`        | Unique node ID                        |
-| `original_label` | Ground-truth labels (comma-separated) |
+`original_nodes.csv`
 
-Example:
-`1,Person,Student`
+- `_nodeId`
+- `original_label`
 
----
+`predicted_nodes.csv`
 
-### **b. predicted_nodes.csv**
+- `merged_cluster_id`
+- `sortedLabels`
+- `nodeIdsInCluster`
 
-| Column              | Description                        |
-| ------------------- | ---------------------------------- |
-| `merged_cluster_id` | ID of discovered node pattern      |
-| `sortedLabels`      | Predicted labels (colon-separated) |
-| `nodeIdsInCluster`  | Node IDs (semicolon-separated)     |
+`original_edges.csv`
 
-Example:
-`A01,Person:Student,1;2;5`
+- `srcId`
+- `dstId`
+- `relationshipType`
+- `srcType`
+- `dstType`
 
----
+`predicted_edges.csv`
 
-### **c. original_edges.csv**
+- `merged_cluster_id`
+- `relationshipTypes`
+- `srcLabels`
+- `dstLabels`
+- `edgeIdsInCluster`
 
-| Column             | Description            |
-| ------------------ | ---------------------- |
-| `srcId`            | Source node            |
-| `dstId`            | Target node            |
-| `relationshipType` | Ground-truth edge type |
-| `srcType`          | Ground-truth src label |
-| `dstType`          | Ground-truth dst label |
+## Graph statistics
 
-Example:
-`1,2,LIKES,Person,Person`
-
----
-
-### **4. predicted_edges.csv**
-
-| Column              | Description                                    |                                  |
-| ------------------- | ---------------------------------------------- | -------------------------------- |
-| `merged_cluster_id` | ID of discovered edge pattern                  |                                  |
-| `relationshipTypes` | Predicted relationship types (comma-separated) |                                  |
-| `srcLabels`         | Predicted src labels (comma-separated)         |                                  |
-| `dstLabels`         | Predicted dst labels (comma-separated)         |                                  |
-| `edgeIdsInCluster`  | Edges as `src                                  | dst` pairs (semicolon-separated) |
+`stats.py` exports a structural profile from a running Neo4j database.
 
 Example:
-`E10,LIKES,Person,Person,1|2;7|9`
 
----
-## **9. Artifacts**
+```bash
+python3 stats.py \
+  --uri bolt://localhost:7687 \
+  --user neo4j \
+  --password password \
+  --db neo4j \
+  --out stats_fib
+```
 
-The datasets used and their sources are listed as:
+Important outputs include:
 
-* **POLE**
-  Source: Neo4j Graph Examples
-  GitHub: [https://github.com/neo4j-graph-examples/pole](https://github.com/neo4j-graph-examples/pole)
+- `summary_counts.csv`
+- `summary_counts.json`
+- `cp_operationalization.csv`
+- `cp_operationalization.json`
+- `node_label_counts.csv`
+- `relationship_type_counts.csv`
+- `node_type_counts.csv`
+- `node_patterns.csv`
+- `edge_type_counts.csv`
+- `edge_patterns.csv`
+- `profile.json`
 
-* **MB6**
-  Source: Connectome (Takemura et al.)
-  CSV Dataset: [https://github.com/sophisid/PG-HIVE/tree/master/datasets/MB6](https://github.com/sophisid/PG-HIVE/tree/master/datasets/MB6)
+## Troubleshooting
 
-* **HET.IO**
-  Source: Himmelstein et al.
-  GitHub: [https://github.com/hetio/hetionet](https://github.com/hetio/hetionet)
+If Neo4j does not become ready:
 
-* **FIB25**
-  Source: Takemura et al.
-  CSV Dataset: [https://github.com/sophisid/PG-HIVE/tree/master/datasets/FIB25](https://github.com/sophisid/PG-HIVE/tree/master/datasets/FIB25)
+- check `neo4j-community-<version>/logs/neo4j.log`
+- make sure you are using Java 11 for Neo4j 4.4.x
+- keep `neo4j_memory` realistic for your machine; too-large values cause startup failure
 
-* **ICIJ (Offshore Leaks)**
-  GitHub: [https://github.com/ICIJ/offshoreleaks-data-packages](https://github.com/ICIJ/offshoreleaks-data-packages)
+If a method repo fails during setup:
 
-* **LDBC**
-  Source: LDBC Benchmark
-  CSV Dataset: [https://github.com/sophisid/PG-HIVE/tree/master/datasets/LDBC](https://github.com/sophisid/PG-HIVE/tree/master/datasets/LDBC)
+- check whether the method needs extra system tools such as `sbt`
+- check the method log under `output/<dataset>/`
 
-* **CORD-19**
-  Source: AllenAI
-  GitHub: [https://github.com/allenai/cord19](https://github.com/allenai/cord19)
+If large datasets stall:
 
-* **IYP – Internet Yellow Pages**
-  Source: Fontugne et al.
-  GitHub: [https://github.com/InternetHealthReport/internet-yellow-pages](https://github.com/InternetHealthReport/internet-yellow-pages)
-
----
-
-## **10. Contributions**
-
-Contributions are very welcome.
-
-You can contribute by:
-
-* Adding new datasets
-* Extending/Improving the benchmark pipeline
-* Reporting issues or submitting pull requests
+- lower `query_batch_size`
+- adjust `neo4j_memory`

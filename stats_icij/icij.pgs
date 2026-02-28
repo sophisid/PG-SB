@@ -1,0 +1,42 @@
+CREATE NODE TYPE node_Entity ( node_Entity : Entity { address STRING, closed_date STRING, company_number STRING, company_type STRING, countries STRING, country_codes STRING, dorm_date STRING, entity_number STRING, former_name STRING, ibcRUC STRING, inactivation_date STRING, incorporation_date STRING, internal_id STRING, jurisdiction STRING, jurisdiction_description STRING, lastEditTimestamp STRING, name STRING, node_id STRING, note STRING, original_name STRING, service_provider STRING, sourceID STRING, status STRING, struck_off_date STRING, tax_stat_description STRING, type STRING, valid_until STRING } );
+CREATE NODE TYPE node_Officer ( node_Officer : Officer { countries STRING, country_codes STRING, icij_id STRING, lastEditTimestamp STRING, name STRING, node_id STRING, note STRING, sourceID STRING, valid_until STRING } );
+CREATE NODE TYPE node_Address ( node_Address : Address { address STRING, addressID STRING, countries STRING, country STRING, country_code STRING, country_codes STRING, icij_id STRING, lastEditTimestamp STRING, name STRING, node_id STRING, note STRING, original_address STRING, sourceID STRING, valid_until STRING } );
+CREATE NODE TYPE node_Intermediary ( node_Intermediary : Intermediary { address STRING, countries STRING, country_codes STRING, internal_id STRING, lastEditTimestamp STRING, name STRING, node_id STRING, registered_office STRING, sourceID STRING, status STRING, valid_until STRING } );
+CREATE NODE TYPE node_Other ( node_Other : Other { closed_date STRING, countries STRING, country_codes STRING, incorporation_date STRING, jurisdiction STRING, jurisdiction_description STRING, lastEditTimestamp STRING, name STRING, node_id STRING, note STRING, sourceID STRING, struck_off_date STRING, type STRING, valid_until STRING } );
+CREATE NODE TYPE node_Intermediary_Officer ( node_Intermediary_Officer : Intermediary & Officer { countries STRING, country_codes STRING, lastEditTimestamp STRING, name STRING, node_id STRING, sourceID STRING, valid_until STRING } );
+CREATE EDGE TYPE edge_officer_of ( : Entity | Intermediary | ( Intermediary & Officer ) | Officer ) - [ edge_officer_of : officer_of { end_date STRING, lastEditTimestamp STRING, link STRING, sourceID STRING, start_date STRING, status STRING, valid_until STRING } ] -> ( : Entity | Intermediary | Officer | Other );
+CREATE EDGE TYPE edge_registered_address ( : Entity | Intermediary | ( Intermediary & Officer ) | Officer | Other ) - [ edge_registered_address : registered_address { lastEditTimestamp STRING, link STRING, sourceID STRING, valid_until STRING } ] -> ( : Address | Entity );
+CREATE EDGE TYPE edge_intermediary_of ( : Intermediary | ( Intermediary & Officer ) ) - [ edge_intermediary_of : intermediary_of { end_date STRING, lastEditTimestamp STRING, link STRING, sourceID STRING, start_date STRING, valid_until STRING } ] -> ( : Entity );
+CREATE EDGE TYPE edge_same_name_as ( : Entity | Intermediary | Officer | Other ) - [ edge_same_name_as : same_name_as { lastEditTimestamp STRING, link STRING, sourceID STRING, valid_until STRING } ] -> ( : Entity | Intermediary | ( Intermediary & Officer ) | Officer | Other );
+CREATE EDGE TYPE edge_similar ( : Intermediary | ( Intermediary & Officer ) | Officer ) - [ edge_similar : similar { link STRING } ] -> ( : Intermediary | ( Intermediary & Officer ) | Officer );
+CREATE EDGE TYPE edge_same_company_as ( : Entity ) - [ edge_same_company_as : same_company_as { link STRING, sourceID STRING, valid_until STRING } ] -> ( : Entity );
+CREATE EDGE TYPE edge_connected_to ( : Intermediary | Officer | Other ) - [ edge_connected_to : connected_to { link STRING, sourceID STRING, valid_until STRING } ] -> ( : Entity );
+CREATE EDGE TYPE edge_same_as ( : Address | Entity | Intermediary ) - [ edge_same_as : same_as { link STRING } ] -> ( : Address | Entity | Officer );
+CREATE EDGE TYPE edge_same_id_as ( : Officer ) - [ edge_same_id_as : same_id_as { link STRING, sourceID STRING, valid_until STRING } ] -> ( : Officer );
+CREATE EDGE TYPE edge_underlying ( : ( Intermediary & Officer ) | Officer | Other ) - [ edge_underlying : underlying { lastEditTimestamp STRING, link STRING, sourceID STRING, valid_until STRING } ] -> ( : Entity | ( Intermediary & Officer ) | Officer );
+CREATE EDGE TYPE edge_similar_company_as ( : Entity ) - [ edge_similar_company_as : similar_company_as { link STRING, sourceID STRING, valid_until STRING } ] -> ( : Entity );
+CREATE EDGE TYPE edge_probably_same_officer_as ( : Officer ) - [ edge_probably_same_officer_as : probably_same_officer_as { link STRING, sourceID STRING, valid_until STRING } ] -> ( : Officer );
+CREATE EDGE TYPE edge_same_address_as ( : Address ) - [ edge_same_address_as : same_address_as { link STRING, sourceID STRING, valid_until STRING } ] -> ( : Address );
+CREATE EDGE TYPE edge_same_intermediary_as ( : Intermediary ) - [ edge_same_intermediary_as : same_intermediary_as { link STRING, sourceID STRING, valid_until STRING } ] -> ( : Intermediary );
+CREATE GRAPH TYPE icij_GraphType STRICT {
+  node_Entity,
+  node_Officer,
+  node_Address,
+  node_Intermediary,
+  node_Other,
+  node_Intermediary_Officer,
+  edge_officer_of,
+  edge_registered_address,
+  edge_intermediary_of,
+  edge_same_name_as,
+  edge_similar,
+  edge_same_company_as,
+  edge_connected_to,
+  edge_same_as,
+  edge_same_id_as,
+  edge_underlying,
+  edge_similar_company_as,
+  edge_probably_same_officer_as,
+  edge_same_address_as,
+  edge_same_intermediary_as
+};

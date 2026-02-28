@@ -1,0 +1,11 @@
+relType,sourceLabelCombo,targetLabelCombo,count
+APPEARED_IN,Character,Film,162
+HOMEWORLD,Character,Planet,82
+OF,Character,Species,78
+APPEARED_IN,Species,Film,73
+APPEARED_IN,Starship,Film,55
+APPEARED_IN,Vehicle,Film,49
+HOMEWORLD,Species,Planet,36
+APPEARED_IN,Planet,Film,33
+PILOT,Character,Starship,30
+PILOT,Character,Vehicle,13

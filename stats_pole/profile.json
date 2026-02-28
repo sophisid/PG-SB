@@ -1,0 +1,907 @@
+{
+  "summary_counts": {
+    "nodes": 61521,
+    "edges": 105599,
+    "node_types": 11,
+    "edge_types": 17,
+    "node_labels": 11,
+    "edge_labels": 16,
+    "node_patterns": 17,
+    "edge_patterns": 17,
+    "total_properties": 31
+  },
+  "global_stats": {
+    "total_nodes": 61521,
+    "total_edges": 105599
+  },
+  "node_labels": [
+    "AREA",
+    "Crime",
+    "Email",
+    "Location",
+    "Object",
+    "Officer",
+    "Person",
+    "Phone",
+    "PhoneCall",
+    "PostCode",
+    "Vehicle"
+  ],
+  "node_label_counts": [
+    {
+      "label": "Crime",
+      "count": 28762
+    },
+    {
+      "label": "Location",
+      "count": 14904
+    },
+    {
+      "label": "PostCode",
+      "count": 14196
+    },
+    {
+      "label": "Officer",
+      "count": 1000
+    },
+    {
+      "label": "Vehicle",
+      "count": 1000
+    },
+    {
+      "label": "PhoneCall",
+      "count": 534
+    },
+    {
+      "label": "Person",
+      "count": 369
+    },
+    {
+      "label": "Email",
+      "count": 328
+    },
+    {
+      "label": "Phone",
+      "count": 328
+    },
+    {
+      "label": "AREA",
+      "count": 93
+    },
+    {
+      "label": "Object",
+      "count": 7
+    }
+  ],
+  "relationship_types": [
+    "CALLED",
+    "CALLER",
+    "CURRENT_ADDRESS",
+    "FAMILY_REL",
+    "HAS_EMAIL",
+    "HAS_PHONE",
+    "HAS_POSTCODE",
+    "INVESTIGATED_BY",
+    "INVOLVED_IN",
+    "KNOWS",
+    "KNOWS_LW",
+    "KNOWS_PHONE",
+    "LOCATION_IN_AREA",
+    "OCCURRED_AT",
+    "PARTY_TO",
+    "POSTCODE_IN_AREA"
+  ],
+  "relationship_type_counts": [
+    {
+      "relType": "INVESTIGATED_BY",
+      "count": 28762
+    },
+    {
+      "relType": "OCCURRED_AT",
+      "count": 28762
+    },
+    {
+      "relType": "HAS_POSTCODE",
+      "count": 14904
+    },
+    {
+      "relType": "LOCATION_IN_AREA",
+      "count": 14904
+    },
+    {
+      "relType": "POSTCODE_IN_AREA",
+      "count": 14196
+    },
+    {
+      "relType": "INVOLVED_IN",
+      "count": 985
+    },
+    {
+      "relType": "KNOWS",
+      "count": 586
+    },
+    {
+      "relType": "CALLED",
+      "count": 534
+    },
+    {
+      "relType": "CALLER",
+      "count": 534
+    },
+    {
+      "relType": "CURRENT_ADDRESS",
+      "count": 368
+    },
+    {
+      "relType": "HAS_EMAIL",
+      "count": 328
+    },
+    {
+      "relType": "HAS_PHONE",
+      "count": 328
+    },
+    {
+      "relType": "FAMILY_REL",
+      "count": 155
+    },
+    {
+      "relType": "KNOWS_PHONE",
+      "count": 118
+    },
+    {
+      "relType": "KNOWS_LW",
+      "count": 80
+    },
+    {
+      "relType": "PARTY_TO",
+      "count": 55
+    }
+  ],
+  "node_property_keys": [
+    "address",
+    "age",
+    "areaCode",
+    "badge_no",
+    "call_date",
+    "call_duration",
+    "call_time",
+    "call_type",
+    "charge",
+    "code",
+    "date",
+    "description",
+    "email_address",
+    "id",
+    "last_outcome",
+    "latitude",
+    "longitude",
+    "make",
+    "model",
+    "name",
+    "nhs_no",
+    "note",
+    "phoneNo",
+    "postcode",
+    "rank",
+    "reg",
+    "source_id",
+    "surname",
+    "type",
+    "year"
+  ],
+  "edge_property_keys": [
+    "rel_type"
+  ],
+  "all_property_keys": [
+    "address",
+    "age",
+    "areaCode",
+    "badge_no",
+    "call_date",
+    "call_duration",
+    "call_time",
+    "call_type",
+    "charge",
+    "code",
+    "date",
+    "description",
+    "email_address",
+    "id",
+    "last_outcome",
+    "latitude",
+    "longitude",
+    "make",
+    "model",
+    "name",
+    "nhs_no",
+    "note",
+    "phoneNo",
+    "postcode",
+    "rank",
+    "reg",
+    "rel_type",
+    "source_id",
+    "surname",
+    "type",
+    "year"
+  ],
+  "node_types": [
+    {
+      "nodeType": "AREA",
+      "properties": [
+        "areaCode",
+        "id"
+      ]
+    },
+    {
+      "nodeType": "Crime",
+      "properties": [
+        "date",
+        "id",
+        "source_id",
+        "last_outcome",
+        "type"
+      ]
+    },
+    {
+      "nodeType": "Email",
+      "properties": [
+        "id",
+        "email_address"
+      ]
+    },
+    {
+      "nodeType": "Location",
+      "properties": [
+        "postcode",
+        "id",
+        "address",
+        "latitude",
+        "longitude"
+      ]
+    },
+    {
+      "nodeType": "Object",
+      "properties": [
+        "description",
+        "source_id",
+        "id",
+        "type"
+      ]
+    },
+    {
+      "nodeType": "Officer",
+      "properties": [
+        "name",
+        "rank",
+        "badge_no",
+        "id",
+        "surname"
+      ]
+    },
+    {
+      "nodeType": "Person",
+      "properties": [
+        "name",
+        "nhs_no",
+        "id",
+        "surname",
+        "age"
+      ]
+    },
+    {
+      "nodeType": "Phone",
+      "properties": [
+        "phoneNo",
+        "id"
+      ]
+    },
+    {
+      "nodeType": "PhoneCall",
+      "properties": [
+        "call_time",
+        "call_date",
+        "id",
+        "call_type",
+        "call_duration"
+      ]
+    },
+    {
+      "nodeType": "PostCode",
+      "properties": [
+        "id",
+        "code"
+      ]
+    },
+    {
+      "nodeType": "Vehicle",
+      "properties": [
+        "model",
+        "id",
+        "year",
+        "reg",
+        "make"
+      ]
+    }
+  ],
+  "node_type_counts": [
+    {
+      "nodeType": "Crime",
+      "count": 28762
+    },
+    {
+      "nodeType": "Location",
+      "count": 14904
+    },
+    {
+      "nodeType": "PostCode",
+      "count": 14196
+    },
+    {
+      "nodeType": "Officer",
+      "count": 1000
+    },
+    {
+      "nodeType": "Vehicle",
+      "count": 1000
+    },
+    {
+      "nodeType": "PhoneCall",
+      "count": 534
+    },
+    {
+      "nodeType": "Person",
+      "count": 369
+    },
+    {
+      "nodeType": "Email",
+      "count": 328
+    },
+    {
+      "nodeType": "Phone",
+      "count": 328
+    },
+    {
+      "nodeType": "AREA",
+      "count": 93
+    },
+    {
+      "nodeType": "Object",
+      "count": 7
+    }
+  ],
+  "node_patterns": [
+    {
+      "nodeType": "Crime",
+      "propSet": "date:id:last_outcome:source_id:type",
+      "count": 28750
+    },
+    {
+      "nodeType": "Location",
+      "propSet": "address:id:latitude:longitude:postcode",
+      "count": 14904
+    },
+    {
+      "nodeType": "PostCode",
+      "propSet": "code:id",
+      "count": 14196
+    },
+    {
+      "nodeType": "Officer",
+      "propSet": "badge_no:id:name:rank:surname",
+      "count": 1000
+    },
+    {
+      "nodeType": "Vehicle",
+      "propSet": "id:make:model:reg:year",
+      "count": 1000
+    },
+    {
+      "nodeType": "PhoneCall",
+      "propSet": "call_date:call_duration:call_time:call_type:id",
+      "count": 534
+    },
+    {
+      "nodeType": "Person",
+      "propSet": "id:name:nhs_no:surname",
+      "count": 367
+    },
+    {
+      "nodeType": "Email",
+      "propSet": "email_address:id",
+      "count": 328
+    },
+    {
+      "nodeType": "Phone",
+      "propSet": "id:phoneNo",
+      "count": 328
+    },
+    {
+      "nodeType": "AREA",
+      "propSet": "areaCode:id",
+      "count": 93
+    },
+    {
+      "nodeType": "Crime",
+      "propSet": "charge:date:id:last_outcome:source_id:type",
+      "count": 10
+    },
+    {
+      "nodeType": "Object",
+      "propSet": "description:id:type",
+      "count": 5
+    },
+    {
+      "nodeType": "Object",
+      "propSet": "description:id:source_id:type",
+      "count": 2
+    },
+    {
+      "nodeType": "Crime",
+      "propSet": "charge:date:id:last_outcome:note:source_id:type",
+      "count": 1
+    },
+    {
+      "nodeType": "Crime",
+      "propSet": "date:id:last_outcome:source_id",
+      "count": 1
+    },
+    {
+      "nodeType": "Person",
+      "propSet": "age:id:name:nhs_no:surname",
+      "count": 1
+    },
+    {
+      "nodeType": "Person",
+      "propSet": "id:name:surname",
+      "count": 1
+    }
+  ],
+  "edge_types": [
+    {
+      "relType": "CALLED",
+      "sources": [
+        "PhoneCall"
+      ],
+      "targets": [
+        "Phone"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "CALLER",
+      "sources": [
+        "PhoneCall"
+      ],
+      "targets": [
+        "Phone"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "CURRENT_ADDRESS",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Location"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "FAMILY_REL",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Person"
+      ],
+      "properties": [
+        "rel_type"
+      ]
+    },
+    {
+      "relType": "HAS_EMAIL",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Email"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "HAS_PHONE",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Phone"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "HAS_POSTCODE",
+      "sources": [
+        "Location"
+      ],
+      "targets": [
+        "PostCode"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "INVESTIGATED_BY",
+      "sources": [
+        "Crime"
+      ],
+      "targets": [
+        "Officer"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "INVOLVED_IN",
+      "sources": [
+        "Object",
+        "Vehicle"
+      ],
+      "targets": [
+        "Crime"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "KNOWS",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Person"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "KNOWS_LW",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Person"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "KNOWS_PHONE",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Person"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "LOCATION_IN_AREA",
+      "sources": [
+        "Location"
+      ],
+      "targets": [
+        "AREA"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "OCCURRED_AT",
+      "sources": [
+        "Crime"
+      ],
+      "targets": [
+        "Location"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PARTY_TO",
+      "sources": [
+        "Person"
+      ],
+      "targets": [
+        "Crime"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "POSTCODE_IN_AREA",
+      "sources": [
+        "PostCode"
+      ],
+      "targets": [
+        "AREA"
+      ],
+      "properties": []
+    }
+  ],
+  "edge_type_counts": [
+    {
+      "relType": "INVESTIGATED_BY",
+      "sourceLabelCombo": "Crime",
+      "targetLabelCombo": "Officer",
+      "count": 28762
+    },
+    {
+      "relType": "OCCURRED_AT",
+      "sourceLabelCombo": "Crime",
+      "targetLabelCombo": "Location",
+      "count": 28762
+    },
+    {
+      "relType": "HAS_POSTCODE",
+      "sourceLabelCombo": "Location",
+      "targetLabelCombo": "PostCode",
+      "count": 14904
+    },
+    {
+      "relType": "LOCATION_IN_AREA",
+      "sourceLabelCombo": "Location",
+      "targetLabelCombo": "AREA",
+      "count": 14904
+    },
+    {
+      "relType": "POSTCODE_IN_AREA",
+      "sourceLabelCombo": "PostCode",
+      "targetLabelCombo": "AREA",
+      "count": 14196
+    },
+    {
+      "relType": "INVOLVED_IN",
+      "sourceLabelCombo": "Vehicle",
+      "targetLabelCombo": "Crime",
+      "count": 978
+    },
+    {
+      "relType": "KNOWS",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Person",
+      "count": 586
+    },
+    {
+      "relType": "CALLED",
+      "sourceLabelCombo": "PhoneCall",
+      "targetLabelCombo": "Phone",
+      "count": 534
+    },
+    {
+      "relType": "CALLER",
+      "sourceLabelCombo": "PhoneCall",
+      "targetLabelCombo": "Phone",
+      "count": 534
+    },
+    {
+      "relType": "CURRENT_ADDRESS",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Location",
+      "count": 368
+    },
+    {
+      "relType": "HAS_EMAIL",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Email",
+      "count": 328
+    },
+    {
+      "relType": "HAS_PHONE",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Phone",
+      "count": 328
+    },
+    {
+      "relType": "FAMILY_REL",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Person",
+      "count": 155
+    },
+    {
+      "relType": "KNOWS_PHONE",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Person",
+      "count": 118
+    },
+    {
+      "relType": "KNOWS_LW",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Person",
+      "count": 80
+    },
+    {
+      "relType": "PARTY_TO",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Crime",
+      "count": 55
+    },
+    {
+      "relType": "INVOLVED_IN",
+      "sourceLabelCombo": "Object",
+      "targetLabelCombo": "Crime",
+      "count": 7
+    }
+  ],
+  "edge_patterns": [
+    {
+      "relType": "INVESTIGATED_BY",
+      "sourceLabelCombo": "Crime",
+      "targetLabelCombo": "Officer",
+      "propSet": "",
+      "count": 28762
+    },
+    {
+      "relType": "OCCURRED_AT",
+      "sourceLabelCombo": "Crime",
+      "targetLabelCombo": "Location",
+      "propSet": "",
+      "count": 28762
+    },
+    {
+      "relType": "HAS_POSTCODE",
+      "sourceLabelCombo": "Location",
+      "targetLabelCombo": "PostCode",
+      "propSet": "",
+      "count": 14904
+    },
+    {
+      "relType": "LOCATION_IN_AREA",
+      "sourceLabelCombo": "Location",
+      "targetLabelCombo": "AREA",
+      "propSet": "",
+      "count": 14904
+    },
+    {
+      "relType": "POSTCODE_IN_AREA",
+      "sourceLabelCombo": "PostCode",
+      "targetLabelCombo": "AREA",
+      "propSet": "",
+      "count": 14196
+    },
+    {
+      "relType": "INVOLVED_IN",
+      "sourceLabelCombo": "Vehicle",
+      "targetLabelCombo": "Crime",
+      "propSet": "",
+      "count": 978
+    },
+    {
+      "relType": "KNOWS",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Person",
+      "propSet": "",
+      "count": 586
+    },
+    {
+      "relType": "CALLED",
+      "sourceLabelCombo": "PhoneCall",
+      "targetLabelCombo": "Phone",
+      "propSet": "",
+      "count": 534
+    },
+    {
+      "relType": "CALLER",
+      "sourceLabelCombo": "PhoneCall",
+      "targetLabelCombo": "Phone",
+      "propSet": "",
+      "count": 534
+    },
+    {
+      "relType": "CURRENT_ADDRESS",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Location",
+      "propSet": "",
+      "count": 368
+    },
+    {
+      "relType": "HAS_EMAIL",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Email",
+      "propSet": "",
+      "count": 328
+    },
+    {
+      "relType": "HAS_PHONE",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Phone",
+      "propSet": "",
+      "count": 328
+    },
+    {
+      "relType": "FAMILY_REL",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Person",
+      "propSet": "rel_type",
+      "count": 155
+    },
+    {
+      "relType": "KNOWS_PHONE",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Person",
+      "propSet": "",
+      "count": 118
+    },
+    {
+      "relType": "KNOWS_LW",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Person",
+      "propSet": "",
+      "count": 80
+    },
+    {
+      "relType": "PARTY_TO",
+      "sourceLabelCombo": "Person",
+      "targetLabelCombo": "Crime",
+      "propSet": "",
+      "count": 55
+    },
+    {
+      "relType": "INVOLVED_IN",
+      "sourceLabelCombo": "Object",
+      "targetLabelCombo": "Crime",
+      "propSet": "",
+      "count": 7
+    }
+  ],
+  "node_types_properties_counts": [
+    {
+      "nodeType": "Crime",
+      "count": 28762,
+      "properties": "date|id|last_outcome|source_id|type"
+    },
+    {
+      "nodeType": "Location",
+      "count": 14904,
+      "properties": "address|id|latitude|longitude|postcode"
+    },
+    {
+      "nodeType": "PostCode",
+      "count": 14196,
+      "properties": "code|id"
+    },
+    {
+      "nodeType": "Officer",
+      "count": 1000,
+      "properties": "badge_no|id|name|rank|surname"
+    },
+    {
+      "nodeType": "Vehicle",
+      "count": 1000,
+      "properties": "id|make|model|reg|year"
+    },
+    {
+      "nodeType": "PhoneCall",
+      "count": 534,
+      "properties": "call_date|call_duration|call_time|call_type|id"
+    },
+    {
+      "nodeType": "Person",
+      "count": 369,
+      "properties": "age|id|name|nhs_no|surname"
+    },
+    {
+      "nodeType": "Email",
+      "count": 328,
+      "properties": "email_address|id"
+    },
+    {
+      "nodeType": "Phone",
+      "count": 328,
+      "properties": "id|phoneNo"
+    },
+    {
+      "nodeType": "AREA",
+      "count": 93,
+      "properties": "areaCode|id"
+    },
+    {
+      "nodeType": "Object",
+      "count": 7,
+      "properties": "description|id|source_id|type"
+    }
+  ]
+}

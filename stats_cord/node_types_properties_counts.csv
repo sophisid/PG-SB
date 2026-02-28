@@ -1,0 +1,17 @@
+nodeType,count,properties
+Reference,2815762,name|refId|title|venue|year
+Citation,880891,citId|text
+PaperID,388973,paperRefId|type|value
+Author,355672,authorId|email|first|last|middle|suffix
+BodyText,283036,bodyId|section|text
+AbstractCollection,128492,absCollId
+AuthorCollection,128492,acId
+BodyTextCollection,128492,bodyCollId
+Paper,128492,cord_uid|doi|journal|paperId|pmcid|publish_time|pubmed_id|source_x|title|url
+ReferenceCollection,128492,refCollId
+Affiliation,48913,affId|institution|laboratory
+Location,44504,country|locId|postcode|region|settlement
+Journal,15157,journalId|name
+Abstract,9878,abstractId|text
+Source,33,name|sourceId
+License,17,licenseId|name

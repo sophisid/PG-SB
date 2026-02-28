@@ -1,0 +1,15 @@
+relType,sourceLabelCombo,targetLabelCombo,properties,count
+officer_of,Entity|Intermediary|Intermediary:Officer|Officer,Entity|Intermediary|Officer|Other,end_date|lastEditTimestamp|link|sourceID|start_date|status|valid_until,1720357
+registered_address,Entity|Intermediary|Intermediary:Officer|Officer|Other,Address|Entity,lastEditTimestamp|link|sourceID|valid_until,832721
+intermediary_of,Intermediary|Intermediary:Officer,Entity,end_date|lastEditTimestamp|link|sourceID|start_date|valid_until,598546
+same_name_as,Entity|Intermediary|Officer|Other,Entity|Intermediary|Intermediary:Officer|Officer|Other,lastEditTimestamp|link|sourceID|valid_until,104170
+similar,Intermediary|Intermediary:Officer|Officer,Intermediary|Intermediary:Officer|Officer,link,46761
+same_company_as,Entity,Entity,link|sourceID|valid_until,15523
+connected_to,Intermediary|Officer|Other,Entity,link|sourceID|valid_until,12145
+same_as,Address|Entity|Intermediary,Address|Entity|Officer,link,4272
+same_id_as,Officer,Officer,link|sourceID|valid_until,3120
+underlying,Intermediary:Officer|Officer|Other,Entity|Intermediary:Officer|Officer,lastEditTimestamp|link|sourceID|valid_until,1308
+similar_company_as,Entity,Entity,link|sourceID|valid_until,203
+probably_same_officer_as,Officer,Officer,link|sourceID|valid_until,132
+same_address_as,Address,Address,link|sourceID|valid_until,5
+same_intermediary_as,Intermediary,Intermediary,link|sourceID|valid_until,4

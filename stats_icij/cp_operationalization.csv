@@ -1,0 +1,2 @@
+cp1_avg_node_patterns_per_node_type,cp2_unlabeled_nodes_percent,cp3_avg_label_cardinality_per_node,cp5_total_node_patterns_typed,cp5_global_distinct_property_sets,cp7_avg_edge_patterns_per_edge_type,cp8_nodes_plus_edges
+34.666666666666664,0.0,1.0005648336269906,208,187,7.285714285714286,5355790

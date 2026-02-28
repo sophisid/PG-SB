@@ -1,0 +1,10 @@
+relType,sourceLabelCombo,targetLabelCombo,propSet,count
+CONTAINS,SynapseSet:medulla7column_SynapseSet,Synapse:medulla7column_Synapse,,614160
+SYNAPSES_TO,Synapse:medulla7column_Synapse,Synapse:medulla7column_Synapse,,313204
+CONTAINS,Neuron:Segment:medulla7column_Neuron:medulla7column_Segment,SynapseSet:medulla7column_SynapseSet,,231020
+CONNECTS_TO,SynapseSet:medulla7column_SynapseSet,SynapseSet:medulla7column_SynapseSet,,174516
+CONTAINS,Neuron:Segment:medulla7column_Segment,SynapseSet:medulla7column_SynapseSet,,118012
+CONNECTS_TO,Neuron:Segment:medulla7column_Neuron:medulla7column_Segment,Neuron:Segment:medulla7column_Segment,roiInfo:weight:weightHP,112426
+CONNECTS_TO,Neuron:Segment:medulla7column_Neuron:medulla7column_Segment,Neuron:Segment:medulla7column_Neuron:medulla7column_Segment,roiInfo:weight:weightHP,58477
+CONNECTS_TO,Neuron:Segment:medulla7column_Segment,Neuron:Segment:medulla7column_Segment,roiInfo:weight:weightHP,1973
+CONNECTS_TO,Neuron:Segment:medulla7column_Segment,Neuron:Segment:medulla7column_Neuron:medulla7column_Segment,roiInfo:weight:weightHP,1640

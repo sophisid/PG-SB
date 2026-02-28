@@ -1,0 +1,6 @@
+nodeType,count,properties
+Synapse:mushroombody_Synapse,317986,alpha1|alpha2|alpha3|confidence|location|type
+SynapseSet:mushroombody_SynapseSet,160516,
+Neuron:Segment:mushroombody_Segment,6551,alpha1|alpha2|alpha3|bodyId|cropped|instance|post|pre|roiInfo|size|status|statusLabel|type
+Neuron:Segment:mushroombody_Neuron:mushroombody_Segment,1213,alpha1|alpha2|alpha3|bodyId|cropped|instance|post|pre|roiInfo|size|status|statusLabel|type
+Meta:medulla7column_Meta,1,dataset|lastDatabaseEdit|latestMutationId|logo|meshHost|neuroglancerInfo|neuroglancerMeta|postHPThreshold|postHighAccuracyThreshold|preHPThreshold|primaryRois|roiHierarchy|roiInfo|statusDefinitions|superLevelRois|totalPostCount|totalPreCount|uuid

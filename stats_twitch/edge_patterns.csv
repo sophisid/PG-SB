@@ -1,0 +1,10 @@
+relType,sourceLabelCombo,targetLabelCombo,propSet,count
+CHATTER,User,Stream:User,,10015267
+MODERATOR,User,Stream:User,,29024
+VIP,User,Stream:User,,15178
+PLAYS,Stream:User,Game,,5696
+HAS_LANGUAGE,Stream:User,Language,,4541
+CHATTER,Stream:User,Stream:User,,3014
+HAS_TEAM,Stream:User,Team,,2980
+MODERATOR,Stream:User,Stream:User,,722
+VIP,Stream:User,Stream:User,,516

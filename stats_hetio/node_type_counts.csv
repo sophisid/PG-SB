@@ -1,0 +1,12 @@
+nodeType,count
+Gene:HetionetNode,20945
+Biological Process:HetionetNode,11381
+HetionetNode:Side Effect,5734
+HetionetNode:Molecular Function,2884
+HetionetNode:Pathway,1822
+Compound:HetionetNode,1552
+Cellular Component:HetionetNode,1391
+HetionetNode:Symptom,438
+Anatomy:HetionetNode,402
+HetionetNode:Pharmacologic Class,345
+Disease:HetionetNode,137

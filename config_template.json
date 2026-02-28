@@ -6,9 +6,32 @@
   "neo4j_port": 7687,
   "noise_levels": [0, 10, 20, 30, 40],
   "label_percents": [0.0, 0.5, 1.0],
+  "neo4j_mode": "community",
   "neo4j_dirs": {
     "4.4.0": "./neo4j-community-4.4.0",
     "5.1.0": "./neo4j-community-5.1.0",
     "5.25.1": "./neo4j-community-5.25.1"
-  }
+  },
+  "neo4j_desktop_dirs": {},
+  "neo4j_auto_download": true,
+  "neo4j_download_dir": "./neo4j_runtimes",
+  "neo4j_memory": {
+    "heap_initial": "2G",
+    "heap_max": "4G",
+    "pagecache": "2G"
+  },
+  "dataset_order": [
+    "starwars",
+    "pole",
+    "mb6",
+    "het",
+    "fib",
+    "icij",
+    "cord",
+    "twitch",
+    "ldbc",
+    "iyp"
+  ],
+  "run_external_commands": true,
+  "query_batch_size": 10000
 }

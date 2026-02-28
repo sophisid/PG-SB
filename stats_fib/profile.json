@@ -1,0 +1,606 @@
+{
+  "summary_counts": {
+    "nodes": 802473,
+    "edges": 1625428,
+    "node_types": 5,
+    "edge_types": 9,
+    "node_labels": 10,
+    "edge_labels": 3,
+    "node_patterns": 31,
+    "edge_patterns": 9,
+    "total_properties": 33
+  },
+  "global_stats": {
+    "total_nodes": 802473,
+    "total_edges": 1625428
+  },
+  "node_labels": [
+    "Meta",
+    "Neuron",
+    "Segment",
+    "Synapse",
+    "SynapseSet",
+    "medulla7column_Meta",
+    "medulla7column_Neuron",
+    "medulla7column_Segment",
+    "medulla7column_Synapse",
+    "medulla7column_SynapseSet"
+  ],
+  "node_label_counts": [
+    {
+      "label": "Synapse",
+      "count": 366306
+    },
+    {
+      "label": "medulla7column_Synapse",
+      "count": 366306
+    },
+    {
+      "label": "SynapseSet",
+      "count": 349032
+    },
+    {
+      "label": "medulla7column_SynapseSet",
+      "count": 349032
+    },
+    {
+      "label": "Neuron",
+      "count": 87134
+    },
+    {
+      "label": "Segment",
+      "count": 87134
+    },
+    {
+      "label": "medulla7column_Segment",
+      "count": 87134
+    },
+    {
+      "label": "medulla7column_Neuron",
+      "count": 2951
+    },
+    {
+      "label": "Meta",
+      "count": 1
+    },
+    {
+      "label": "medulla7column_Meta",
+      "count": 1
+    }
+  ],
+  "relationship_types": [
+    "CONNECTS_TO",
+    "CONTAINS",
+    "SYNAPSES_TO"
+  ],
+  "relationship_type_counts": [
+    {
+      "relType": "CONTAINS",
+      "count": 963192
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "count": 349032
+    },
+    {
+      "relType": "SYNAPSES_TO",
+      "count": 313204
+    }
+  ],
+  "node_property_keys": [
+    "bodyId",
+    "confidence",
+    "cropped",
+    "dataset",
+    "distal",
+    "instance",
+    "lastDatabaseEdit",
+    "latestMutationId",
+    "location",
+    "logo",
+    "meshHost",
+    "neuroglancerInfo",
+    "neuroglancerMeta",
+    "post",
+    "postHPThreshold",
+    "postHighAccuracyThreshold",
+    "pre",
+    "preHPThreshold",
+    "primaryRois",
+    "proximal",
+    "roiHierarchy",
+    "roiInfo",
+    "size",
+    "status",
+    "statusDefinitions",
+    "statusLabel",
+    "superLevelRois",
+    "totalPostCount",
+    "totalPreCount",
+    "type",
+    "uuid"
+  ],
+  "edge_property_keys": [
+    "roiInfo",
+    "weight",
+    "weightHP"
+  ],
+  "all_property_keys": [
+    "bodyId",
+    "confidence",
+    "cropped",
+    "dataset",
+    "distal",
+    "instance",
+    "lastDatabaseEdit",
+    "latestMutationId",
+    "location",
+    "logo",
+    "meshHost",
+    "neuroglancerInfo",
+    "neuroglancerMeta",
+    "post",
+    "postHPThreshold",
+    "postHighAccuracyThreshold",
+    "pre",
+    "preHPThreshold",
+    "primaryRois",
+    "proximal",
+    "roiHierarchy",
+    "roiInfo",
+    "size",
+    "status",
+    "statusDefinitions",
+    "statusLabel",
+    "superLevelRois",
+    "totalPostCount",
+    "totalPreCount",
+    "type",
+    "uuid",
+    "weight",
+    "weightHP"
+  ],
+  "node_types": [
+    {
+      "nodeType": "Meta:medulla7column_Meta",
+      "properties": [
+        "primaryRois",
+        "roiInfo",
+        "roiHierarchy",
+        "neuroglancerInfo",
+        "totalPreCount",
+        "lastDatabaseEdit",
+        "uuid",
+        "statusDefinitions",
+        "preHPThreshold",
+        "totalPostCount",
+        "superLevelRois",
+        "latestMutationId",
+        "logo",
+        "postHighAccuracyThreshold",
+        "meshHost",
+        "dataset",
+        "postHPThreshold",
+        "neuroglancerMeta"
+      ]
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "properties": [
+        "roiInfo",
+        "pre",
+        "instance",
+        "distal",
+        "post",
+        "size",
+        "proximal",
+        "bodyId",
+        "type",
+        "cropped",
+        "statusLabel",
+        "status"
+      ]
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "properties": [
+        "roiInfo",
+        "pre",
+        "distal",
+        "instance",
+        "post",
+        "size",
+        "proximal",
+        "bodyId",
+        "type",
+        "cropped",
+        "statusLabel",
+        "status"
+      ]
+    },
+    {
+      "nodeType": "Synapse:medulla7column_Synapse",
+      "properties": [
+        "location",
+        "proximal",
+        "distal",
+        "type",
+        "confidence"
+      ]
+    },
+    {
+      "nodeType": "SynapseSet:medulla7column_SynapseSet",
+      "properties": []
+    }
+  ],
+  "node_type_counts": [
+    {
+      "nodeType": "Synapse:medulla7column_Synapse",
+      "count": 366306
+    },
+    {
+      "nodeType": "SynapseSet:medulla7column_SynapseSet",
+      "count": 349032
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "count": 84183
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "count": 2951
+    },
+    {
+      "nodeType": "Meta:medulla7column_Meta",
+      "count": 1
+    }
+  ],
+  "node_patterns": [
+    {
+      "nodeType": "SynapseSet:medulla7column_SynapseSet",
+      "propSet": "",
+      "count": 349032
+    },
+    {
+      "nodeType": "Synapse:medulla7column_Synapse",
+      "propSet": "confidence:location:proximal:type",
+      "count": 214536
+    },
+    {
+      "nodeType": "Synapse:medulla7column_Synapse",
+      "propSet": "confidence:distal:location:type",
+      "count": 151770
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:post:pre:proximal:roiInfo:size",
+      "count": 44376
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:distal:post:pre:roiInfo:size",
+      "count": 28423
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:cropped:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 5495
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:post:pre:roiInfo:size:status:statusLabel",
+      "count": 4732
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:cropped:instance:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 992
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 517
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:instance:post:pre:proximal:roiInfo:size:status:statusLabel:type",
+      "count": 400
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:distal:post:pre:proximal:roiInfo:size",
+      "count": 322
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 252
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:cropped:instance:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 252
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:instance:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 244
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:cropped:instance:post:pre:proximal:roiInfo:size:status:statusLabel:type",
+      "count": 213
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 200
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:distal:post:pre:roiInfo:size:status:statusLabel",
+      "count": 180
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:instance:post:pre:roiInfo:size:status:statusLabel",
+      "count": 179
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 135
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:distal:post:pre:roiInfo:size:status:statusLabel",
+      "count": 88
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 45
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:cropped:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 23
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:instance:post:pre:roiInfo:size:status:statusLabel:type",
+      "count": 15
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:post:pre:roiInfo:size:status:statusLabel",
+      "count": 11
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:instance:post:pre:proximal:roiInfo:size:status:statusLabel:type",
+      "count": 11
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:distal:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 9
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:instance:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 7
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:cropped:instance:post:pre:proximal:roiInfo:size:status:statusLabel:type",
+      "count": 6
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "bodyId:distal:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 5
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "bodyId:cropped:distal:post:pre:proximal:roiInfo:size:status:statusLabel",
+      "count": 2
+    },
+    {
+      "nodeType": "Meta:medulla7column_Meta",
+      "propSet": "dataset:lastDatabaseEdit:latestMutationId:logo:meshHost:neuroglancerInfo:neuroglancerMeta:postHPThreshold:postHighAccuracyThreshold:preHPThreshold:primaryRois:roiHierarchy:roiInfo:statusDefinitions:superLevelRois:totalPostCount:totalPreCount:uuid",
+      "count": 1
+    }
+  ],
+  "edge_types": [
+    {
+      "relType": "CONNECTS_TO",
+      "sources": [
+        "SynapseSet:medulla7column_SynapseSet",
+        "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+        "Neuron:Segment:medulla7column_Segment"
+      ],
+      "targets": [
+        "SynapseSet:medulla7column_SynapseSet",
+        "Neuron:Segment:medulla7column_Segment",
+        "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment"
+      ],
+      "properties": [
+        "weight",
+        "weightHP",
+        "roiInfo"
+      ]
+    },
+    {
+      "relType": "CONTAINS",
+      "sources": [
+        "SynapseSet:medulla7column_SynapseSet",
+        "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+        "Neuron:Segment:medulla7column_Segment"
+      ],
+      "targets": [
+        "Synapse:medulla7column_Synapse",
+        "SynapseSet:medulla7column_SynapseSet"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "SYNAPSES_TO",
+      "sources": [
+        "Synapse:medulla7column_Synapse"
+      ],
+      "targets": [
+        "Synapse:medulla7column_Synapse"
+      ],
+      "properties": []
+    }
+  ],
+  "edge_type_counts": [
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "SynapseSet:medulla7column_SynapseSet",
+      "targetLabelCombo": "Synapse:medulla7column_Synapse",
+      "count": 614160
+    },
+    {
+      "relType": "SYNAPSES_TO",
+      "sourceLabelCombo": "Synapse:medulla7column_Synapse",
+      "targetLabelCombo": "Synapse:medulla7column_Synapse",
+      "count": 313204
+    },
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "targetLabelCombo": "SynapseSet:medulla7column_SynapseSet",
+      "count": 231020
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "SynapseSet:medulla7column_SynapseSet",
+      "targetLabelCombo": "SynapseSet:medulla7column_SynapseSet",
+      "count": 174516
+    },
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Segment",
+      "targetLabelCombo": "SynapseSet:medulla7column_SynapseSet",
+      "count": 118012
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "targetLabelCombo": "Neuron:Segment:medulla7column_Segment",
+      "count": 112426
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "targetLabelCombo": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "count": 58477
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Segment",
+      "targetLabelCombo": "Neuron:Segment:medulla7column_Segment",
+      "count": 1973
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Segment",
+      "targetLabelCombo": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "count": 1640
+    }
+  ],
+  "edge_patterns": [
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "SynapseSet:medulla7column_SynapseSet",
+      "targetLabelCombo": "Synapse:medulla7column_Synapse",
+      "propSet": "",
+      "count": 614160
+    },
+    {
+      "relType": "SYNAPSES_TO",
+      "sourceLabelCombo": "Synapse:medulla7column_Synapse",
+      "targetLabelCombo": "Synapse:medulla7column_Synapse",
+      "propSet": "",
+      "count": 313204
+    },
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "targetLabelCombo": "SynapseSet:medulla7column_SynapseSet",
+      "propSet": "",
+      "count": 231020
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "SynapseSet:medulla7column_SynapseSet",
+      "targetLabelCombo": "SynapseSet:medulla7column_SynapseSet",
+      "propSet": "",
+      "count": 174516
+    },
+    {
+      "relType": "CONTAINS",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Segment",
+      "targetLabelCombo": "SynapseSet:medulla7column_SynapseSet",
+      "propSet": "",
+      "count": 118012
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "targetLabelCombo": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "roiInfo:weight:weightHP",
+      "count": 112426
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "targetLabelCombo": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "roiInfo:weight:weightHP",
+      "count": 58477
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Segment",
+      "targetLabelCombo": "Neuron:Segment:medulla7column_Segment",
+      "propSet": "roiInfo:weight:weightHP",
+      "count": 1973
+    },
+    {
+      "relType": "CONNECTS_TO",
+      "sourceLabelCombo": "Neuron:Segment:medulla7column_Segment",
+      "targetLabelCombo": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "propSet": "roiInfo:weight:weightHP",
+      "count": 1640
+    }
+  ],
+  "node_types_properties_counts": [
+    {
+      "nodeType": "Synapse:medulla7column_Synapse",
+      "count": 366306,
+      "properties": "confidence|distal|location|proximal|type"
+    },
+    {
+      "nodeType": "SynapseSet:medulla7column_SynapseSet",
+      "count": 349032,
+      "properties": ""
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Segment",
+      "count": 84183,
+      "properties": "bodyId|cropped|distal|instance|post|pre|proximal|roiInfo|size|status|statusLabel|type"
+    },
+    {
+      "nodeType": "Neuron:Segment:medulla7column_Neuron:medulla7column_Segment",
+      "count": 2951,
+      "properties": "bodyId|cropped|distal|instance|post|pre|proximal|roiInfo|size|status|statusLabel|type"
+    },
+    {
+      "nodeType": "Meta:medulla7column_Meta",
+      "count": 1,
+      "properties": "dataset|lastDatabaseEdit|latestMutationId|logo|meshHost|neuroglancerInfo|neuroglancerMeta|postHPThreshold|postHighAccuracyThreshold|preHPThreshold|primaryRois|roiHierarchy|roiInfo|statusDefinitions|superLevelRois|totalPostCount|totalPreCount|uuid"
+    }
+  ]
+}

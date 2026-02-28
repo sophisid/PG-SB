@@ -1,0 +1,39 @@
+relType,sourceLabelCombo,targetLabelCombo,propSet,count
+participates,Gene:HetionetNode,Biological Process:HetionetNode,license:source:unbiased,559504
+expresses,Anatomy:HetionetNode,Gene:HetionetNode,sources:unbiased,369336
+regulates,Gene:HetionetNode,Gene:HetionetNode,method:source:subtypes:unbiased,265672
+expresses,Anatomy:HetionetNode,Gene:HetionetNode,license:sources:unbiased,157071
+interacts,Gene:HetionetNode,Gene:HetionetNode,sources:unbiased,147164
+causes,Compound:HetionetNode,HetionetNode:Side Effect,license:source:unbiased:url,138944
+downregulates,Anatomy:HetionetNode,Gene:HetionetNode,source:unbiased,102240
+upregulates,Anatomy:HetionetNode,Gene:HetionetNode,source:unbiased,97848
+participates,Gene:HetionetNode,HetionetNode:Molecular Function,license:source:unbiased,97222
+participates,Gene:HetionetNode,Cellular Component:HetionetNode,license:source:unbiased,73566
+participates,Gene:HetionetNode,HetionetNode:Pathway,license:source:unbiased,71785
+covaries,Gene:HetionetNode,Gene:HetionetNode,source:unbiased,61690
+downregulates,Compound:HetionetNode,Gene:HetionetNode,method:source:unbiased:z_score,21102
+upregulates,Compound:HetionetNode,Gene:HetionetNode,method:source:unbiased:z_score,18756
+participates,Gene:HetionetNode,HetionetNode:Pathway,license:source:unbiased:url,12587
+associates,Disease:HetionetNode,Gene:HetionetNode,license:sources:unbiased,10379
+upregulates,Disease:HetionetNode,Gene:HetionetNode,license:log2_fold_change:source:unbiased,7731
+downregulates,Disease:HetionetNode,Gene:HetionetNode,license:log2_fold_change:source:unbiased,7623
+binds,Compound:HetionetNode,Gene:HetionetNode,actions:license:pubmed_ids:sources:unbiased,6613
+resembles,Compound:HetionetNode,Compound:HetionetNode,license:similarity:source:unbiased,6486
+localizes,Disease:HetionetNode,Anatomy:HetionetNode,license:source:unbiased,3602
+presents,Disease:HetionetNode,HetionetNode:Symptom,license:source:unbiased,3357
+associates,Disease:HetionetNode,Gene:HetionetNode,sources:unbiased,2244
+binds,Compound:HetionetNode,Gene:HetionetNode,affinity_nM:license:pubmed_ids:sources:unbiased,1039
+includes,HetionetNode:Pharmacologic Class,Compound:HetionetNode,license:source:unbiased,1029
+binds,Compound:HetionetNode,Gene:HetionetNode,actions:license:pubmed_ids:sources:unbiased:urls,772
+treats,Compound:HetionetNode,Disease:HetionetNode,license:source:unbiased,755
+binds,Compound:HetionetNode,Gene:HetionetNode,license:pubmed_ids:sources:unbiased,752
+binds,Compound:HetionetNode,Gene:HetionetNode,actions:license:sources:unbiased:urls,734
+resembles,Disease:HetionetNode,Disease:HetionetNode,license:source:unbiased,543
+binds,Compound:HetionetNode,Gene:HetionetNode,actions:license:sources:unbiased,486
+binds,Compound:HetionetNode,Gene:HetionetNode,actions:affinity_nM:license:pubmed_ids:sources:unbiased,481
+binds,Compound:HetionetNode,Gene:HetionetNode,actions:affinity_nM:license:pubmed_ids:sources:unbiased:urls,472
+palliates,Compound:HetionetNode,Disease:HetionetNode,license:source:unbiased,390
+binds,Compound:HetionetNode,Gene:HetionetNode,affinity_nM:pubmed_ids:sources:unbiased,153
+binds,Compound:HetionetNode,Gene:HetionetNode,affinity_nM:sources:unbiased,33
+binds,Compound:HetionetNode,Gene:HetionetNode,license:sources:unbiased,25
+binds,Compound:HetionetNode,Gene:HetionetNode,affinity_nM:license:sources:unbiased,11

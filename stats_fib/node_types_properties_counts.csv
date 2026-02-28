@@ -1,0 +1,6 @@
+nodeType,count,properties
+Synapse:medulla7column_Synapse,366306,confidence|distal|location|proximal|type
+SynapseSet:medulla7column_SynapseSet,349032,
+Neuron:Segment:medulla7column_Segment,84183,bodyId|cropped|distal|instance|post|pre|proximal|roiInfo|size|status|statusLabel|type
+Neuron:Segment:medulla7column_Neuron:medulla7column_Segment,2951,bodyId|cropped|distal|instance|post|pre|proximal|roiInfo|size|status|statusLabel|type
+Meta:medulla7column_Meta,1,dataset|lastDatabaseEdit|latestMutationId|logo|meshHost|neuroglancerInfo|neuroglancerMeta|postHPThreshold|postHighAccuracyThreshold|preHPThreshold|primaryRois|roiHierarchy|roiInfo|statusDefinitions|superLevelRois|totalPostCount|totalPreCount|uuid

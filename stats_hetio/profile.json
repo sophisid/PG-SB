@@ -1,0 +1,1175 @@
+{
+  "summary_counts": {
+    "nodes": 47031,
+    "edges": 2250197,
+    "node_types": 11,
+    "edge_types": 24,
+    "node_labels": 12,
+    "edge_labels": 16,
+    "node_patterns": 14,
+    "edge_patterns": 38,
+    "total_properties": 23
+  },
+  "global_stats": {
+    "total_nodes": 47031,
+    "total_edges": 2250197
+  },
+  "node_labels": [
+    "Anatomy",
+    "Biological Process",
+    "Cellular Component",
+    "Compound",
+    "Disease",
+    "Gene",
+    "HetionetNode",
+    "Molecular Function",
+    "Pathway",
+    "Pharmacologic Class",
+    "Side Effect",
+    "Symptom"
+  ],
+  "node_label_counts": [
+    {
+      "label": "HetionetNode",
+      "count": 47031
+    },
+    {
+      "label": "Gene",
+      "count": 20945
+    },
+    {
+      "label": "Biological Process",
+      "count": 11381
+    },
+    {
+      "label": "Side Effect",
+      "count": 5734
+    },
+    {
+      "label": "Molecular Function",
+      "count": 2884
+    },
+    {
+      "label": "Pathway",
+      "count": 1822
+    },
+    {
+      "label": "Compound",
+      "count": 1552
+    },
+    {
+      "label": "Cellular Component",
+      "count": 1391
+    },
+    {
+      "label": "Symptom",
+      "count": 438
+    },
+    {
+      "label": "Anatomy",
+      "count": 402
+    },
+    {
+      "label": "Pharmacologic Class",
+      "count": 345
+    },
+    {
+      "label": "Disease",
+      "count": 137
+    }
+  ],
+  "relationship_types": [
+    "associates",
+    "binds",
+    "causes",
+    "covaries",
+    "downregulates",
+    "expresses",
+    "includes",
+    "interacts",
+    "localizes",
+    "palliates",
+    "participates",
+    "presents",
+    "regulates",
+    "resembles",
+    "treats",
+    "upregulates"
+  ],
+  "relationship_type_counts": [
+    {
+      "relType": "participates",
+      "count": 814664
+    },
+    {
+      "relType": "expresses",
+      "count": 526407
+    },
+    {
+      "relType": "regulates",
+      "count": 265672
+    },
+    {
+      "relType": "interacts",
+      "count": 147164
+    },
+    {
+      "relType": "causes",
+      "count": 138944
+    },
+    {
+      "relType": "downregulates",
+      "count": 130965
+    },
+    {
+      "relType": "upregulates",
+      "count": 124335
+    },
+    {
+      "relType": "covaries",
+      "count": 61690
+    },
+    {
+      "relType": "associates",
+      "count": 12623
+    },
+    {
+      "relType": "binds",
+      "count": 11571
+    },
+    {
+      "relType": "resembles",
+      "count": 7029
+    },
+    {
+      "relType": "localizes",
+      "count": 3602
+    },
+    {
+      "relType": "presents",
+      "count": 3357
+    },
+    {
+      "relType": "includes",
+      "count": 1029
+    },
+    {
+      "relType": "treats",
+      "count": 755
+    },
+    {
+      "relType": "palliates",
+      "count": 390
+    }
+  ],
+  "node_property_keys": [
+    "bto_id",
+    "chromosome",
+    "class_type",
+    "description",
+    "inchi",
+    "inchikey",
+    "license",
+    "mesh_id",
+    "name",
+    "source",
+    "uid",
+    "url"
+  ],
+  "edge_property_keys": [
+    "actions",
+    "affinity_nM",
+    "license",
+    "log2_fold_change",
+    "method",
+    "pubmed_ids",
+    "similarity",
+    "source",
+    "sources",
+    "subtypes",
+    "unbiased",
+    "url",
+    "urls",
+    "z_score"
+  ],
+  "all_property_keys": [
+    "actions",
+    "affinity_nM",
+    "bto_id",
+    "chromosome",
+    "class_type",
+    "description",
+    "inchi",
+    "inchikey",
+    "license",
+    "log2_fold_change",
+    "mesh_id",
+    "method",
+    "name",
+    "pubmed_ids",
+    "similarity",
+    "source",
+    "sources",
+    "subtypes",
+    "uid",
+    "unbiased",
+    "url",
+    "urls",
+    "z_score"
+  ],
+  "node_types": [
+    {
+      "nodeType": "Anatomy:HetionetNode",
+      "properties": [
+        "uid",
+        "license",
+        "name",
+        "mesh_id",
+        "source",
+        "bto_id",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "Biological Process:HetionetNode",
+      "properties": [
+        "name",
+        "license",
+        "uid",
+        "source",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "Cellular Component:HetionetNode",
+      "properties": [
+        "name",
+        "uid",
+        "license",
+        "source",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "Compound:HetionetNode",
+      "properties": [
+        "uid",
+        "license",
+        "inchikey",
+        "inchi",
+        "name",
+        "source",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "Disease:HetionetNode",
+      "properties": [
+        "name",
+        "uid",
+        "license",
+        "source",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "Gene:HetionetNode",
+      "properties": [
+        "uid",
+        "license",
+        "chromosome",
+        "name",
+        "description",
+        "source",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "HetionetNode:Molecular Function",
+      "properties": [
+        "name",
+        "license",
+        "uid",
+        "source",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "HetionetNode:Pathway",
+      "properties": [
+        "name",
+        "uid",
+        "license",
+        "source",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "HetionetNode:Pharmacologic Class",
+      "properties": [
+        "name",
+        "license",
+        "uid",
+        "source",
+        "class_type",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "HetionetNode:Side Effect",
+      "properties": [
+        "name",
+        "uid",
+        "license",
+        "source",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "HetionetNode:Symptom",
+      "properties": [
+        "name",
+        "uid",
+        "license",
+        "source",
+        "url"
+      ]
+    }
+  ],
+  "node_type_counts": [
+    {
+      "nodeType": "Gene:HetionetNode",
+      "count": 20945
+    },
+    {
+      "nodeType": "Biological Process:HetionetNode",
+      "count": 11381
+    },
+    {
+      "nodeType": "HetionetNode:Side Effect",
+      "count": 5734
+    },
+    {
+      "nodeType": "HetionetNode:Molecular Function",
+      "count": 2884
+    },
+    {
+      "nodeType": "HetionetNode:Pathway",
+      "count": 1822
+    },
+    {
+      "nodeType": "Compound:HetionetNode",
+      "count": 1552
+    },
+    {
+      "nodeType": "Cellular Component:HetionetNode",
+      "count": 1391
+    },
+    {
+      "nodeType": "HetionetNode:Symptom",
+      "count": 438
+    },
+    {
+      "nodeType": "Anatomy:HetionetNode",
+      "count": 402
+    },
+    {
+      "nodeType": "HetionetNode:Pharmacologic Class",
+      "count": 345
+    },
+    {
+      "nodeType": "Disease:HetionetNode",
+      "count": 137
+    }
+  ],
+  "node_patterns": [
+    {
+      "nodeType": "Gene:HetionetNode",
+      "propSet": "chromosome:description:license:name:source:uid:url",
+      "count": 20908
+    },
+    {
+      "nodeType": "Biological Process:HetionetNode",
+      "propSet": "license:name:source:uid:url",
+      "count": 11381
+    },
+    {
+      "nodeType": "HetionetNode:Side Effect",
+      "propSet": "license:name:source:uid:url",
+      "count": 5734
+    },
+    {
+      "nodeType": "HetionetNode:Molecular Function",
+      "propSet": "license:name:source:uid:url",
+      "count": 2884
+    },
+    {
+      "nodeType": "Compound:HetionetNode",
+      "propSet": "inchi:inchikey:license:name:source:uid:url",
+      "count": 1552
+    },
+    {
+      "nodeType": "HetionetNode:Pathway",
+      "propSet": "license:name:source:uid",
+      "count": 1528
+    },
+    {
+      "nodeType": "Cellular Component:HetionetNode",
+      "propSet": "license:name:source:uid:url",
+      "count": 1391
+    },
+    {
+      "nodeType": "HetionetNode:Symptom",
+      "propSet": "license:name:source:uid:url",
+      "count": 438
+    },
+    {
+      "nodeType": "HetionetNode:Pharmacologic Class",
+      "propSet": "class_type:license:name:source:uid:url",
+      "count": 345
+    },
+    {
+      "nodeType": "HetionetNode:Pathway",
+      "propSet": "license:name:source:uid:url",
+      "count": 294
+    },
+    {
+      "nodeType": "Anatomy:HetionetNode",
+      "propSet": "bto_id:license:mesh_id:name:source:uid:url",
+      "count": 248
+    },
+    {
+      "nodeType": "Anatomy:HetionetNode",
+      "propSet": "license:mesh_id:name:source:uid:url",
+      "count": 154
+    },
+    {
+      "nodeType": "Disease:HetionetNode",
+      "propSet": "license:name:source:uid:url",
+      "count": 137
+    },
+    {
+      "nodeType": "Gene:HetionetNode",
+      "propSet": "description:license:name:source:uid:url",
+      "count": 37
+    }
+  ],
+  "edge_types": [
+    {
+      "relType": "associates",
+      "sources": [
+        "Disease:HetionetNode"
+      ],
+      "targets": [
+        "Gene:HetionetNode"
+      ],
+      "properties": [
+        "unbiased",
+        "sources",
+        "license"
+      ]
+    },
+    {
+      "relType": "binds",
+      "sources": [
+        "Compound:HetionetNode"
+      ],
+      "targets": [
+        "Gene:HetionetNode"
+      ],
+      "properties": [
+        "license",
+        "unbiased",
+        "sources",
+        "pubmed_ids",
+        "actions",
+        "urls",
+        "affinity_nM"
+      ]
+    },
+    {
+      "relType": "causes",
+      "sources": [
+        "Compound:HetionetNode"
+      ],
+      "targets": [
+        "HetionetNode:Side Effect"
+      ],
+      "properties": [
+        "source",
+        "url",
+        "unbiased",
+        "license"
+      ]
+    },
+    {
+      "relType": "covaries",
+      "sources": [
+        "Gene:HetionetNode"
+      ],
+      "targets": [
+        "Gene:HetionetNode"
+      ],
+      "properties": [
+        "unbiased",
+        "source"
+      ]
+    },
+    {
+      "relType": "downregulates",
+      "sources": [
+        "Anatomy:HetionetNode",
+        "Compound:HetionetNode",
+        "Disease:HetionetNode"
+      ],
+      "targets": [
+        "Gene:HetionetNode"
+      ],
+      "properties": [
+        "unbiased",
+        "source",
+        "z_score",
+        "method",
+        "log2_fold_change",
+        "license"
+      ]
+    },
+    {
+      "relType": "expresses",
+      "sources": [
+        "Anatomy:HetionetNode"
+      ],
+      "targets": [
+        "Gene:HetionetNode"
+      ],
+      "properties": [
+        "unbiased",
+        "sources",
+        "license"
+      ]
+    },
+    {
+      "relType": "includes",
+      "sources": [
+        "HetionetNode:Pharmacologic Class"
+      ],
+      "targets": [
+        "Compound:HetionetNode"
+      ],
+      "properties": [
+        "source",
+        "unbiased",
+        "license"
+      ]
+    },
+    {
+      "relType": "interacts",
+      "sources": [
+        "Gene:HetionetNode"
+      ],
+      "targets": [
+        "Gene:HetionetNode"
+      ],
+      "properties": [
+        "unbiased",
+        "sources"
+      ]
+    },
+    {
+      "relType": "localizes",
+      "sources": [
+        "Disease:HetionetNode"
+      ],
+      "targets": [
+        "Anatomy:HetionetNode"
+      ],
+      "properties": [
+        "source",
+        "unbiased",
+        "license"
+      ]
+    },
+    {
+      "relType": "palliates",
+      "sources": [
+        "Compound:HetionetNode"
+      ],
+      "targets": [
+        "Disease:HetionetNode"
+      ],
+      "properties": [
+        "source",
+        "unbiased",
+        "license"
+      ]
+    },
+    {
+      "relType": "participates",
+      "sources": [
+        "Gene:HetionetNode"
+      ],
+      "targets": [
+        "Biological Process:HetionetNode",
+        "HetionetNode:Pathway",
+        "HetionetNode:Molecular Function",
+        "Cellular Component:HetionetNode"
+      ],
+      "properties": [
+        "source",
+        "unbiased",
+        "license",
+        "url"
+      ]
+    },
+    {
+      "relType": "presents",
+      "sources": [
+        "Disease:HetionetNode"
+      ],
+      "targets": [
+        "HetionetNode:Symptom"
+      ],
+      "properties": [
+        "source",
+        "unbiased",
+        "license"
+      ]
+    },
+    {
+      "relType": "regulates",
+      "sources": [
+        "Gene:HetionetNode"
+      ],
+      "targets": [
+        "Gene:HetionetNode"
+      ],
+      "properties": [
+        "source",
+        "unbiased",
+        "method",
+        "subtypes"
+      ]
+    },
+    {
+      "relType": "resembles",
+      "sources": [
+        "Compound:HetionetNode",
+        "Disease:HetionetNode"
+      ],
+      "targets": [
+        "Compound:HetionetNode",
+        "Disease:HetionetNode"
+      ],
+      "properties": [
+        "source",
+        "similarity",
+        "unbiased",
+        "license"
+      ]
+    },
+    {
+      "relType": "treats",
+      "sources": [
+        "Compound:HetionetNode"
+      ],
+      "targets": [
+        "Disease:HetionetNode"
+      ],
+      "properties": [
+        "source",
+        "unbiased",
+        "license"
+      ]
+    },
+    {
+      "relType": "upregulates",
+      "sources": [
+        "Anatomy:HetionetNode",
+        "Compound:HetionetNode",
+        "Disease:HetionetNode"
+      ],
+      "targets": [
+        "Gene:HetionetNode"
+      ],
+      "properties": [
+        "unbiased",
+        "source",
+        "z_score",
+        "method",
+        "log2_fold_change",
+        "license"
+      ]
+    }
+  ],
+  "edge_type_counts": [
+    {
+      "relType": "participates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "Biological Process:HetionetNode",
+      "count": 559504
+    },
+    {
+      "relType": "expresses",
+      "sourceLabelCombo": "Anatomy:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 526407
+    },
+    {
+      "relType": "regulates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 265672
+    },
+    {
+      "relType": "interacts",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 147164
+    },
+    {
+      "relType": "causes",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "HetionetNode:Side Effect",
+      "count": 138944
+    },
+    {
+      "relType": "downregulates",
+      "sourceLabelCombo": "Anatomy:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 102240
+    },
+    {
+      "relType": "upregulates",
+      "sourceLabelCombo": "Anatomy:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 97848
+    },
+    {
+      "relType": "participates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "HetionetNode:Molecular Function",
+      "count": 97222
+    },
+    {
+      "relType": "participates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "HetionetNode:Pathway",
+      "count": 84372
+    },
+    {
+      "relType": "participates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "Cellular Component:HetionetNode",
+      "count": 73566
+    },
+    {
+      "relType": "covaries",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 61690
+    },
+    {
+      "relType": "downregulates",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 21102
+    },
+    {
+      "relType": "upregulates",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 18756
+    },
+    {
+      "relType": "associates",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 12623
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 11571
+    },
+    {
+      "relType": "upregulates",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 7731
+    },
+    {
+      "relType": "downregulates",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "count": 7623
+    },
+    {
+      "relType": "resembles",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Compound:HetionetNode",
+      "count": 6486
+    },
+    {
+      "relType": "localizes",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Anatomy:HetionetNode",
+      "count": 3602
+    },
+    {
+      "relType": "presents",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "HetionetNode:Symptom",
+      "count": 3357
+    },
+    {
+      "relType": "includes",
+      "sourceLabelCombo": "HetionetNode:Pharmacologic Class",
+      "targetLabelCombo": "Compound:HetionetNode",
+      "count": 1029
+    },
+    {
+      "relType": "treats",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Disease:HetionetNode",
+      "count": 755
+    },
+    {
+      "relType": "resembles",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Disease:HetionetNode",
+      "count": 543
+    },
+    {
+      "relType": "palliates",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Disease:HetionetNode",
+      "count": 390
+    }
+  ],
+  "edge_patterns": [
+    {
+      "relType": "participates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "Biological Process:HetionetNode",
+      "propSet": "license:source:unbiased",
+      "count": 559504
+    },
+    {
+      "relType": "expresses",
+      "sourceLabelCombo": "Anatomy:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "sources:unbiased",
+      "count": 369336
+    },
+    {
+      "relType": "regulates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "method:source:subtypes:unbiased",
+      "count": 265672
+    },
+    {
+      "relType": "expresses",
+      "sourceLabelCombo": "Anatomy:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "license:sources:unbiased",
+      "count": 157071
+    },
+    {
+      "relType": "interacts",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "sources:unbiased",
+      "count": 147164
+    },
+    {
+      "relType": "causes",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "HetionetNode:Side Effect",
+      "propSet": "license:source:unbiased:url",
+      "count": 138944
+    },
+    {
+      "relType": "downregulates",
+      "sourceLabelCombo": "Anatomy:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "source:unbiased",
+      "count": 102240
+    },
+    {
+      "relType": "upregulates",
+      "sourceLabelCombo": "Anatomy:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "source:unbiased",
+      "count": 97848
+    },
+    {
+      "relType": "participates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "HetionetNode:Molecular Function",
+      "propSet": "license:source:unbiased",
+      "count": 97222
+    },
+    {
+      "relType": "participates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "Cellular Component:HetionetNode",
+      "propSet": "license:source:unbiased",
+      "count": 73566
+    },
+    {
+      "relType": "participates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "HetionetNode:Pathway",
+      "propSet": "license:source:unbiased",
+      "count": 71785
+    },
+    {
+      "relType": "covaries",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "source:unbiased",
+      "count": 61690
+    },
+    {
+      "relType": "downregulates",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "method:source:unbiased:z_score",
+      "count": 21102
+    },
+    {
+      "relType": "upregulates",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "method:source:unbiased:z_score",
+      "count": 18756
+    },
+    {
+      "relType": "participates",
+      "sourceLabelCombo": "Gene:HetionetNode",
+      "targetLabelCombo": "HetionetNode:Pathway",
+      "propSet": "license:source:unbiased:url",
+      "count": 12587
+    },
+    {
+      "relType": "associates",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "license:sources:unbiased",
+      "count": 10379
+    },
+    {
+      "relType": "upregulates",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "license:log2_fold_change:source:unbiased",
+      "count": 7731
+    },
+    {
+      "relType": "downregulates",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "license:log2_fold_change:source:unbiased",
+      "count": 7623
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "actions:license:pubmed_ids:sources:unbiased",
+      "count": 6613
+    },
+    {
+      "relType": "resembles",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Compound:HetionetNode",
+      "propSet": "license:similarity:source:unbiased",
+      "count": 6486
+    },
+    {
+      "relType": "localizes",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Anatomy:HetionetNode",
+      "propSet": "license:source:unbiased",
+      "count": 3602
+    },
+    {
+      "relType": "presents",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "HetionetNode:Symptom",
+      "propSet": "license:source:unbiased",
+      "count": 3357
+    },
+    {
+      "relType": "associates",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "sources:unbiased",
+      "count": 2244
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "affinity_nM:license:pubmed_ids:sources:unbiased",
+      "count": 1039
+    },
+    {
+      "relType": "includes",
+      "sourceLabelCombo": "HetionetNode:Pharmacologic Class",
+      "targetLabelCombo": "Compound:HetionetNode",
+      "propSet": "license:source:unbiased",
+      "count": 1029
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "actions:license:pubmed_ids:sources:unbiased:urls",
+      "count": 772
+    },
+    {
+      "relType": "treats",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Disease:HetionetNode",
+      "propSet": "license:source:unbiased",
+      "count": 755
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "license:pubmed_ids:sources:unbiased",
+      "count": 752
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "actions:license:sources:unbiased:urls",
+      "count": 734
+    },
+    {
+      "relType": "resembles",
+      "sourceLabelCombo": "Disease:HetionetNode",
+      "targetLabelCombo": "Disease:HetionetNode",
+      "propSet": "license:source:unbiased",
+      "count": 543
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "actions:license:sources:unbiased",
+      "count": 486
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "actions:affinity_nM:license:pubmed_ids:sources:unbiased",
+      "count": 481
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "actions:affinity_nM:license:pubmed_ids:sources:unbiased:urls",
+      "count": 472
+    },
+    {
+      "relType": "palliates",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Disease:HetionetNode",
+      "propSet": "license:source:unbiased",
+      "count": 390
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "affinity_nM:pubmed_ids:sources:unbiased",
+      "count": 153
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "affinity_nM:sources:unbiased",
+      "count": 33
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "license:sources:unbiased",
+      "count": 25
+    },
+    {
+      "relType": "binds",
+      "sourceLabelCombo": "Compound:HetionetNode",
+      "targetLabelCombo": "Gene:HetionetNode",
+      "propSet": "affinity_nM:license:sources:unbiased",
+      "count": 11
+    }
+  ],
+  "node_types_properties_counts": [
+    {
+      "nodeType": "Gene:HetionetNode",
+      "count": 20945,
+      "properties": "chromosome|description|license|name|source|uid|url"
+    },
+    {
+      "nodeType": "Biological Process:HetionetNode",
+      "count": 11381,
+      "properties": "license|name|source|uid|url"
+    },
+    {
+      "nodeType": "HetionetNode:Side Effect",
+      "count": 5734,
+      "properties": "license|name|source|uid|url"
+    },
+    {
+      "nodeType": "HetionetNode:Molecular Function",
+      "count": 2884,
+      "properties": "license|name|source|uid|url"
+    },
+    {
+      "nodeType": "HetionetNode:Pathway",
+      "count": 1822,
+      "properties": "license|name|source|uid|url"
+    },
+    {
+      "nodeType": "Compound:HetionetNode",
+      "count": 1552,
+      "properties": "inchi|inchikey|license|name|source|uid|url"
+    },
+    {
+      "nodeType": "Cellular Component:HetionetNode",
+      "count": 1391,
+      "properties": "license|name|source|uid|url"
+    },
+    {
+      "nodeType": "HetionetNode:Symptom",
+      "count": 438,
+      "properties": "license|name|source|uid|url"
+    },
+    {
+      "nodeType": "Anatomy:HetionetNode",
+      "count": 402,
+      "properties": "bto_id|license|mesh_id|name|source|uid|url"
+    },
+    {
+      "nodeType": "HetionetNode:Pharmacologic Class",
+      "count": 345,
+      "properties": "class_type|license|name|source|uid|url"
+    },
+    {
+      "nodeType": "Disease:HetionetNode",
+      "count": 137,
+      "properties": "license|name|source|uid|url"
+    }
+  ]
+}

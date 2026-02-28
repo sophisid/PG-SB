@@ -1,0 +1,11 @@
+{
+  "nodes": 2016523,
+  "edges": 3339267,
+  "node_types": 6,
+  "edge_types": 14,
+  "node_labels": 5,
+  "edge_labels": 14,
+  "node_patterns": 208,
+  "edge_patterns": 102,
+  "total_properties": 38
+}

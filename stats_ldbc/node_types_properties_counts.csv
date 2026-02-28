@@ -1,0 +1,9 @@
+nodeType,count,properties
+Comment,2052169,browserUsed|content|creationDate|id|length|locationIP
+Post,1003605,browserUsed|content|creationDate|id|imageFile|language|length|locationIP
+Forum,90492,creationDate|id|title
+Tag,16080,id|name|url
+Person,9892,birthday|browserUsed|creationDate|firstName|gender|id|lastName|locationIP
+Organisation,7955,id|name|type|url
+Place,1460,id|name|type|url
+TagClass,71,id|name|url

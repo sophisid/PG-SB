@@ -1,0 +1,7 @@
+nodeType,count,properties
+Entity,814344,address|closed_date|company_number|company_type|countries|country_codes|dorm_date|entity_number|former_name|ibcRUC|inactivation_date|incorporation_date|internal_id|jurisdiction|jurisdiction_description|lastEditTimestamp|name|node_id|note|original_name|service_provider|sourceID|status|struck_off_date|tax_stat_description|type|valid_until
+Officer,770176,countries|country_codes|icij_id|lastEditTimestamp|name|node_id|note|sourceID|valid_until
+Address,402246,address|addressID|countries|country|country_code|country_codes|icij_id|lastEditTimestamp|name|node_id|note|original_address|sourceID|valid_until
+Intermediary,25629,address|countries|country_codes|internal_id|lastEditTimestamp|name|node_id|registered_office|sourceID|status|valid_until
+Other,2989,closed_date|countries|country_codes|incorporation_date|jurisdiction|jurisdiction_description|lastEditTimestamp|name|node_id|note|sourceID|struck_off_date|type|valid_until
+Intermediary:Officer,1139,countries|country_codes|lastEditTimestamp|name|node_id|sourceID|valid_until

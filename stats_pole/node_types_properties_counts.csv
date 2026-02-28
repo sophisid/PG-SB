@@ -1,0 +1,12 @@
+nodeType,count,properties
+Crime,28762,date|id|last_outcome|source_id|type
+Location,14904,address|id|latitude|longitude|postcode
+PostCode,14196,code|id
+Officer,1000,badge_no|id|name|rank|surname
+Vehicle,1000,id|make|model|reg|year
+PhoneCall,534,call_date|call_duration|call_time|call_type|id
+Person,369,age|id|name|nhs_no|surname
+Email,328,email_address|id
+Phone,328,id|phoneNo
+AREA,93,areaCode|id
+Object,7,description|id|source_id|type

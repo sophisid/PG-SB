@@ -1,0 +1,550 @@
+{
+  "summary_counts": {
+    "nodes": 260,
+    "edges": 611,
+    "node_types": 6,
+    "edge_types": 10,
+    "node_labels": 6,
+    "edge_labels": 4,
+    "node_patterns": 6,
+    "edge_patterns": 10,
+    "total_properties": 46
+  },
+  "global_stats": {
+    "total_nodes": 260,
+    "total_edges": 611
+  },
+  "node_labels": [
+    "Character",
+    "Film",
+    "Planet",
+    "Species",
+    "Starship",
+    "Vehicle"
+  ],
+  "node_label_counts": [
+    {
+      "label": "Character",
+      "count": 82
+    },
+    {
+      "label": "Planet",
+      "count": 60
+    },
+    {
+      "label": "Vehicle",
+      "count": 39
+    },
+    {
+      "label": "Species",
+      "count": 37
+    },
+    {
+      "label": "Starship",
+      "count": 36
+    },
+    {
+      "label": "Film",
+      "count": 6
+    }
+  ],
+  "relationship_types": [
+    "APPEARED_IN",
+    "HOMEWORLD",
+    "OF",
+    "PILOT"
+  ],
+  "relationship_type_counts": [
+    {
+      "relType": "APPEARED_IN",
+      "count": 372
+    },
+    {
+      "relType": "HOMEWORLD",
+      "count": 118
+    },
+    {
+      "relType": "OF",
+      "count": 78
+    },
+    {
+      "relType": "PILOT",
+      "count": 43
+    }
+  ],
+  "node_property_keys": [
+    "MGLT",
+    "average_height",
+    "average_lifespan",
+    "birth_year",
+    "cargo_capacity",
+    "classification",
+    "climate",
+    "consumables",
+    "cost_in_credits",
+    "created",
+    "crew",
+    "designation",
+    "diameter",
+    "director",
+    "edited",
+    "episode_id",
+    "eye_color",
+    "eye_colors",
+    "gender",
+    "gravity",
+    "hair_color",
+    "hair_colors",
+    "height",
+    "hyperdrive_rating",
+    "language",
+    "length",
+    "manufacturer",
+    "mass",
+    "max_atmosphering_speed",
+    "model",
+    "name",
+    "opening_crawl",
+    "orbital_period",
+    "passengers",
+    "population",
+    "producer",
+    "release_date",
+    "rotation_period",
+    "skin_color",
+    "skin_colors",
+    "starship_class",
+    "surface_water",
+    "terrain",
+    "title",
+    "url",
+    "vehicle_class"
+  ],
+  "edge_property_keys": [],
+  "all_property_keys": [
+    "MGLT",
+    "average_height",
+    "average_lifespan",
+    "birth_year",
+    "cargo_capacity",
+    "classification",
+    "climate",
+    "consumables",
+    "cost_in_credits",
+    "created",
+    "crew",
+    "designation",
+    "diameter",
+    "director",
+    "edited",
+    "episode_id",
+    "eye_color",
+    "eye_colors",
+    "gender",
+    "gravity",
+    "hair_color",
+    "hair_colors",
+    "height",
+    "hyperdrive_rating",
+    "language",
+    "length",
+    "manufacturer",
+    "mass",
+    "max_atmosphering_speed",
+    "model",
+    "name",
+    "opening_crawl",
+    "orbital_period",
+    "passengers",
+    "population",
+    "producer",
+    "release_date",
+    "rotation_period",
+    "skin_color",
+    "skin_colors",
+    "starship_class",
+    "surface_water",
+    "terrain",
+    "title",
+    "url",
+    "vehicle_class"
+  ],
+  "node_types": [
+    {
+      "nodeType": "Character",
+      "properties": [
+        "eye_color",
+        "gender",
+        "edited",
+        "skin_color",
+        "created",
+        "mass",
+        "name",
+        "url",
+        "birth_year",
+        "height",
+        "hair_color"
+      ]
+    },
+    {
+      "nodeType": "Film",
+      "properties": [
+        "episode_id",
+        "release_date",
+        "edited",
+        "created",
+        "director",
+        "producer",
+        "opening_crawl",
+        "title",
+        "url"
+      ]
+    },
+    {
+      "nodeType": "Planet",
+      "properties": [
+        "orbital_period",
+        "surface_water",
+        "diameter",
+        "edited",
+        "created",
+        "gravity",
+        "name",
+        "climate",
+        "terrain",
+        "rotation_period",
+        "url",
+        "population"
+      ]
+    },
+    {
+      "nodeType": "Species",
+      "properties": [
+        "average_height",
+        "skin_colors",
+        "edited",
+        "created",
+        "name",
+        "eye_colors",
+        "language",
+        "designation",
+        "average_lifespan",
+        "classification",
+        "url",
+        "hair_colors"
+      ]
+    },
+    {
+      "nodeType": "Starship",
+      "properties": [
+        "max_atmosphering_speed",
+        "cargo_capacity",
+        "passengers",
+        "edited",
+        "consumables",
+        "created",
+        "MGLT",
+        "length",
+        "starship_class",
+        "url",
+        "manufacturer",
+        "crew",
+        "hyperdrive_rating",
+        "cost_in_credits",
+        "name",
+        "model"
+      ]
+    },
+    {
+      "nodeType": "Vehicle",
+      "properties": [
+        "max_atmosphering_speed",
+        "cargo_capacity",
+        "passengers",
+        "edited",
+        "consumables",
+        "created",
+        "length",
+        "url",
+        "manufacturer",
+        "crew",
+        "vehicle_class",
+        "cost_in_credits",
+        "name",
+        "model"
+      ]
+    }
+  ],
+  "node_type_counts": [
+    {
+      "nodeType": "Character",
+      "count": 82
+    },
+    {
+      "nodeType": "Planet",
+      "count": 60
+    },
+    {
+      "nodeType": "Vehicle",
+      "count": 39
+    },
+    {
+      "nodeType": "Species",
+      "count": 37
+    },
+    {
+      "nodeType": "Starship",
+      "count": 36
+    },
+    {
+      "nodeType": "Film",
+      "count": 6
+    }
+  ],
+  "node_patterns": [
+    {
+      "nodeType": "Character",
+      "propSet": "birth_year:created:edited:eye_color:gender:hair_color:height:mass:name:skin_color:url",
+      "count": 82
+    },
+    {
+      "nodeType": "Planet",
+      "propSet": "climate:created:diameter:edited:gravity:name:orbital_period:population:rotation_period:surface_water:terrain:url",
+      "count": 60
+    },
+    {
+      "nodeType": "Vehicle",
+      "propSet": "cargo_capacity:consumables:cost_in_credits:created:crew:edited:length:manufacturer:max_atmosphering_speed:model:name:passengers:url:vehicle_class",
+      "count": 39
+    },
+    {
+      "nodeType": "Species",
+      "propSet": "average_height:average_lifespan:classification:created:designation:edited:eye_colors:hair_colors:language:name:skin_colors:url",
+      "count": 37
+    },
+    {
+      "nodeType": "Starship",
+      "propSet": "MGLT:cargo_capacity:consumables:cost_in_credits:created:crew:edited:hyperdrive_rating:length:manufacturer:max_atmosphering_speed:model:name:passengers:starship_class:url",
+      "count": 36
+    },
+    {
+      "nodeType": "Film",
+      "propSet": "created:director:edited:episode_id:opening_crawl:producer:release_date:title:url",
+      "count": 6
+    }
+  ],
+  "edge_types": [
+    {
+      "relType": "APPEARED_IN",
+      "sources": [
+        "Vehicle",
+        "Character",
+        "Starship",
+        "Planet",
+        "Species"
+      ],
+      "targets": [
+        "Film"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "HOMEWORLD",
+      "sources": [
+        "Character",
+        "Species"
+      ],
+      "targets": [
+        "Planet"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "OF",
+      "sources": [
+        "Character"
+      ],
+      "targets": [
+        "Species"
+      ],
+      "properties": []
+    },
+    {
+      "relType": "PILOT",
+      "sources": [
+        "Character"
+      ],
+      "targets": [
+        "Starship",
+        "Vehicle"
+      ],
+      "properties": []
+    }
+  ],
+  "edge_type_counts": [
+    {
+      "relType": "APPEARED_IN",
+      "sourceLabelCombo": "Character",
+      "targetLabelCombo": "Film",
+      "count": 162
+    },
+    {
+      "relType": "HOMEWORLD",
+      "sourceLabelCombo": "Character",
+      "targetLabelCombo": "Planet",
+      "count": 82
+    },
+    {
+      "relType": "OF",
+      "sourceLabelCombo": "Character",
+      "targetLabelCombo": "Species",
+      "count": 78
+    },
+    {
+      "relType": "APPEARED_IN",
+      "sourceLabelCombo": "Species",
+      "targetLabelCombo": "Film",
+      "count": 73
+    },
+    {
+      "relType": "APPEARED_IN",
+      "sourceLabelCombo": "Starship",
+      "targetLabelCombo": "Film",
+      "count": 55
+    },
+    {
+      "relType": "APPEARED_IN",
+      "sourceLabelCombo": "Vehicle",
+      "targetLabelCombo": "Film",
+      "count": 49
+    },
+    {
+      "relType": "HOMEWORLD",
+      "sourceLabelCombo": "Species",
+      "targetLabelCombo": "Planet",
+      "count": 36
+    },
+    {
+      "relType": "APPEARED_IN",
+      "sourceLabelCombo": "Planet",
+      "targetLabelCombo": "Film",
+      "count": 33
+    },
+    {
+      "relType": "PILOT",
+      "sourceLabelCombo": "Character",
+      "targetLabelCombo": "Starship",
+      "count": 30
+    },
+    {
+      "relType": "PILOT",
+      "sourceLabelCombo": "Character",
+      "targetLabelCombo": "Vehicle",
+      "count": 13
+    }
+  ],
+  "edge_patterns": [
+    {
+      "relType": "APPEARED_IN",
+      "sourceLabelCombo": "Character",
+      "targetLabelCombo": "Film",
+      "propSet": "",
+      "count": 162
+    },
+    {
+      "relType": "HOMEWORLD",
+      "sourceLabelCombo": "Character",
+      "targetLabelCombo": "Planet",
+      "propSet": "",
+      "count": 82
+    },
+    {
+      "relType": "OF",
+      "sourceLabelCombo": "Character",
+      "targetLabelCombo": "Species",
+      "propSet": "",
+      "count": 78
+    },
+    {
+      "relType": "APPEARED_IN",
+      "sourceLabelCombo": "Species",
+      "targetLabelCombo": "Film",
+      "propSet": "",
+      "count": 73
+    },
+    {
+      "relType": "APPEARED_IN",
+      "sourceLabelCombo": "Starship",
+      "targetLabelCombo": "Film",
+      "propSet": "",
+      "count": 55
+    },
+    {
+      "relType": "APPEARED_IN",
+      "sourceLabelCombo": "Vehicle",
+      "targetLabelCombo": "Film",
+      "propSet": "",
+      "count": 49
+    },
+    {
+      "relType": "HOMEWORLD",
+      "sourceLabelCombo": "Species",
+      "targetLabelCombo": "Planet",
+      "propSet": "",
+      "count": 36
+    },
+    {
+      "relType": "APPEARED_IN",
+      "sourceLabelCombo": "Planet",
+      "targetLabelCombo": "Film",
+      "propSet": "",
+      "count": 33
+    },
+    {
+      "relType": "PILOT",
+      "sourceLabelCombo": "Character",
+      "targetLabelCombo": "Starship",
+      "propSet": "",
+      "count": 30
+    },
+    {
+      "relType": "PILOT",
+      "sourceLabelCombo": "Character",
+      "targetLabelCombo": "Vehicle",
+      "propSet": "",
+      "count": 13
+    }
+  ],
+  "node_types_properties_counts": [
+    {
+      "nodeType": "Character",
+      "count": 82,
+      "properties": "birth_year|created|edited|eye_color|gender|hair_color|height|mass|name|skin_color|url"
+    },
+    {
+      "nodeType": "Planet",
+      "count": 60,
+      "properties": "climate|created|diameter|edited|gravity|name|orbital_period|population|rotation_period|surface_water|terrain|url"
+    },
+    {
+      "nodeType": "Vehicle",
+      "count": 39,
+      "properties": "cargo_capacity|consumables|cost_in_credits|created|crew|edited|length|manufacturer|max_atmosphering_speed|model|name|passengers|url|vehicle_class"
+    },
+    {
+      "nodeType": "Species",
+      "count": 37,
+      "properties": "average_height|average_lifespan|classification|created|designation|edited|eye_colors|hair_colors|language|name|skin_colors|url"
+    },
+    {
+      "nodeType": "Starship",
+      "count": 36,
+      "properties": "MGLT|cargo_capacity|consumables|cost_in_credits|created|crew|edited|hyperdrive_rating|length|manufacturer|max_atmosphering_speed|model|name|passengers|starship_class|url"
+    },
+    {
+      "nodeType": "Film",
+      "count": 6,
+      "properties": "created|director|edited|episode_id|opening_crawl|producer|release_date|title|url"
+    }
+  ]
+}
