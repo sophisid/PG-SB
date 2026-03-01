@@ -319,3 +319,6 @@ If large datasets stall:
 
 - lower `query_batch_size`
 - adjust `neo4j_memory`
+
+# Note
+For `ldbc-sbn`, you can the benchmark here: https://github.com/ldbc/ldbc_snb_datagen_hadoop
