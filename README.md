@@ -30,7 +30,7 @@ Main folders:
 
 Before running the benchmark, download the dataset dump files from Zenodo:
 
-- https://zenodo.org/records/17801336
+- https://doi.org/10.5281/zenodo.17801335
 
 After downloading them, place each dump inside the matching dataset folder under `datasets/`.
 
